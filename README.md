@@ -9,6 +9,8 @@
 - https://github.com/jeffreytse/zsh-vi-mode
 - Font - https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized
 - https://github.com/nickclyde/rofi-bluetooth
+- https://github.com/hyprland-community/pyprland
+  
 https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/
 
 base packages - base-devel zsh discord neofetch neovim rofi waybar git grim slurp wl-clipboard bluez bluez-utils iwd kitty btop fzf hyprland iwd kitty ranger 
