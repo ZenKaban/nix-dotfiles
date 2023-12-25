@@ -69,5 +69,5 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # add function to update dotfiles
 function config_upd() {
-    config add -u  && config commit -m "$1" && config push
+    config add -u && config commit -m "$1" && config push
 }
