@@ -31,3 +31,16 @@ So, if you want to auto power-on after boot you need to add the line AutoEnable=
 ------------------------------------------------------------------------------
 [Policy]
 AutoEnable=true
+
+put this in /etc/iptables/iptables.rules, and in ip6tables.rules:
+#
+
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -i lo -j ACCEPT
+-A OUTPUT -o lo -j ACCEPT
+-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+COMMIT
