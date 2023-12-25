@@ -1,0 +1,9 @@
+2023-12-25T21:55:03.968Z 0: 
+
+----------------------------------------------
+2023-12-25T21:55:03.974Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.39"}, modulepath: /home/alex/.config/discord/0.0.39/modules
+2023-12-25T21:55:03.976Z 2: ✅ webContents.created web1 ""
+2023-12-25T21:55:03.977Z 3: ✅ window.created win1 "discord"
+2023-12-25T21:55:04.098Z 4: ✅ webContents.did-finish-load web1
+2023-12-25T21:55:38.618Z 5: ✅ webContents.created web2 ""
+2023-12-25T21:55:38.629Z 6: ✅ window.created win2 "Discord"
