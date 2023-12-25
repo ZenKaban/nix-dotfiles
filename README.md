@@ -33,6 +33,7 @@ So, if you want to auto power-on after boot you need to add the line AutoEnable=
 AutoEnable=true
 
 put this in /etc/iptables/iptables.rules, and in ip6tables.rules:
+```bash
 #
 
 *filter
@@ -44,3 +45,5 @@ put this in /etc/iptables/iptables.rules, and in ip6tables.rules:
 -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 COMMIT
+```
+systemctl enable iptables
