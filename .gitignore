@@ -2,3 +2,4 @@
 /.config/iterm2
 */nvim/lazy-lock.json
 */gh
+*.log
