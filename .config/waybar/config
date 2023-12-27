@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "height": 35,
-    "spacing": 7,
+    "spacing": 12,
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
@@ -18,9 +18,9 @@
         // "disk",
         "pulseaudio",
         // "bluetooth",
-        "network",
+        "network"
         // "battery",
-        "custom/power"
+        // "custom/power"
     ],
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -38,23 +38,18 @@
         // "icon-size": 21,
         "spacing": 10
     },
-    "custom/updates": {
-        "exec": "~/.local/bin/polybar/updates-pacman-aurhelper",
-        "format": "󰏔 {}",
-        "interval": 600
-    },
-     
+
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%H:%M   %a, %b %d}"
+        "format": "  {:%H:%M   %a, %b %d}"
     },
-
 
     "cpu": {
         "interval": 10,
         "format": "{}% ",
         "max-length": 10
     },
+
     "bluetooth": {
 	    "format": " {status}",
 	    "format-connected": " {device_alias}",

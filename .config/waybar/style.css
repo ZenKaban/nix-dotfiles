@@ -114,6 +114,7 @@ button {
 #mode,
 #idle_inhibitor,
 #scratchpad,
+#language,
 #mpd {
     padding: 0 12px;
     background-color: @base;
@@ -150,13 +151,15 @@ label:focus {
 }
 
 #cpu {
-  color: @text
+  color: @text;
 }
 
 #memory {
-  color: @text
+  color: @text;
 }
-
+#language {
+  color: @red;
+}
 
 #disk {
     color: @peach;
