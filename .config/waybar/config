@@ -4,7 +4,8 @@
     "spacing": 7,
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "tray",
     ],
     "modules-center": [
         "clock"

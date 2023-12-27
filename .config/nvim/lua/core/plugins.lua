@@ -28,7 +28,19 @@ require("lazy").setup({
     {'akinsho/toggleterm.nvim', version = "*", config = true},
     -- {'jose-elias-alvarez/null-ls.nvim'}, 
     {'windwp/nvim-autopairs'},
-    {'Djancyp/outline'}, {'terrortylor/nvim-comment'},
+    {'terrortylor/nvim-comment'},
+{
+  "hedyhli/outline.nvim",
+  lazy = true,
+  cmd = { "Outline", "OutlineOpen" },
+  keys = { -- Example mapping to toggle outline
+    { "<leader>o", "<cmd>Outline<CR>", desc = "Toggle outline" },
+  },
+  opts = {
+    -- Your setup opts here
+  },
+},
+
     {'windwp/nvim-ts-autotag'}, {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
@@ -54,6 +66,18 @@ require("lazy").setup({
             "nvim-lua/plenary.nvim",
         },
 	},
+    {
+    'mikesmithgh/kitty-scrollback.nvim',
+    enabled = true,
+    lazy = true,
+    cmd = { 'KittyScrollbackGenerateKittens', 'KittyScrollbackCheckHealth' },
+    event = { 'User KittyScrollbackLaunch' },
+    -- version = '*', -- latest stable version, may have breaking changes if major version changed
+    -- version = '^2.0.0', -- pin major version, include fixes and features that do not have breaking changes
+    config = function()
+      require('kitty-scrollback').setup()
+    end,
+  },
 {
   "folke/flash.nvim",
   event = "VeryLazy",
