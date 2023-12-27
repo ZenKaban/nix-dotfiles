@@ -7,6 +7,7 @@ plugins = [
 [scratchpads.term]
 command = "kitty --class scratchpad"
 margin = 50
+animation = "fromTop"
 
 [scratchpads.ranger]
 command = "kitty --class scratchpad -e ranger"
