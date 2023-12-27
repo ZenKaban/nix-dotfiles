@@ -1,0 +1,19 @@
+yay -S davfs2
+
+sudo mkdir /home/alex/yadisk
+
+https://yandex.ru/support/disk-desktop/webdav-app-passwords.html?lang=ru
+
+Добавляем в /etc/fstab строку монтирования:
+
+https://webdav.yandex.ru         /home/alex/yadisk      davfs   user,rw,_netdev 0 0
+
+Сообщим утилите davfs2 свой логин и пароль от webdav удалённого диска.
+	 ~/.davfs2/secrets добавляем строку:
+/home/alex/yadisk	yandex_username	yandex_password
+
+sudo usermod -a -G alex
+
+mount ~/yadisk
+
+
