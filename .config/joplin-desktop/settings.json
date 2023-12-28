@@ -1,0 +1,41 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"locale": "en_GB",
+	"api.token": "5faa86ccf24b6c33a477b472d28898aa3e77fd89afc565038809cedf2e2045faee0ee2f6b034670b4c75fdb63b144a9557eb313fcf23ef9ccd796a81d25fdd8b",
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"spellChecker.languages": [
+		"en-US"
+	],
+	"noteVisiblePanes": [
+		"editor",
+		"viewer"
+	],
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "sideBar",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "noteList",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "editor",
+				"visible": true
+			}
+		],
+		"visible": true
+	},
+	"sync.target": 6,
+	"sync.6.path": "https://webdav.yandex.com/joplin",
+	"sync.6.username": "ya.kabanoff90",
+	"editor.keyboardMode": "vim",
+	"dateFormat": "YYYY/MM/DD",
+	"theme": 4,
+	"editor.codeView": true
+}

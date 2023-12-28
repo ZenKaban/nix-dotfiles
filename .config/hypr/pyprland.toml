@@ -17,4 +17,3 @@ margin = 50
 command = "kitty --class scratchpad -e btop"
 margin = 50
 
-
