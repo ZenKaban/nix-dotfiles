@@ -1,6 +1,5 @@
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias lazygitconfig='lazygit --git-dir=$HOME/.cfg --work-tree=$HOME'
-alias ls='eza -l'
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -61,21 +60,4 @@ function config_upd() {
     config add -u && config commit -m "$1" && config push
 }
 
-# The following lines were added by compinstall
-
-zstyle ':completion:*' completer _expand _complete _ignored _approximate
-zstyle ':completion:*' completions 1
-zstyle ':completion:*' matcher-list '' ''
-zstyle ':completion:*' max-errors 2
-zstyle :compinstall filename '/home/alex/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-setopt beep notify
-bindkey -v
-# End of lines configured by zsh-newuser-install
+alias ls='eza -l'
