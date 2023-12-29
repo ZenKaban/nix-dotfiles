@@ -10,6 +10,7 @@
 - Font - https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized
 - https://github.com/nickclyde/rofi-bluetooth
 - https://github.com/hyprland-community/pyprland
+- https://github.com/eza-community/eza
 
 https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/
 
