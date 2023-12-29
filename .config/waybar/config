@@ -4,21 +4,25 @@
     "spacing": 12,
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "tray",
+        "tray"
+        // "wlr/taskbar",
+        // "hyprland/window",
     ],
+
     "modules-center": [
-        "clock"
+        "hyprland/workspaces",
     ],
+
     "modules-right": [
         "hyprland/language", 
-        "custom/updates",
+        // "custom/updates",
         "cpu",
         "memory",
         // "disk",
         "pulseaudio",
         // "bluetooth",
-        "network"
+        "network",
+        "clock"
         // "battery",
         // "custom/power"
     ],
@@ -35,13 +39,39 @@
     },
 
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 20,
         "spacing": 10
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+           "Alacritty"
+        ],
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+
+    "hyprland/window": {
+        "rewrite": {
+            "(.*) - Brave": "$1",
+            "(.*) - Chromium": "$1",
+            "(.*) - Brave Search": "$1",
+            "(.*) - Outlook": "$1",
+            "(.*) Microsoft Teams": "$1"
+        },
+        "separate-outputs": true
     },
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "  {:%H:%M   %a, %b %d}"
+        "format": "  {:%H:%M | %a, %b %d}"
     },
 
     "cpu": {

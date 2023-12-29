@@ -30,12 +30,12 @@
 @define-color rosewater #f5e0dc;
 
 * {
-    font-family: JetBrainsMono Nerd Font;
-    font-size: 13px;
+    font-family: Liga SFMono Nerd Font;
+    font-size: 14px;
 }
 
 window#waybar {
-    background-color: @crust;
+    background-color: rgba(17,17,27,0.1);
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;
@@ -90,7 +90,7 @@ button {
 }
 
 #workspaces button.active {
-    background-color: @surface0;
+    background-color: @surface2;
 }
 
 #workspaces button.urgent {
@@ -115,6 +115,7 @@ button {
 #idle_inhibitor,
 #scratchpad,
 #language,
+#workspaces,
 #mpd {
     padding: 0 12px;
     background-color: @base;
@@ -125,7 +126,7 @@ button {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 0;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
