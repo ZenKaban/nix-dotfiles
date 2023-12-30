@@ -3,7 +3,7 @@
 - https://ohmyz.sh
 - https://github.com/romkatv/powerlevel10k
 - https://ranger.github.io
-- SurfingKeys
+- SurfingKeys (config - https://gist.github.com/ZenKaban/bad5c1f7eb2a87c566be40f06ac5c754)
 - https://github.com/jesseduffield/lazygit
 - https://github.com/junegunn/fzf
 - https://github.com/jeffreytse/zsh-vi-mode
