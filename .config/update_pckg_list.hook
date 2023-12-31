@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Target = *
+
+[Action]
+Description = Updating package list for dotfiles
+When = PostTransaction
+Exec = /home/alex/.config/update_package_list.sh
