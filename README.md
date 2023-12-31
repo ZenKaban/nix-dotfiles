@@ -26,7 +26,7 @@ Revert / and /run/media
 Backup package list
 ________________
 
-pacman -Qem|cut -f 1 -d " " > aur_packages && pacman -Qe|cut -f 1 -d " " > pacman_packages
+pacman -Qem|cut -f 1 -d " " > ~/.config/aur_packages && pacman -Qe|cut -f 1 -d " " > ~/.config/pacman_packages
 
 Arch install essentials
 ________________
