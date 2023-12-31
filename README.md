@@ -14,21 +14,27 @@
 
 https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/
 
-Backup
+**Backup**
 ________________
 
 **To backup**
-sudo rsync -aAXHv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/*"} --delete / /run/media/alex/a4fa4af6-80f7-474c-beca-67298600bf11
+
+`sudo rsync -aAXHv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/*"} --delete / /run/media/alex/a4fa4af6-80f7-474c-beca-67298600bf11`
 
 **To restore**
 Revert / and /run/media
 
-Backup package list
+**Backup package list**
 ________________
+**Manual command**
 
-pacman -Qem|cut -f 1 -d " " > ~/.config/aur_packages && pacman -Qe|cut -f 1 -d " " > ~/.config/pacman_packages
+`pacman -Qem | cut -f 1 -d " " > ~/.config/aur_packages && pacman -Qe | cut -f 1 -d " " > ~/.config/pacman_packages`
 
-Arch install essentials
+**Automatic hook for Pacman**
+
+Put `update_pckg_list.hook` in `/etc/pacman.d/hooks` and update path
+
+**Arch install essentials**
 ________________
 base packages - base-devel zsh discord neofetch neovim rofi waybar git grim slurp wl-clipboard bluez bluez-utils iwd kitty btop fzf hyprland iwd kitty ranger 
 
