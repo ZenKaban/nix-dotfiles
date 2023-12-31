@@ -23,6 +23,11 @@ sudo rsync -aAXHv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt
 **To restore**
 Revert / and /run/media
 
+Backup package list
+________________
+
+pacman -Qem|cut -f 1 -d " " > aur_packages && pacman -Qe|cut -f 1 -d " " > pacman_packages
+
 Arch install essentials
 ________________
 base packages - base-devel zsh discord neofetch neovim rofi waybar git grim slurp wl-clipboard bluez bluez-utils iwd kitty btop fzf hyprland iwd kitty ranger 
