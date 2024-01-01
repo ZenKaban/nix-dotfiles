@@ -1,4 +1,6 @@
 amdvlk
+arch-wiki-docs
+arch-wiki-lite
 atool
 base
 base-devel
@@ -8,6 +10,7 @@ brightnessctl
 btop
 davfs2
 ddcutil
+dialog
 dunst
 efibootmgr
 eza
@@ -56,6 +59,7 @@ sddm
 slurp
 steam-devices-git
 sudo
+swayidle
 swaylock-effects
 transmission-qt
 ttf-liberation
