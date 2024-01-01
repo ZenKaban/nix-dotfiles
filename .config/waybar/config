@@ -16,7 +16,7 @@
     "modules-right": [
         "hyprland/language", 
         // "custom/updates",
-        "cpu",
+        "custom/updates",
         "memory",
         // "disk",
         "pulseaudio",
@@ -26,6 +26,18 @@
         // "battery",
         // "custom/power"
     ],
+
+    "custom/updates": {
+       "format": "{} {icon}",
+       "return-type": "json",
+       "format-icons": {
+           "has-updates": "󱍷",
+           "updated": "󰂪"
+       },
+       "exec-if": "which waybar-module-pacman-updates",
+       "exec": "waybar-module-pacman-updates"
+   },
+
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
