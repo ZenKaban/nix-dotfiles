@@ -34,6 +34,10 @@ ________________
 
 Put `update_pckg_list.hook` in `/etc/pacman.d/hooks` and update path
 
+**Install packages from list (excluding AUR)**
+
+`pacman -S --needed $(comm -12 <(pacman -Slq | sort) <(sort pkglist.txt))`
+
 **Arch install essentials**
 ________________
 base packages - base-devel zsh discord neofetch neovim rofi waybar git grim slurp wl-clipboard bluez bluez-utils iwd kitty btop fzf hyprland iwd kitty ranger 
