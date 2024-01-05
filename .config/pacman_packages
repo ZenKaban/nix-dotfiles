@@ -11,6 +11,7 @@ btop
 davfs2
 ddcutil
 dialog
+dosfstools
 dunst
 efibootmgr
 eza
@@ -40,6 +41,7 @@ ncdu
 neofetch
 neovim
 ntfs-3g
+p7zip
 pacman-contrib
 pacman-log-orphans-hook
 pavucontrol
