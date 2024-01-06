@@ -37,5 +37,7 @@
 	"editor.keyboardMode": "vim",
 	"dateFormat": "YYYY/MM/DD",
 	"theme": 4,
-	"editor.codeView": true
+	"editor.codeView": true,
+	"editor": "/usr/bin/nvim",
+	"showTrayIcon": false
 }
