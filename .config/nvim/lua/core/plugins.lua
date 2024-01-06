@@ -15,8 +15,6 @@ require("lazy").setup({
         dependencies = {'nvim-lua/plenary.nvim'}
     }, 
     {'cooperuser/glowbeam.nvim'},
-    {'joshdick/onedark.vim'},
-    {'rebelot/kanagawa.nvim'},
     {'nvim-treesitter/nvim-treesitter'}, 
     {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'},
@@ -72,7 +70,6 @@ require("lazy").setup({
             "nvim-lua/plenary.nvim",
         },
 	},
-    {"shaunsingh/nord.nvim"},
     {'mikesmithgh/kitty-scrollback.nvim',
         enabled = true,
         lazy = true,
@@ -131,5 +128,11 @@ require("lazy").setup({
                 desc = "Toggle Flash Search",
             },
             },
-    }
+    },
+    -- Themes
+    {'joshdick/onedark.vim'},
+    {'rebelot/kanagawa.nvim'},
+    {'shaunsingh/solarized.nvim'},
+    {"shaunsingh/nord.nvim"},
+
 });

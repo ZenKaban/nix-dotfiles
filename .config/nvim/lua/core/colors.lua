@@ -12,3 +12,4 @@ end
 
 SetColor('kanagawa-wave')
 -- SetColor('nord')
+-- SetColor('solarized')
