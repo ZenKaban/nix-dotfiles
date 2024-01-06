@@ -11,7 +11,8 @@
 - https://github.com/nickclyde/rofi-bluetooth
 - https://github.com/hyprland-community/pyprland
 - https://github.com/eza-community/eza
-
+- https://fx.wtf/install
+- https://lnav.org/
 https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/
 
 **Backup**
