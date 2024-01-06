@@ -78,4 +78,7 @@ xdg-desktop-portal-hyprland
 xf86-video-amdgpu
 xwaylandvideobridge
 yay
+zathura
+zathura-djvu
+zathura-pdf-mupdf
 zsh-vi-mode
