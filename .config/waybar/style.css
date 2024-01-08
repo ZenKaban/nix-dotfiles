@@ -126,7 +126,7 @@ button {
 
 #window,
 #workspaces {
-    margin: 0 0;
+    margin: 3 3;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
