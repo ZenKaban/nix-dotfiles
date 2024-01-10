@@ -39,6 +39,11 @@
    },
 
     "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "urgent": "",
+  },
         "disable-scroll": true,
         "all-outputs": false,
         "on-click": "activate",
