@@ -34,6 +34,8 @@ joplin-appimage
 kitty
 less
 lib32-systemd
+libayatana-appindicator
+libmfx
 linux
 linux-firmware
 linux-zen
@@ -44,6 +46,7 @@ ncdu
 neofetch
 neovim
 ntfs-3g
+numactl
 p7zip
 pacman-contrib
 pacman-log-orphans-hook
@@ -64,6 +67,7 @@ sddm
 slurp
 steam-devices-git
 sudo
+sunshine
 swayidle
 swaylock-effects
 transmission-qt
