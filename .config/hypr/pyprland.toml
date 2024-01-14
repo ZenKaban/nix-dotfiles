@@ -17,11 +17,6 @@ margin = 50
 command = "kitty --class scratchpad -e btop"
 margin = 50
 
-[scratchpads.volume]
-command = "pavucontrol"
-lazy = true
-margin = 50
-
 [scratchpads.disk]
 command = "kitty --class scratchpad -e ncdu"
 margin = 50
