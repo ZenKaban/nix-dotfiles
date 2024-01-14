@@ -9,6 +9,7 @@ bluez
 bluez-utils
 brightnessctl
 btop
+cups
 davfs2
 ddcutil
 dialog
@@ -19,6 +20,7 @@ eza
 f2fs-tools
 firefox
 flatpak
+foo2zjs-nightly
 fuseiso
 fx
 fzf
@@ -37,6 +39,7 @@ less
 lib32-systemd
 libayatana-appindicator
 libmfx
+libreoffice-fresh
 linux
 linux-firmware
 linux-zen
@@ -71,9 +74,11 @@ sudo
 sunshine
 swayidle
 swaylock-effects
+system-config-printer
 transmission-qt
 ttf-liberation
 udiskie
+usbutils
 waybar
 waybar-module-pacman-updates-git
 webcord
