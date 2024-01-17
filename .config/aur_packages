@@ -2,7 +2,6 @@ archlinux-themes-sddm
 davfs2
 foo2zjs-nightly
 iwdrofimenu-git
-joplin-appimage
 pacman-log-orphans-hook
 popcorntime
 pyprland
@@ -10,6 +9,8 @@ rofi-bluetooth-git
 steam-devices-git
 sunshine
 swaylock-effects
+synology-drive
+synology-note-station
 waybar-module-pacman-updates-git
 webcord
 wlogout

@@ -33,7 +33,6 @@ hyprland
 hyprpaper
 iwd
 iwdrofimenu-git
-joplin-appimage
 kitty
 less
 lib32-systemd
@@ -49,6 +48,7 @@ multilib-devel
 ncdu
 neofetch
 neovim
+nfs-utils
 ntfs-3g
 numactl
 p7zip
@@ -74,6 +74,8 @@ sudo
 sunshine
 swayidle
 swaylock-effects
+synology-drive
+synology-note-station
 system-config-printer
 transmission-qt
 ttf-liberation

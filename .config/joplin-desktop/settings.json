@@ -34,7 +34,7 @@
 	"sync.target": 6,
 	"sync.6.path": "https://webdav.yandex.com/joplin",
 	"sync.6.username": "ya.kabanoff90",
-	"editor.keyboardMode": "vim",
+	"editor.keyboardMode": "",
 	"dateFormat": "YYYY/MM/DD",
 	"theme": 4,
 	"editor.codeView": true,
