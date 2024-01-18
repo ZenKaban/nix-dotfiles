@@ -1,0 +1,31 @@
+{"key":"start_screen","value":"Favorites","_id":"3iWE3Fr4iH5Mzu1T"}
+{"key":"nativeWindowFrame","value":false,"_id":"469p9owjeXYd4ejI"}
+{"key":"dhtDataUpdated","value":1705558267369,"_id":"5KihzN6Xnj16jFjT"}
+{"key":"version","value":"0.4.9","_id":"Bn5K2ajKlQwMcBPP"}
+{"key":"ipAddress","value":"192.168.31.201","_id":"CRVlh3clulKV6eoX"}
+{"key":"releaseName","value":"Ogres are not like cakes","_id":"DeV9bBPlWrGdXKd5"}
+{"key":"dhtEnable","value":true,"_id":"F8NukUyiR7hwiKgH"}
+{"key":"automaticUpdating","value":true,"_id":"H3aR6E3NoNUNrQYj"}
+{"key":"disclaimerAccepted","value":1,"_id":"IZRxsBmpG4TPWdbp"}
+{"key":"startScreen","value":"Favorites","_id":"LtfW2s77xChyXENf"}
+{"key":"animeTabEnable","value":false,"_id":"MPsIELe2pHdlxLkQ"}
+{"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
+{"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
+{"key":"lastWatchedTime","value":false,"_id":"QRBhwjgOR30Dtf33"}
+{"key":"dhtInfo","value":{"server":"https://shows.cf/,https://movies-api.tk/,https://movies-api.gq/","git":"https://github.com/popcorn-official/popcorn-desktop/","site":"https://shows.cf/","r":"PopcornTimeApp","v":"0.4.9","keys":{"os":"Butter","fanart":"ce4bba4b3cc473306c6cddb4e1cb0da4","tvdb":"80A769280C71D83B","tmdb":"ac92176abc89a80e6f5df9510e326601","trakttv":{"id":"647c69e4ed1ad13393bf6edd9d8f9fb6fe9faf405b44320a6b71ab960b4540a2","s":"f55b0a53c63af683588b47f6de94226b7572a6f83f40bd44c58a7c83fe1f2cb1"}}},"_id":"RZEvDZ0Cvk3xPvg5"}
+{"key":"language","value":"en","_id":"X0pmToU0CEAO8bzN"}
+{"key":"totalDownloaded","value":2685004209,"_id":"c55C7omzSplOjTQS"}
+{"key":"alwaysFullscreen","value":true,"_id":"eXLFiUaEQqctdoaO"}
+{"key":"dhtData","value":"{\"server\":\"https://shows.cf/,https://movies-api.tk/,https://movies-api.gq/\",\"git\":\"https://github.com/popcorn-official/popcorn-desktop/\",\"site\":\"https://shows.cf/\",\"r\":\"PopcornTimeApp\",\"v\":\"0.4.9\",\"keys\":{\"os\":\"Butter\",\"fanart\":\"ce4bba4b3cc473306c6cddb4e1cb0da4\",\"tvdb\":\"80A769280C71D83B\",\"tmdb\":\"ac92176abc89a80e6f5df9510e326601\",\"trakttv\":{\"id\":\"647c69e4ed1ad13393bf6edd9d8f9fb6fe9faf405b44320a6b71ab960b4540a2\",\"s\":\"f55b0a53c63af683588b47f6de94226b7572a6f83f40bd44c58a7c83fe1f2cb1\"}}}","_id":"fz26EmJhvDV4Ykm1"}
+{"key":"lastWatchedTitle","value":"Rick and Morty - Season 7, Episode 1 - How Poopy Got His Poop Back","_id":"gGwtlKQ3fT8PGym0"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"events","value":false,"_id":"oDYCO6W6GOeIMHpS"}
+{"key":"totalUploaded","value":6457388,"_id":"wOrv5P0AXnOsvw16"}
+{"$$indexCreated":{"fieldName":"key","unique":true,"sparse":false}}
+{"key":"version","value":"0.4.9","_id":"Bn5K2ajKlQwMcBPP"}
+{"key":"releaseName","value":"Ogres are not like cakes","_id":"DeV9bBPlWrGdXKd5"}
+{"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
+{"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
+{"key":"ipAddress","value":"192.168.31.201","_id":"CRVlh3clulKV6eoX"}
+{"key":"activateWatchlist","value":true,"_id":"O3Oc6SHL6hv3Dv75"}
+{"key":"activateWatchlist","value":false,"_id":"O3Oc6SHL6hv3Dv75"}
