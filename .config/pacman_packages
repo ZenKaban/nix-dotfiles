@@ -6,7 +6,7 @@ atool
 base
 base-devel
 bluez
-bluez-utils
+bluez-utils-compat
 brightnessctl
 btop
 cups
