@@ -15,6 +15,12 @@
 - https://lnav.org/
 https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/
 
+**Issues with bluetooth sound**
+________________
+https://wiki.archlinux.org/title/Bluetooth#Interference_between_headphones_and_mouse
+https://bbs.archlinux.org/viewtopic.php?id=220315
+Edit systemd `sudo EDITOR=nvim systemctl edit --full systemd-udevd.service`
+
 **Backup**
 ________________
 
