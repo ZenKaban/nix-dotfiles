@@ -66,6 +66,7 @@ qt5-wayland
 ranger
 rofi
 rofi-bluetooth-git
+rofi-calc
 rsync
 sddm
 slurp
