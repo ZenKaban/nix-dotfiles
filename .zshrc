@@ -59,7 +59,7 @@ function config_upd() {
    config pull && config add -u && config status && config commit -m "$1" && config push
 }
 
-# alias ls='eza -l'
+alias ls='eza -l'
 alias v='nvim'
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 # source /usr/share/fzf/key-bindings.zsh
