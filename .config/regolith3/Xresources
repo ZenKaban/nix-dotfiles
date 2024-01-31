@@ -1,0 +1,4 @@
+wm.bar.position: top
+wm.client.focused.color.border: #00ff77
+wm.client.focused.color.child_border: #00ff77
+wm.window.border.size: 2
