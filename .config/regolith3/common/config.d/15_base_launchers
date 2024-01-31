@@ -9,3 +9,5 @@ bindsym $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
 ## Launch // Browser // <><Shift> Enter ##
 set_from_resource $wm.binding.browser wm.binding.browser Shift+Return
 bindsym $mod+$wm.binding.browser exec --no-startup-id gtk-launch $(xdg-settings get default-web-browser)
+
+bindsym Print exec grim -g "$(slurp -d)" - | wl-copy
