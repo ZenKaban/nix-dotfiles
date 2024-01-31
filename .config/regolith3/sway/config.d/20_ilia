@@ -31,3 +31,4 @@ set_from_resource $wm.binding.launcher.app wm.binding.launcher.app space
 # set_from_resource $wm.program.look_selector wm.program.look_selector regolith-look-selector
 # bindsym $mod+$alt+$wm.binding.look_selector exec --no-startup-id $wm.program.look_selector -t $ilia.stylesheet
 bindsym Print exec grim -g "$(slurp -d)" - | wl-copy
+bindsym $mod+Ctrl exec ddcutil --display 1 setvcp 60 0x0f && ddcutil --display 2 setvcp 60 0x11
