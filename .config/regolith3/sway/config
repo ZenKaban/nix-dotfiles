@@ -28,7 +28,8 @@ input type:keyboard {
     xkb_options grp:caps_toggle
 }
 
-
+for_window [app_id="firefox" title="^Picture-in-Picture$"] \
+    floating enable, move position 985 525, sticky enable
 ###############################################################################
 # Workspace Names
 # These are the labels which define each workspace.
