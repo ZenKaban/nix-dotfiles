@@ -3,7 +3,8 @@ icons = "awesome"
 
 [[block]]
 block = "focused_window"
-format = " {title} |"
+format = "{title} |"
+max_width = 100
 
 [[block]]
 block = "keyboard_layout"
@@ -13,8 +14,9 @@ format = "{layout} |"
 "English" = "EN"
 "Russian" = "RU"
 
-[[block]]
-block = "net"
+# [[block]]
+# block = "net"
+# format = ""
 
 # [[block]]
 # block = "disk_space"
