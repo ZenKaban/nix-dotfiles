@@ -1,18 +1,22 @@
+[theme]
 theme = "semi-native"
-icons = "awesome"
+[icons]
+icons = "awesome4"
+
 
 [[block]]
 block = "focused_window"
-format = "{title} |"
-max_width = 100
+[block.format]
+full = " $title.str(max_w:150) /|"
+short = " $title.str(max_w:150) /|"
 
 [[block]]
 block = "keyboard_layout"
 driver = "sway"
-format = "{layout} |"
+format = " $layout /"
 [block.mappings]
-"English" = "EN"
-"Russian" = "RU"
+"English (US)" = "EN"
+"Russian (N/A)" = "RU"
 
 # [[block]]
 # block = "net"
@@ -30,29 +34,35 @@ format = "{layout} |"
 
 [[block]]
 block = "memory"
-display_type = "memory"
-format_mem = "{mem_used_percents}"
-format_swap = "{swap_used_percents}"
+format = " $icon $mem_total_used_percents.eng(w:2) "
+format_alt = " $icon_swap $swap_used_percents.eng(w:2) "
 
 [[block]]
 block = "battery"
-interval = 10
-format = " {percentage}"
-full_format = " {percentage}"
-hide_missing = true
-driver = "sysfs"
+format = " $icon\u2009 $percentage "
+missing_format = ""
+device = "DisplayDevice"
+driver = "upower"
 
-[[block]]
-block = "rofication"
-interval = 1
-socket_path = "/tmp/rofi_notification_daemon"
+# [[block]]
+# block = "rofication"
+# interval = 1
+# socket_path = "/tmp/rofi_notification_daemon"
 
 [[block]]
 block = "sound"
 driver = "pulseaudio"
 
+[[block.click]]
+button = "left"
+cmd = "regolith-control-center sound"
+
 [[block]]
 block = "time"
 interval = 5
-format = "%d/%m %R"
+format = "\uf073 $timestamp.datetime(f:'%a-%d/%m/%y')"
 
+[[block]]
+block = "time"
+interval = 5
+format = "$icon $timestamp.datetime(f:'%R')"
