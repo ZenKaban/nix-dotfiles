@@ -259,7 +259,7 @@ bindsym --to-code $mod+$wm.binding.ws_prev workspace prev
 
 ## Navigate // Previous Workspace // <><Alt> ← ##
 set_from_resource $wm.binding.ws_prev2 wm.binding.ws_prev2 Left
-bindsym --to-code $mod+$alt+$wm.binding.ws_prev2 workspace prev
+# bindsym --to-code $mod+$alt+$wm.binding.ws_prev2 workspace prev
 
 ## Navigate // Previous Workspace on Output // <><Ctrl><Shift> Tab ##
 set_from_resource $wm.binding.ws_prev_on_output wm.binding.ws_prev_on_output Ctrl+Shift+Tab
