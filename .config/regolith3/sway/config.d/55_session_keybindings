@@ -20,7 +20,7 @@ bindsym --to-code $mod+$wm.binding.reload exec $send_reload_pending_tick && sway
 ## Session // Refresh Session // <><Shift> r ##
 set_from_resource $wm.binding.refresh wm.binding.refresh Shift+r
 set_from_resource $wm.program.refresh_ui wm.program.refresh_ui /usr/bin/regolith-look refresh
-bindsym --to-code $mod+$wm.binding.refresh exec $wm.program.refresh_ui
+# bindsym --to-code $mod+$wm.binding.refresh exec $wm.program.refresh_ui
 
 ## Session // Logout // <><Shift> e ##
 set_from_resource $wm.binding.logout wm.binding.logout Shift+e
