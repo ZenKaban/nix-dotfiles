@@ -43,8 +43,9 @@ critical_mem = 90
 [[block]]
 block = "cpu"
 interval = 1
-format = " $icon $barchart $utilization "
-format_alt = " $icon $frequency{ $boost|} "
+format = " $icon $utilization /"
+format_alt = " $icon $barchart $utilization "
+# format_alt = " $icon $frequency{ $boost|} "
 
 [[block]]
 block = "battery"
@@ -69,7 +70,7 @@ cmd = "regolith-control-center sound"
 [[block]]
 block = "time"
 interval = 5
-format = "\uf073 $timestamp.datetime(f:'%a %d/%m/%y')"
+format = "/ \uf073 $timestamp.datetime(f:'%a %d/%m/%y')"
 
 [[block]]
 block = "time"
