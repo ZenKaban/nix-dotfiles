@@ -425,17 +425,21 @@ mode "Resize Mode" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-set_from_resource $wm.binding.resize_mode wm.binding.resize_mode r
+set_from_resource $wm.binding.resize_mode wm.binding.resize_mode Shift+r
 bindsym $mod+$wm.binding.resize_mode mode "Resize Mode"
 
 ###############################################################################
 # Launcher dialogs
 ###############################################################################
 
-## Launch // Terminal // <> Enter ##
+### Launch // Terminal // <> Enter ##
 set_from_resource $wm.binding.terminal wm.binding.terminal Return 
-bindsym $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
+bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
+
+# Launch // Terminal // <> Enter ##
+set_from_resource $wm.binding.terminal wm.binding.terminal r 
+bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty ranger
 
 ## Launch // Browser // <><Shift> Enter ##
-set_from_resource $wm.binding.browser wm.binding.browser Shift+Return
-bindsym $mod+$wm.binding.browser exec --no-startup-id gtk-launch $(xdg-settings get default-web-browser)
+# set_from_resource $wm.binding.browser wm.binding.browser Shift+Return
+# bindsym $mod+$wm.binding.browser exec --no-startup-id gtk-launch $(xdg-settings get default-web-browser)
