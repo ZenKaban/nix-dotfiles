@@ -7,7 +7,7 @@ icons = "awesome4"
 [[block]]
 block = "focused_window"
 [block.format]
-full = " $title.str(max_w:150) /|"
+full = " $title.str(max_w:90) /|"
 short = " $title.str(max_w:150) /|"
 
 [[block]]
