@@ -440,6 +440,7 @@ bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
 set_from_resource $wm.binding.terminal wm.binding.terminal r 
 bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty ranger
 
+bindsym --to-code $mod+Control+d exec ddcutil --display 1 setvcp 60 0x0f && ddcutil --display 2 setvcp 60 0x11
 ## Launch // Browser // <><Shift> Enter ##
 # set_from_resource $wm.binding.browser wm.binding.browser Shift+Return
 # bindsym $mod+$wm.binding.browser exec --no-startup-id gtk-launch $(xdg-settings get default-web-browser)
