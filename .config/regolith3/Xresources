@@ -1,6 +1,6 @@
 wm.bar.position: top
 wm.client.focused.color.border: #00ff77
 wm.client.focused.color.child_border: #00ff77
-wm.window.border.size: 2
+wm.window.border.size: 1
 wm.workspace.auto_back_and_forth: yes
 regolith.look.path: /usr/share/regolith-look/solarized-dark
