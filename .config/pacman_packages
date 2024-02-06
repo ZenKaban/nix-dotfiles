@@ -10,7 +10,6 @@ bluez-utils-compat
 brightnessctl
 btop
 cups
-davfs2
 ddcutil
 dialog
 dosfstools
@@ -72,7 +71,6 @@ sddm
 slurp
 steam-devices-git
 sudo
-sunshine
 swayidle
 swaylock-effects
 synology-drive
@@ -83,6 +81,7 @@ transmission-qt
 ttf-liberation
 udiskie
 usbutils
+vial-appimage
 waybar
 waybar-module-pacman-updates-git
 webcord

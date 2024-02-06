@@ -7,8 +7,10 @@
 {"key":"dhtEnable","value":true,"_id":"F8NukUyiR7hwiKgH"}
 {"key":"automaticUpdating","value":true,"_id":"H3aR6E3NoNUNrQYj"}
 {"key":"disclaimerAccepted","value":1,"_id":"IZRxsBmpG4TPWdbp"}
+{"key":"traktStatus","value":false,"_id":"JZAdqGoBSAgzShac"}
 {"key":"startScreen","value":"Favorites","_id":"LtfW2s77xChyXENf"}
 {"key":"animeTabEnable","value":false,"_id":"MPsIELe2pHdlxLkQ"}
+{"key":"activateWatchlist","value":false,"_id":"O3Oc6SHL6hv3Dv75"}
 {"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
 {"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
 {"key":"lastWatchedTime","value":false,"_id":"QRBhwjgOR30Dtf33"}
@@ -26,8 +28,5 @@
 {"key":"releaseName","value":"Ogres are not like cakes","_id":"DeV9bBPlWrGdXKd5"}
 {"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
 {"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
-{"key":"ipAddress","value":"192.168.31.201","_id":"CRVlh3clulKV6eoX"}
-{"key":"activateWatchlist","value":true,"_id":"O3Oc6SHL6hv3Dv75"}
-{"key":"activateWatchlist","value":false,"_id":"O3Oc6SHL6hv3Dv75"}
-{"key":"traktStatus","value":false,"_id":"JZAdqGoBSAgzShac"}
-{"key":"traktStatus","value":false,"_id":"JZAdqGoBSAgzShac"}
+{"key":"totalDownloaded","value":2685004209,"_id":"c55C7omzSplOjTQS"}
+{"key":"totalUploaded","value":6457388,"_id":"wOrv5P0AXnOsvw16"}
