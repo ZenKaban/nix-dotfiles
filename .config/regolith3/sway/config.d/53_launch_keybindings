@@ -1,0 +1,21 @@
+
+
+###############################################################################
+# Launcher dialogs
+###############################################################################
+
+### Launch // Terminal // <> Enter ##
+set_from_resource $wm.binding.terminal wm.binding.terminal Return 
+bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
+
+# Launch // Terminal // <> Enter ##
+set_from_resource $wm.binding.terminal wm.binding.terminal r 
+bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty ranger
+
+# Switch monitor source
+bindsym --to-code $mod+Control+d exec ddcutil --display 1 setvcp 60 0x0f && ddcutil --display 2 setvcp 60 0x11
+
+# Screenshot
+bindsym --to-code Print exec grim -g "$(slurp -d)" - | wl-copy
+
+
