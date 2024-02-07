@@ -9,7 +9,7 @@ bindsym $mod+$wm.binding.bar_toggle bar mode toggle
 
 set_from_resource $wm.bar.position wm.bar.position bottom
 set_from_resource $wm.bar.font wm.bar.font monospace
-set_from_resource $wm.bar.separatorchar wm.bar.separatorchar " "
+set_from_resource $wm.bar.separatorchar wm.bar.separatorchar ""
 set_from_resource $wm.bar.stripworkspacenumbers wm.bar.stripworkspacenumbers yes
 set_from_resource $wm.bar.mode wm.bar.mode dock
 set_from_resource $wm.bar.workspace_min_width wm.bar.workspace_min_width 36
@@ -27,6 +27,7 @@ bar {
   separator_symbol $wm.bar.separatorchar
   status_command $wm.bar.status_command
   strip_workspace_numbers $wm.bar.stripworkspacenumbers
+  # strip_workspace_name yes
   workspace_min_width $wm.bar.workspace_min_width
 
   colors {
