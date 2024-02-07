@@ -20,4 +20,3 @@ margin = 50
 [scratchpads.disk]
 command = "kitty --class scratchpad -e ncdu --exclude ~/nas"
 margin = 50
-
