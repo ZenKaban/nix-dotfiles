@@ -11,6 +11,7 @@ bluez-utils-compat
 brightnessctl
 btop
 cups
+davfs2
 ddcutil
 dialog
 dosfstools
@@ -60,7 +61,6 @@ pipewire-alsa
 pipewire-audio
 pipewire-pulse
 popcorntime
-pyprland
 python-pillow
 qt5-wayland
 ranger
