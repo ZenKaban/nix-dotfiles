@@ -82,7 +82,7 @@ set_from_resource $wm.binding.ws_prev_on_output2 wm.binding.ws_prev_on_output2 C
 bindsym --to-code $mod+$wm.binding.ws_prev_on_output2 workspace prev_on_output
 
 ## Navigate // Scratchpad // <><Ctrl> a ##
-set_from_resource $wm.binding.scratchpad wm.binding.scratchpad Ctrl+c
+set_from_resource $wm.binding.scratchpad wm.binding.scratchpad o
 bindsym --to-code $mod+$wm.binding.scratchpad scratchpad show, resize set 1500 1000
 
 ###############################################################################
