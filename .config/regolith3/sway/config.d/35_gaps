@@ -25,5 +25,5 @@ gaps inner $wm.gaps.inner.size
 gaps outer $wm.gaps.outer.size
 
 # Only enable gaps on a workspace when there is at least one container
-set_from_resource $wm.gaps.smart wm.gaps.smart on
+set_from_resource $wm.gaps.smart wm.gaps.smart off
 smart_gaps $wm.gaps.smart
