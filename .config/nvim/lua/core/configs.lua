@@ -52,3 +52,4 @@ vim.opt.fillchars = {
 
 vim.cmd([[highlight clear LineNr]])
 vim.cmd([[highlight clear SignColumn]])
+vim.opt.conceallevel = 1
