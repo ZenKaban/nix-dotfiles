@@ -153,8 +153,8 @@ require("lazy").setup({
                 path = "~/Main",
             },
             {
-                name = "work",
-                path = "~/vaults/work",
+                name = "Main",
+                path = "~/Obsidian/Main",
             },
         },
 

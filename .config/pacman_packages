@@ -66,6 +66,7 @@ popcorntime
 python-pillow
 qt5-wayland
 ranger
+ripgrep
 rofi
 rofi-bluetooth-git
 rofi-calc
