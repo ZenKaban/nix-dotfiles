@@ -10,6 +10,7 @@ bluez
 bluez-utils-compat
 brightnessctl
 btop
+chromium
 cups
 davfs2
 ddcutil
@@ -52,6 +53,7 @@ neovim
 nfs-utils
 ntfs-3g
 numactl
+obsidian
 p7zip
 pacman-contrib
 pacman-log-orphans-hook
