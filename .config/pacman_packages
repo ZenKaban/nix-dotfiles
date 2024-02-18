@@ -63,6 +63,7 @@ pipewire-alsa
 pipewire-audio
 pipewire-pulse
 popcorntime
+powertop
 python-pillow
 qt5-wayland
 ranger
