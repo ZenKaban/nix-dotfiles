@@ -1,5 +1,5 @@
 ## Navigate // Next Free Workspace // <> ` ##
-set_from_resource $wm.binding.next_free wm.binding.next_free j
+set_from_resource $wm.binding.next_free wm.binding.next_free Ctrl+j
 bindsym --to-code $mod+$wm.binding.next_free exec --no-startup-id childe
 
 ## Modify // Move Window to Next Free Workspace // <><Shift> ` ##
@@ -8,4 +8,4 @@ bindsym --to-code $mod+$wm.binding.move_next_free exec --no-startup-id childe --
 
 ## Modify // Carry Window to Next Free Workspace // <><Alt> ` ##
 set_from_resource $wm.binding.take_next_free wm.binding.take_next_free Shift+j
-bindsym --to-code $mod+$alt+$wm.binding.take_next_free exec --no-startup-id childe --move-window --follow
+bindsym --to-code $mod+$wm.binding.take_next_free exec --no-startup-id childe --move-window --follow
