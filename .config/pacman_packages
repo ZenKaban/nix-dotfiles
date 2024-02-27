@@ -35,6 +35,7 @@ hyprland
 hyprpaper
 iwd
 iwdrofimenu-git
+jq
 kitty
 less
 lib32-systemd
@@ -75,6 +76,7 @@ rofi-calc
 rsync
 sddm
 slurp
+socat
 steam-devices-git
 sudo
 swayidle
