@@ -32,7 +32,9 @@ github-cli
 go
 grim
 grub
+hypridle
 hyprland
+hyprlock
 hyprpaper
 iwd
 iwdrofimenu-git
@@ -80,7 +82,6 @@ slurp
 steam-devices-git
 sudo
 swayidle
-swaylock-effects
 synology-drive
 synology-note-station
 system-config-printer

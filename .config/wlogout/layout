@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "sleep 1; swaylock",
+    "action" : "sleep 1; hyprlock",
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -24,7 +24,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "sleep 1; swaylock --daemonize && sleep 3 && systemctl suspend",
+    "action" : "sleep 1; hyprlock && sleep 3 && systemctl suspend",
     "text" : "Suspend (U)",
     "keybind" : "u"
 }
