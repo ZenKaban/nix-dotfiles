@@ -1,4 +1,3 @@
-
 ###############################################################################
 # Window and Workspace Navigation
 ###############################################################################
@@ -10,12 +9,6 @@ bindsym --to-code $mod+$wm.binding.focus_parent focus parent
 ## Navigate // Relative Child // <> z ##/
 set_from_resource $wm.binding.focus_child wm.binding.focus_child z
 bindsym --to-code $mod+$wm.binding.focus_child focus child
-
-## Navigate // Relative Window // <> ↑ ↓ ← → ##
-bindsym --to-code $mod+Left focus left
-bindsym --to-code $mod+Down focus down
-bindsym --to-code $mod+Up focus up
-bindsym --to-code $mod+Right focus right
 
 ## Navigate // Relative Window // <> k j h l ##
 set_from_resource $wm.binding.left wm.binding.left h
@@ -38,6 +31,7 @@ bindsym --to-code $mod+$ws7_key workspace number $ws7
 bindsym --to-code $mod+$ws8_key workspace number $ws8
 bindsym --to-code $mod+$ws9_key workspace number $ws9
 bindsym --to-code $mod+$ws10_key workspace number $ws10
+
 ## Navigate // Workspace 11 - 19 // <><Ctrl> 1..9 ##
 bindsym --to-code $mod+Ctrl+$ws1_key workspace number $ws11
 bindsym --to-code $mod+Ctrl+$ws2_key workspace number $ws12
@@ -49,33 +43,9 @@ bindsym --to-code $mod+Ctrl+$ws7_key workspace number $ws17
 bindsym --to-code $mod+Ctrl+$ws8_key workspace number $ws18
 bindsym --to-code $mod+Ctrl+$ws9_key workspace number $ws19
 
-## Navigate // Next Workspace // <> Tab ##
-set_from_resource $wm.binding.ws_next wm.binding.ws_next Tab
-bindsym --to-code $mod+$wm.binding.ws_next workspace next
-
-## Navigate // Next Workspace // <><Alt> → ##
-set_from_resource $wm.binding.ws_next2 wm.binding.ws_next2 Right
-bindsym --to-code $mod+$alt+$wm.binding.ws_next2 workspace next
-
-## Navigate // Next Workspace on Output // <><Ctrl> Tab ##
-set_from_resource $wm.binding.ws_next_on_output wm.binding.ws_next_on_output Ctrl+Tab
-bindsym --to-code $mod+$wm.binding.ws_next_on_output workspace next_on_output
-
 ## Navigate // Next Workspace on Output // <><Ctrl> l ##
 set_from_resource $wm.binding.ws_next_on_output2 wm.binding.ws_next_on_output2 Ctrl+l
 bindsym --to-code $mod+$wm.binding.ws_next_on_output2 workspace next_on_output
-
-## Navigate // Previous Workspace // <><Shift> Tab ##
-set_from_resource $wm.binding.ws_prev wm.binding.ws_prev Shift+Tab
-bindsym --to-code $mod+$wm.binding.ws_prev workspace prev
-
-## Navigate // Previous Workspace // <><Alt> ← ##
-set_from_resource $wm.binding.ws_prev2 wm.binding.ws_prev2 Left
-# bindsym --to-code $mod+$alt+$wm.binding.ws_prev2 workspace prev
-
-## Navigate // Previous Workspace on Output // <><Ctrl><Shift> Tab ##
-set_from_resource $wm.binding.ws_prev_on_output wm.binding.ws_prev_on_output Ctrl+Shift+Tab
-bindsym --to-code $mod+$wm.binding.ws_prev_on_output workspace prev_on_output
 
 ## Navigate // Previous Workspace on Output // <><Ctrl> h ##
 set_from_resource $wm.binding.ws_prev_on_output2 wm.binding.ws_prev_on_output2 Ctrl+h
@@ -89,31 +59,15 @@ bindsym --to-code $mod+$wm.binding.scratchpad scratchpad show, resize set 1500 1
 # Window and Workspace Configuration
 ###############################################################################
 
-## Modify // Window Position // <><Shift> ↑ ↓ ← → ##
-bindsym --to-code $mod+Shift+Left move left
-bindsym --to-code $mod+Shift+Down move down
-bindsym --to-code $mod+Shift+Up move up
-bindsym --to-code $mod+Shift+Right move right
-
 ## Modify // Window Position // <><Shift> k j h l ##
-set_from_resource $wm.binding.move_left wm.binding.move_left Alt+h
-set_from_resource $wm.binding.move_right wm.binding.move_right Alt+l
-set_from_resource $wm.binding.move_up wm.binding.move_up Alt+k
-set_from_resource $wm.binding.move_down wm.binding.move_down Alt+j
+set_from_resource $wm.binding.move_left wm.binding.move_left Shift+h
+set_from_resource $wm.binding.move_right wm.binding.move_right Shift+l
+set_from_resource $wm.binding.move_up wm.binding.move_up Shift+k
+set_from_resource $wm.binding.move_down wm.binding.move_down Shift+j
 bindsym --to-code $mod+$wm.binding.move_left move left
-bindsym --to-code $mod+$wm.binding.move_down move down
-bindsym --to-code $mod+$wm.binding.move_up move up
+# bindsym --to-code $mod+$wm.binding.move_down move down
+# bindsym --to-code $mod+$wm.binding.move_up move up
 bindsym --to-code $mod+$wm.binding.move_right move right
-
-## Modify // Containing Workspace // <><Ctrl><Shift> ↑ ↓ ← → ##
-set_from_resource $wm.binding.move_workspace_output_left wm.binding.move_workspace_output_left Ctrl+Shift+Left
-set_from_resource $wm.binding.move_workspace_output_right wm.binding.move_workspace_output_right Ctrl+Shift+Right
-set_from_resource $wm.binding.move_workspace_output_up wm.binding.move_workspace_output_up Ctrl+Shift+Up
-set_from_resource $wm.binding.move_workspace_output_down wm.binding.move_workspace_output_down Ctrl+Shift+Down
-bindsym --to-code $mod+$wm.binding.move_workspace_output_left move workspace to output left
-bindsym --to-code $mod+$wm.binding.move_workspace_output_right move workspace to output right
-bindsym --to-code $mod+$wm.binding.move_workspace_output_up move workspace to output up
-bindsym --to-code $mod+$wm.binding.move_workspace_output_down move workspace to output down
 
 ## Modify // Containing Workspace // <><Ctrl><Shift> k j h l ##
 set_from_resource $wm.binding.take_left wm.binding.take_left Ctrl+Shift+h
@@ -168,6 +122,7 @@ bindsym --to-code $mod+Shift+$ws7_key move container to workspace number $ws7
 bindsym --to-code $mod+Shift+$ws8_key move container to workspace number $ws8
 bindsym --to-code $mod+Shift+$ws9_key move container to workspace number $ws9
 bindsym --to-code $mod+Shift+$ws10_key move container to workspace number $ws10
+
 ## Modify // Move Window to Workspace 11 - 19// <><Ctrl><Shift> 1..9 ##
 bindsym --to-code $mod+Shift+Ctrl+$ws1_key move container to workspace number $ws11
 bindsym --to-code $mod+Shift+Ctrl+$ws2_key move container to workspace number $ws12
@@ -191,6 +146,7 @@ bindsym --to-code $mod+$alt+$ws7_key move container to workspace number $ws7; wo
 bindsym --to-code $mod+$alt+$ws8_key move container to workspace number $ws8; workspace number $ws8
 bindsym --to-code $mod+$alt+$ws9_key move container to workspace number $ws9; workspace number $ws9
 bindsym --to-code $mod+$alt+$ws10_key move container to workspace number $ws10; workspace number $ws10
+
 ## Modify // Carry Window to Workspace 11 - 19 // <><Alt><Ctrl> 1..9 ##
 bindsym --to-code $mod+$alt+Ctrl+$ws1_key move container to workspace number $ws11; workspace number $ws11
 bindsym --to-code $mod+$alt+Ctrl+$ws2_key move container to workspace number $ws12; workspace number $ws12
