@@ -6,7 +6,7 @@ set $send_reload_pending_tick swaymsg -t send_tick '{"status": "reload_pending"}
 exec_always swaymsg -t send_tick '{"status": "reload_done"}'
 
 ## Session // Exit App // <><Shift> q ##
-set_from_resource $wm.binding.exit_app wm.binding.exit_app Shift+q
+set_from_resource $wm.binding.exit_app wm.binding.exit_app c
 bindsym --to-code $mod+$wm.binding.exit_app [con_id="__focused__"] kill
 
 ## Session // Terminate App // <><Alt> q ##
@@ -14,8 +14,8 @@ set_from_resource $wm.binding.kill_app wm.binding.kill_app q
 bindsym --to-code $mod+$alt+$wm.binding.kill_app [con_id="__focused__"] exec --no-startup-id kill -9 $(xdotool getwindowfocus getwindowpid)
 
 ## Session // Reload i3 Config // <><Shift> c ##
-set_from_resource $wm.binding.reload wm.binding.reload Shift+c
-bindsym --to-code $mod+$wm.binding.reload exec $send_reload_pending_tick && swaymsg reload
+# set_from_resource $wm.binding.reload wm.binding.reload Shift+c
+# bindsym --to-code $mod+$wm.binding.reload exec $send_reload_pending_tick && swaymsg reload
 
 ## Session // Refresh Session // <><Shift> r ##
 set_from_resource $wm.binding.refresh wm.binding.refresh Shift+r
