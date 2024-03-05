@@ -59,6 +59,7 @@ nfs-utils
 ntfs-3g
 numactl
 obsidian
+openssl-1.1
 p7zip
 pacman-contrib
 pacman-log-orphans-hook
