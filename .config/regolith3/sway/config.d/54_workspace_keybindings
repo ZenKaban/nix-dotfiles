@@ -74,11 +74,12 @@ set_from_resource $wm.binding.take_left wm.binding.take_left Ctrl+Shift+h
 set_from_resource $wm.binding.take_right wm.binding.take_right Ctrl+Shift+l
 set_from_resource $wm.binding.take_up wm.binding.take_up Ctrl+Shift+k
 set_from_resource $wm.binding.take_down wm.binding.take_down Ctrl+Shift+j
-bindsym --to-code $mod+$wm.binding.take_left move workspace to output left
-bindsym --to-code $mod+$wm.binding.take_down move workspace to output down
-bindsym --to-code $mod+$wm.binding.take_up move workspace to output up
-bindsym --to-code $mod+$wm.binding.take_right move workspace to output right
-
+# bindsym --to-code $mod+$wm.binding.take_left move workspace to output left
+# bindsym --to-code $mod+$wm.binding.take_down move workspace to output down
+# bindsym --to-code $mod+$wm.binding.take_up move workspace to output up
+# bindsym --to-code $mod+$wm.binding.take_right move workspace to output right
+bindsym --to-code $mod+$wm.binding.take_left [con_id=__focused__] move to workspace prev, focus
+bindsym --to-code $mod+$wm.binding.take_right [con_id=__focused__] move to workspace next, focus
 ## Modify // Vertical Window Orientation // <> v ##
 set_from_resource $wm.binding.split_v wm.binding.split_v v
 bindsym --to-code $mod+$wm.binding.split_v split vertical
