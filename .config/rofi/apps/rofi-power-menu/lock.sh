@@ -1,6 +1,7 @@
 #!/usr/bin/bash
-if gtklock ; then 
-   gtklock --background $(trawlcat regolith.lockscreen.wallpaper.file /dev/null)
+if gtklock --background $(trawlcat regolith.lockscreen.wallpaper.file /dev/null) ; 
+then 
+    ''    
 else
     swaylock
 fi
