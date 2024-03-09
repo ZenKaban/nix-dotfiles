@@ -8,7 +8,7 @@ exec_always swaymsg -t send_tick '{"status": "reload_done"}'
 ## Session // Wlogout // <><Shift> r ##
 set_from_resource $wm.binding.refresh wm.binding.refresh g
 set_from_resource $wm.program.refresh_ui wm.program.refresh_ui /usr/bin/regolith-look refresh
-bindsym --to-code $mod+$wm.binding.refresh exec wlogout
+# bindsym --to-code $mod+$wm.binding.refresh exec wlogout
 
 ## Session // Exit App // <><Shift> q ##
 set_from_resource $wm.binding.exit_app wm.binding.exit_app c

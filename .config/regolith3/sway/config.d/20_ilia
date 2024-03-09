@@ -4,7 +4,7 @@ set_from_resource $ilia.stylesheet ilia.stylesheet
 ## Launch // Application // <> Space ##
 set_from_resource $wm.binding.launcher.app wm.binding.launcher.app space
 set_from_resource $wm.program.launcher.app wm.program.launcher.app ilia -p apps
-bindsym $mod+$wm.binding.launcher.app exec --no-startup-id $wm.program.launcher.app -t $ilia.stylesheet
+# bindsym $mod+$wm.binding.launcher.app exec --no-startup-id $wm.program.launcher.app -t $ilia.stylesheet
 
 ## Launch // Command // <><Shift> Space ##
 set_from_resource $wm.binding.launcher.cmd wm.binding.launcher.cmd Shift+space

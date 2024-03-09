@@ -1,6 +1,5 @@
 //@theme "/usr/share/rofi/themes/lb.rasi"
 //@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
-@theme "/usr/share/rofi/themes/solarized_alternate.rasi"
 configuration {
 /*	modes: "window,drun,run,ssh";*/
 	font: "mono 16";
@@ -153,3 +152,4 @@ configuration {
       sorting-method:    "name";
   }
 }
+@theme "/usr/share/rofi/themes/solarized_alternate.rasi"

@@ -18,4 +18,8 @@ bindsym --to-code $mod+Control+d exec ddcutil --display 1 setvcp 60 0x0f && ddcu
 # Screenshot
 bindsym --to-code Print exec grim -g "$(slurp -d)" - | wl-copy
 
-
+bindsym --to-code $mod+Space exec rofi -show drun
+bindsym --to-code $mod+q exec rofi -show power-menu -modi power-menu:~/.config/rofi/apps/rofi-power-menu/rofi-power-menu
+bindsym --to-code $mod+b exec ~/.config/rofi/apps/rofi-bluetooth/rofi-bluetooth
+bindsym --to-code $mod+i exec ~/.config/rofi/apps/rofi-vpn-master/rofi-vpn.sh
+bindsym --to-code $mod+w exec ~/.config/rofi/apps/rofi-wifi-menu-master/rofi-wifi-menu.sh

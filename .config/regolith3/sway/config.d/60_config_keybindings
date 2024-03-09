@@ -20,7 +20,7 @@ bindsym $mod+$wm.binding.wifi exec --no-startup-id $wm.program.wifi
 ## Modify // Bluetooth Settings // <> b ##
 set_from_resource $wm.binding.bluetooth wm.binding.bluetooth b
 set_from_resource $wm.program.bluetooth wm.program.bluetooth regolith-control-center bluetooth
-bindsym $mod+$wm.binding.bluetooth exec --no-startup-id $wm.program.bluetooth
+# bindsym $mod+$wm.binding.bluetooth exec --no-startup-id $wm.program.bluetooth
 
 ## Launch // File Browser // <><Shift> n ##
 set_from_resource $wm.binding.files wm.binding.files Shift+n

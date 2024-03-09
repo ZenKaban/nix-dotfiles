@@ -106,11 +106,11 @@ bindsym --to-code $mod+$wm.binding.move_scratchpad move to scratchpad
 
 ## Modify // Tile/Float Focus Toggle // <><Shift> t ##
 set_from_resource $wm.binding.focus_toggle wm.binding.focus_toggle Shift+t
-bindsym --to-code $mod+$wm.binding.focus_toggle focus mode_toggle
+# bindsym --to-code $mod+$wm.binding.focus_toggle focus mode_toggle
 
 ## Modify // Window Layout Mode // <> t ##
 set_from_resource $wm.binding.layout_mode wm.binding.layout_mode t
-bindsym --to-code $mod+$wm.binding.layout_mode layout toggle tabbed splith splitv
+# bindsym --to-code $mod+$wm.binding.layout_mode layout toggle tabbed splith splitv
 
 ## Modify // Move Window to Workspace 1 - 10 // <><Shift> 0..9 ##
 bindsym --to-code $mod+Shift+$ws1_key move container to workspace number $ws1
