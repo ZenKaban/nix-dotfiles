@@ -79,10 +79,10 @@ button {
 }
 
 #workspaces button {
-    padding: 0 8px;
+    padding: 0 13px;
     color: @text;
-    border-radius: 15px;
-    margin: 5px 0 5px 5px;
+    border-radius: 19px;
+    margin: 5px 0 5px 2px;
 }
 
 #workspaces button.selected {
@@ -90,6 +90,7 @@ button {
 }
 
 #workspaces button.active {
+    border-radius: 10px;
     background-color: @surface2;
 }
 

@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "height": 35,
-    "spacing": 12,
+    "spacing": 7,
     // Choose the order of the modules
     "modules-left": [
         "tray",
@@ -18,7 +18,7 @@
         // "custom/updates",
         "custom/updates",
         "memory",
-        "disk",
+        // "disk",
         "pulseaudio",
         // "bluetooth",
         "network",
@@ -39,11 +39,28 @@
    },
 
     "hyprland/workspaces": {
-        "format": "{name}",
+        // "format": "{name}",
         "format-icons": {
-            // "1": "",
-            "urgent": "",
-  },
+            "active": " ",
+            "urgent": " ",
+        },
+        "format": "{icon}: {windows}",
+        "format-window-separator": "|",
+        "window-rewrite-default": "",
+        "window-rewrite": {
+            "title<.*YouTube.*>": "", // Windows whose titles contain "youtube"
+            "class<firefox>": "", // Windows whose classes are "firefox"
+            // "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+            "kitty": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+            "steam": "󰓓",
+            "vial": " ",
+            "discord": "󰙯",
+            "lutris": "󱎓",
+            "transmission": "󰇚",
+            "Popcorn-Time": "",
+            "obsidian": "",
+            "libreoffice": "󰏆",
+	    },
         "disable-scroll": true,
         "all-outputs": false,
         "on-click": "activate",
@@ -79,7 +96,7 @@
 
     "hyprland/window": {
         "rewrite": {
-            "(.*) — Mozilla Firefox": "󰖟 : $1",
+            "(.*) — Mozilla Firefox": ": $1",
             "(.*) - kitty": "> [$1]"
         },
         "separate-outputs": true,
@@ -111,7 +128,7 @@
     "memory": {
         "interval": 30,
         // "format": "{used:0.1f}G/{total:0.1f}G "
-        "format": "{used:0.1f}G "
+        "format": " {used:0.1f}G"
     },
 
     "disk": {
