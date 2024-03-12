@@ -12,7 +12,7 @@ short = " $title.str(max_w:150) /|"
 
 [[block]]
 block = "keyboard_layout"
-driver = "localebus"
+driver = "sway"
 format = " $layout /"
 [block.mappings]
 "English (US)" = "EN"
