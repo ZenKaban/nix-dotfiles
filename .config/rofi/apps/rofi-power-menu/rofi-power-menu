@@ -48,8 +48,8 @@ actions[lockscreen]="/home/$USER/.config/rofi/apps/rofi-power-menu/lock.sh"
 actions[logout]="loginctl terminate-session ${XDG_SESSION_ID-}"
 actions[suspend]="/home/$USER/.config/rofi/apps/rofi-power-menu/suspend.sh"
 actions[hibernate]="systemctl hibernate"
-actions[reboot]="systemctl reboot"
-actions[shutdown]="systemctl poweroff"
+actions[reboot]="umount -f ~/nas; sleep 3; systemctl reboot"
+actions[shutdown]="umount -f ~/nas; sleep 3; systemctl poweroff"
 
 # By default, ask for confirmation for actions that are irreversible
 confirmations=(reboot shutdown logout)

@@ -1,7 +1,7 @@
 {
     "layer": "top",
-    "height": 35,
-    "spacing": 7,
+    "height": 20,
+    "spacing": 5,
     // Choose the order of the modules
     "modules-left": [
         "tray",
@@ -18,10 +18,11 @@
         // "custom/updates",
         "custom/updates",
         "memory",
+        "cpu",
         // "disk",
         "pulseaudio",
         // "bluetooth",
-        "network",
+        // "network",
         "clock"
         // "battery",
         // "custom/power"
@@ -109,9 +110,9 @@
     },
 
     "cpu": {
-        "interval": 10,
-        "format": "{}% ",
-        "max-length": 10
+        "interval": 3,
+        "format": " {usage}%",
+        "max-length": 6
     },
 
     "bluetooth": {
