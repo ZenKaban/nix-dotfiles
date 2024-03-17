@@ -88,6 +88,7 @@ swaylock-effects
 synology-drive
 synology-note-station
 system-config-printer
+the_silver_searcher
 tldr
 transmission-qt
 ttf-liberation
@@ -97,6 +98,7 @@ vial-appimage
 waybar
 waybar-module-pacman-updates-git
 webcord
+wget
 wireplumber
 wl-clipboard
 xdg-desktop-portal-hyprland
