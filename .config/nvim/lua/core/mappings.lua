@@ -2,8 +2,8 @@ vim.g.mapleader = " "
 -- Run
 vim.keymap.set('n', '<leader>r', ':!python %<CR>')
 -- NeoTree
-vim.keymap.set('n', '<leader>E', ':Neotree float reveal<CR>')
-vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>')
+vim.keymap.set('n', '<leader>e', ':Neotree float reveal<CR>')
+vim.keymap.set('n', '<leader>E', ':Neotree toggle<CR>')
 vim.keymap.set('n', '<leader>o', ':Neotree float git_status<CR>')
 
 -- Navigation
