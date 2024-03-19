@@ -4,4 +4,5 @@ then
     ''    
 else
     swaylock
+    # hyprlock
 fi
