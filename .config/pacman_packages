@@ -39,7 +39,6 @@ hyprlock
 hyprpaper
 imagemagick
 iwd
-iwdrofimenu-git
 jq
 kitty
 less
@@ -76,9 +75,10 @@ python-pillow
 qt5-wayland
 ranger
 ripgrep
-rofi
 rofi-bluetooth-git
 rofi-calc
+rofi-lbonn-wayland
+rofi-lbonn-wayland-debug
 rsync
 sddm
 slurp

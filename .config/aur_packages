@@ -3,12 +3,11 @@ bluez-utils-compat
 canon-pixma-mg2500-complete
 davfs2
 foo2zjs-nightly
-hypridle
-hyprlock
-iwdrofimenu-git
 pacman-log-orphans-hook
 popcorntime
 rofi-bluetooth-git
+rofi-lbonn-wayland
+rofi-lbonn-wayland-debug
 swaylock-effects
 synology-drive
 synology-note-station
