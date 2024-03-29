@@ -26,7 +26,7 @@ set_from_resource $alt  wm.alt Mod1
 input type:keyboard {
     xkb_layout us,ru
     xkb_options grp:caps_toggle
-    repeat_delay 200
+    repeat_delay 300
     repeat_rate 30
 }
 
