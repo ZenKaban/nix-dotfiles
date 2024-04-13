@@ -1,3 +1,6 @@
+fastfetch
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias lazygitconfig='lazygit --git-dir=$HOME/.cfg --work-tree=$HOME'
 alias ssh='env TERM=xterm-256color ssh' # allows kitty to work with ssh
