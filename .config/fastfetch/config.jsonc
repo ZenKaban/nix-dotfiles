@@ -20,10 +20,7 @@
     "terminal",
     "terminalfont",
     "cpu",
-    {
-        "type": "gpu",
-        "hideType": "discrete"
-    },
+    "gpu",
     "memory",
     // "swap",
     {
