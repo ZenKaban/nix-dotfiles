@@ -53,7 +53,8 @@ bindsym --to-code $mod+$wm.binding.ws_prev_on_output2 workspace prev_on_output
 
 ## Navigate // Scratchpad // <><Ctrl> a ##
 set_from_resource $wm.binding.scratchpad wm.binding.scratchpad o
-bindsym --to-code $mod+$wm.binding.scratchpad scratchpad show, resize set 1500 1000
+bindsym --to-code $mod+$wm.binding.scratchpad [app_id=org.mozilla.firefox] scratchpad show, resize set 1500 1000
+bindsym --to-code $mod+t [app_id=kitty] scratchpad show, resize set 1500 1000
 
 ###############################################################################
 # Window and Workspace Configuration

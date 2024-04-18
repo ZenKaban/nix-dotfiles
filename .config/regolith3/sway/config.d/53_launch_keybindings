@@ -6,7 +6,7 @@
 
 ### Launch // Terminal // <> Enter ##
 set_from_resource $wm.binding.terminal wm.binding.terminal t 
-bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
+bindsym --to-code $mod+Control+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
 # bindsym --to-code $mod+t exec kitty scratchpad show 
 
 # Launch // Terminal // <> Enter ##
