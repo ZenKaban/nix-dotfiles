@@ -65,11 +65,13 @@ function config_upd() {
    config pull && config add -u && config status && config commit -m "$1" && config push
 }
 
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias ls='eza -l'
 alias v='nvim'
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+
+# ZVM_INIT_MODE=sourcing
 # source /usr/share/fzf/key-bindings.zsh
 # source /usr/share/fzf/completion.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(fzf --zsh)"
