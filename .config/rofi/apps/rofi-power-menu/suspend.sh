@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-if swaylock --daemonize && systemctl suspend ; 
+if sleep 1 && swaylock --daemonize && systemctl suspend ; 
 # if hyprlock && systemctl suspend ; 
 then 
     ''    
