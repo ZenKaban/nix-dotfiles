@@ -2,7 +2,7 @@
 //@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
 configuration {
     modes: "drun";
-	font: "mono 16";
+	font: "mono 18";
     monitor: "-1";
 /*	location: 0;*/
 /*	yoffset: 0;*/
