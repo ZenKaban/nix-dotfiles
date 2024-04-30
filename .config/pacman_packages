@@ -6,6 +6,7 @@ atool
 base
 base-devel
 bluez
+bluez-deprecated-tools
 bluez-utils
 brightnessctl
 btop
@@ -80,7 +81,7 @@ ranger
 reflector
 ripgrep
 rofi-calc
-rofi-lbonn-wayland
+rofi-wayland
 rsync
 sddm
 slurp
