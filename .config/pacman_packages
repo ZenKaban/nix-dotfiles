@@ -6,7 +6,7 @@ atool
 base
 base-devel
 bluez
-bluez-utils-compat
+bluez-utils
 brightnessctl
 btop
 canon-pixma-mg2500-complete
@@ -79,7 +79,6 @@ qt5-wayland
 ranger
 reflector
 ripgrep
-rofi-bluetooth-git
 rofi-calc
 rofi-lbonn-wayland
 rsync
@@ -89,7 +88,6 @@ steam
 sudo
 swaylock-effects
 synology-drive
-synology-note-station
 sysbench
 system-config-printer
 tldr
