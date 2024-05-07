@@ -20,6 +20,8 @@ discord
 dosfstools
 dunst
 efibootmgr
+electron30
+esbuild
 eza
 f2fs-tools
 fastfetch
@@ -83,8 +85,10 @@ ripgrep
 rofi-calc
 rofi-wayland
 rsync
+rust
 sddm
 slurp
+spdlog-git
 steam
 sudo
 swaylock-effects
@@ -108,6 +112,7 @@ xdg-desktop-portal-hyprland
 xf86-video-amdgpu
 xsane
 xwaylandvideobridge
+yarn
 yay
 zathura
 zathura-djvu
