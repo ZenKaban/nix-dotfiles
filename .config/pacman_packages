@@ -6,7 +6,8 @@ atool
 base
 base-devel
 bluez
-bluez-utils-compat
+bluez-deprecated-tools
+bluez-utils
 brightnessctl
 btop
 canon-pixma-mg2500-complete
@@ -19,6 +20,8 @@ discord
 dosfstools
 dunst
 efibootmgr
+electron30
+esbuild
 eza
 f2fs-tools
 fastfetch
@@ -34,6 +37,7 @@ go
 goverlay
 grim
 grub
+hydra-launcher
 hypridle
 hyprland
 hyprlock
@@ -54,6 +58,7 @@ linux-firmware
 linux-zen
 linux-zen-headers
 lnav
+lutris
 mangohud
 multilib-devel
 ncdu
@@ -79,17 +84,17 @@ qt5-wayland
 ranger
 reflector
 ripgrep
-rofi-bluetooth-git
 rofi-calc
-rofi-lbonn-wayland
+rofi-wayland
 rsync
+rust
 sddm
 slurp
+spdlog-git
 steam
 sudo
 swaylock-effects
 synology-drive
-synology-note-station
 sysbench
 system-config-printer
 tldr
@@ -109,6 +114,7 @@ xdg-desktop-portal-hyprland
 xf86-video-amdgpu
 xsane
 xwaylandvideobridge
+yarn
 yay
 zathura
 zathura-djvu
