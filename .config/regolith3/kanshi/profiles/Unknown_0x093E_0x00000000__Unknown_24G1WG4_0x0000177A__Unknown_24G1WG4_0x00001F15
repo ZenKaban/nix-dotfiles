@@ -1,5 +1,5 @@
 profile {
-	output "Unknown 0x093E 0x00000000" mode 1920x1080@60.003Hz position 0,0 transform normal scale 1
-	output "Unknown 24G1WG4 0x00001F15" mode 1920x1080@60Hz position 3840,0 transform normal scale 1
-	output "Unknown 24G1WG4 0x0000177A" mode 1920x1080@60Hz position 1920,0 transform normal scale 1
+	output "Unknown 24G1WG4 0x0000177A" mode 1920x1080@144.001Hz position 1920,0 transform normal scale 1 enable
+	output "Unknown 0x093E 0x00000000" mode 1920x1080@60.003Hz position 0,0 transform normal scale 1 enable
+	output "Unknown 24G1WG4 0x00001F15" mode 1920x1080@144.001Hz position 3840,0 transform normal scale 1 enable
 }
