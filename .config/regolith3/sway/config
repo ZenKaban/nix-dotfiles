@@ -84,10 +84,10 @@ set $ws19 "$ws19"
 
 workspace "$ws1" output eDP-1
 workspace "$ws2" output eDP-1
-workspace "$ws3" output HDMI-A-1 eDP-1
+workspace "$ws3" output eDP-1
 workspace "$ws4" output HDMI-A-1 eDP-1
 workspace "$ws5" output HDMI-A-1 DP-1
-workspace "$ws6" output DP-2 DP-1
+workspace "$ws6" output HDMI-A-1 DP-1
 workspace "$ws7" output DP-2 DP-1
 workspace "$ws8" output DP-2 DP-1
 workspace "$ws9" output DP-2 DP-1
@@ -171,8 +171,6 @@ set_from_resource $wm.font gtk.font_name Sans 13
 font pango:$wm.font
 
 # Set dbus activation environment vars (Needed for GTK apps to work properly)
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
-
 ###############################################################################
 # WM Config Partials
 ###############################################################################
