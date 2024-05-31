@@ -19,8 +19,15 @@ https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-
 ________________
 https://wiki.archlinux.org/title/Bluetooth#Interference_between_headphones_and_mouse
 https://bbs.archlinux.org/viewtopic.php?id=220315
-https://launchpad.net/~aglasgall/+archive/ubuntu/pipewire-extra-bt-codecs
+
 Edit systemd `sudo EDITOR=nvim systemctl edit --full systemd-udevd.service`
+
+**Ubuntu 22 issues**
+________________
+https://launchpad.net/~aglasgall/+archive/ubuntu/pipewire-extra-bt-codecs
+
+From wlroots documentation: WLR_DRM_NO_ATOMIC: set to 1 to use legacy DRM interface instead of atomic mode setting
+Setting this variable appears to help. No more errors printed in the logs and I haven't noticed the lag. I put it in /usr/share/wayland-sessions/sway.desktop, replacing the Exec line with Exec=env WLR_DRM_NO_ATOMIC=1 sway
 
 **Backup**
 ________________
