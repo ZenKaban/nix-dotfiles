@@ -13,6 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR=nvim
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/.fzf/bin
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
