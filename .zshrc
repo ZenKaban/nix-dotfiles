@@ -47,7 +47,7 @@ alias v='nvim'
 alias ssh='env TERM=xterm-256color ssh' # allows kitty to work with ssh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias lazygitconfig='lazygit --git-dir=$HOME/.cfg --work-tree=$HOME'
-
+alias fgrep='~/.config/scripts/fzrg'
 
 ### Functions 
 # Update dotfiles
