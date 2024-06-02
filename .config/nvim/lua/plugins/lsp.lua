@@ -31,6 +31,9 @@ flags = {
 capabilities = capabilities,
 }
 lspconfig.tsserver.setup {}
+lspconfig.lua_ls.setup {}
+lspconfig.clangd.setup {}
+lspconfig.cmake.setup {}
 lspconfig.prismals.setup {}
 lspconfig.cssls.setup {
     capabilities = capabilities
