@@ -21,3 +21,5 @@ bindsym --to-code $mod+q exec rofi -show power-menu -modi power-menu:~/.config/r
 bindsym --to-code $mod+b exec ~/.config/rofi/apps/rofi-bluetooth/rofi-bluetooth
 bindsym --to-code $mod+i exec ~/.config/rofi/apps/rofi-vpn-master/rofi-vpn.sh
 bindsym --to-code $mod+w exec ~/.config/rofi/apps/rofi-wifi-menu-master/rofi-wifi-menu.sh
+bindsym --to-code $mod+grave exec swaylock
+bindsym --to-code $mod+Control+grave exec /home/$USER/.config/rofi/apps/rofi-power-menu/suspend.sh
