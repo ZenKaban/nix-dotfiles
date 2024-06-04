@@ -32,7 +32,7 @@ vim.keymap.set('n', '<s-Tab>', ':BufferLineCyclePrev<CR>')
 -- Terminal
 vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float<CR>')
 vim.keymap.set('n', '<leader>th', ':ToggleTerm direction=horizontal<CR>')
-vim.keymap.set('n', '<leader>tv', ':ToggleTerm direction=vertical size=40<CR>')
+vim.keymap.set('n', '<leader>tv', ':ToggleTerm direction=vertical size=90<CR>')
 
 --LazyGit
 vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>')
@@ -40,5 +40,6 @@ vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>')
 vim.keymap.set('v', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>y', '"+y')
 
-vim.keymap.set('v', '<leader>p', '"+p')
-vim.keymap.set('n', '<leader>p', '"+p')
+-- vim.keymap.set('v', '<leader>p', '"+p')
+-- vim.keymap.set('n', '<leader>p', '"+p')
+vim.keymap.set('x', '<leader>p', '"_dP')
