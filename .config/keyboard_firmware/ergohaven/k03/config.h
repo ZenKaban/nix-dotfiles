@@ -41,3 +41,4 @@
 
 #define TAP_CODE_DELAY 1
 
+#define QUICK_TAP_TERM_PER_KEY

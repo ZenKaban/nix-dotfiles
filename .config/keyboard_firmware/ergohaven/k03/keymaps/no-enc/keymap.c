@@ -26,14 +26,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          _______, _______, KC_ASTR, KC_COLN, KC_SLSH, _______,                                           _______, KC_PIPE, KC_TILD, KC_AMPR, _______,  _______,
                            _______, _______, _______, ADJUST, _______, _______,        _______, _______, _______, _______, _______, _______ \
         ),
-    
+
       [_ADJUST] = LAYOUT(
         QK_BOOT, _______, _______, _______, _______, _______,                                            _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______,                                            _______, _______, _______, _______, DM_PLY1, DM_REC1,
         _______, _______, _______, _______, _______, _______,                                            _______, KC_VOLD, KC_MUTE, KC_VOLU, DM_PLY2, DM_REC2,
         _______, _______, _______, _______, _______, CG_TOGG,                                            _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, DM_RSTP,
-                          _______, _______, _______, _______, _______, _______,        _______, _______, _______,  _______, _______, _______                  
-                                                                          
+                          _______, _______, _______, _______, _______, _______,        _______, _______, _______,  _______, _______, _______
+
        ),
 };
 
@@ -51,10 +51,10 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
   if (!is_keyboard_master()) {
     return OLED_ROTATION_270;  // bongocat, ergohaven_dark/light
-    // return OLED_ROTATION_270;  // luna 
+    // return OLED_ROTATION_270;  // luna
      }
     else {
-    return OLED_ROTATION_270;  
+    return OLED_ROTATION_270;
     }
   return rotation;
 }
@@ -89,7 +89,7 @@ void render_layer_state(void) {
             oled_write_P(PSTR("Adjst"), false);
             break;
         case _FOUR:
-            oled_write_P(PSTR("Four\n"), false);
+            oled_write_P(PSTR("Game\n"), false);
             break;
         case _FIVE:
             oled_write_P(PSTR("Five\n"), false);
@@ -158,15 +158,18 @@ const rgblight_segment_t PROGMEM my_layer2_layer[] = RGBLIGHT_LAYER_SEGMENTS(
 const rgblight_segment_t PROGMEM my_layer3_layer[] = RGBLIGHT_LAYER_SEGMENTS(
     {0, 4, HSV_GOLDENROD}
 );
+const rgblight_segment_t PROGMEM my_layer4_layer[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, 4, HSV_GREEN}
+);
 
 // Now define the array of layers. Later layers take precedence
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
-    my_base_layer,    
-    my_layer1_layer,    
-    my_layer2_layer,    
-    my_layer3_layer     
+    my_base_layer,
+    my_layer1_layer,
+    my_layer2_layer,
+    my_layer3_layer,
+    my_layer4_layer
 );
-
 
 void keyboard_post_init_user(void) {
     // Enable the LED layers
@@ -182,7 +185,32 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     rgblight_set_layer_state(1, layer_state_cmp(state, _RAISE));
     rgblight_set_layer_state(2, layer_state_cmp(state, _LOWER));
     rgblight_set_layer_state(3, layer_state_cmp(state, _ADJUST));
+    rgblight_set_layer_state(4, layer_state_cmp(state, _FOUR));
     return state;
 
 }
 #endif
+
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(1, KC_BSPC):
+            // Immediately select the hold action when another key is tapped.
+            return true;
+        case LT(2, KC_SPC):
+            // Immediately select the hold action when another key is tapped.
+            return true;
+
+        default:
+            // Do not select the hold action when another key is pressed.
+            return false;
+    }
+}
+
+uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(1, KC_BSPC):
+            return 0;
+        default:
+            return QUICK_TAP_TERM;
+    }
+}
