@@ -232,3 +232,6 @@ bindsym $mod+$wm.binding.resize_mode mode "Resize Mode"
 ## Launch // Browser // <><Shift> Enter ##
 # set_from_resource $wm.binding.browser wm.binding.browser Shift+Return
 # bindsym $mod+$wm.binding.browser exec --no-startup-id gtk-launch $(xdg-settings get default-web-browser)
+exec --no-startup-id [ -z "${NOTIFY_SOCKET-}" ] \
+  && systemctl --user start regolith-wayland.target \
+  || systemd-notify --ready
