@@ -51,7 +51,7 @@ exec --no-startup-id kitty --class sranger ranger
 for_window [app_id="sranger"] move to scratchpad
 
 exec --no-startup-id flatpak run md.obsidian.Obsidian
-for_window [app_id="md.obsidian.Obsidian"] move to scratchpad
+for_window [class="obsidian"] move to scratchpad
 
 
 ###############################################################################
