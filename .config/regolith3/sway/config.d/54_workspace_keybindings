@@ -52,8 +52,11 @@ set_from_resource $wm.binding.ws_prev_on_output2 wm.binding.ws_prev_on_output2 C
 bindsym --to-code $mod+$wm.binding.ws_prev_on_output2 workspace prev_on_output
 
 ## Navigate // Scratchpad // <><Ctrl> a ##
-bindsym --to-code $mod+o [app_id=org.telegram.desktop] scratchpad show, resize set 1900 1000
-bindsym --to-code $mod+t [app_id=kitty] scratchpad show, resize set 1900 1000
+bindsym --to-code $mod+o [app_id=org.telegram.desktop] scratchpad show, resize set 1800 1000
+bindsym --to-code $mod+n [app_id=md.obsidian.Obsidian] scratchpad show, resize set 1800 1000
+bindsym --to-code $mod+t [app_id=skitty] scratchpad show, resize set 1800 1000
+bindsym --to-code $mod+r [app_id=sranger] scratchpad show, resize set 1800 1000
+
 
 ###############################################################################
 # Window and Workspace Configuration

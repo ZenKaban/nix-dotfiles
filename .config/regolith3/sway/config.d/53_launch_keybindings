@@ -7,14 +7,15 @@ set_from_resource $wm.binding.terminal wm.binding.terminal t
 bindsym --to-code $mod+Control+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
 
 # Launch // Terminal // <> Enter ##
-set_from_resource $wm.binding.terminal wm.binding.terminal r 
-bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty ranger
+# set_from_resource $wm.binding.terminal wm.binding.terminal r 
+# bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty ranger
 
 # Switch monitor source
 bindsym --to-code $mod+Control+d exec ddcutil --display 1 setvcp 60 0x0f && ddcutil --display 2 setvcp 60 0x11
 
 # Screenshot
 bindsym --to-code Print exec grim -g "$(slurp -d)" - | wl-copy
+bindsym --to-code $mod+Print exec grim -g "$(slurp)" - | swappy -f - 
 
 bindsym --to-code $mod+Space exec rofi -show drun
 bindsym --to-code $mod+q exec rofi -show power-menu -modi power-menu:~/.config/rofi/apps/rofi-power-menu/rofi-power-menu
