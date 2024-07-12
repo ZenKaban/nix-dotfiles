@@ -129,6 +129,7 @@ require("lazy").setup({
             },
             },
     },
+    { 'echasnovski/mini.nvim', version = false },
    -- see below for full list of options 👇
     -- Themes
     {'joshdick/onedark.vim'},
