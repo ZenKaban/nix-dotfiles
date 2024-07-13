@@ -1,1 +1,1 @@
-require('mini.icons').setup()
+require('mini.nvim').setup()
