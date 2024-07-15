@@ -339,7 +339,7 @@
     #default_icon = /path/to/icon
 
 [change-urgency]
-    appname = org.telegram.desktop
+    appname = "org.telegram.desktop"
     urgency = normal
 
 # Every section that isn't one of the above is interpreted as a rules to
