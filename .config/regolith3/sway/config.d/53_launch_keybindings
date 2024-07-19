@@ -15,7 +15,8 @@ bindsym --to-code $mod+Control+d exec ddcutil --display 1 setvcp 60 0x0f && ddcu
 
 # Screenshot
 bindsym --to-code Print exec grim -g "$(slurp -d)" - | wl-copy
-bindsym --to-code $mod+Print exec grim -g "$(slurp)" - | swappy -f - 
+# bindsym --to-code $mod+Print exec grim -g "$(slurp -d)" - | swappy -f -
+bindsym --to-code $mod+Print exec grim -g "$(slurp -d)" - | satty -f -
 
 bindsym --to-code $mod+Space exec rofi -show drun
 bindsym --to-code $mod+q exec rofi -show power-menu -modi power-menu:~/.config/rofi/apps/rofi-power-menu/rofi-power-menu
