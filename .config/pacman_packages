@@ -91,6 +91,8 @@ rofi-calc
 rofi-wayland
 rsync
 rust
+satty-bin
+satty-bin-debug
 sddm
 slurp
 spdlog-git

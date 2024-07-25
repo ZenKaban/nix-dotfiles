@@ -1,10 +1,10 @@
 {"key":"start_screen","value":"Favorites","_id":"3iWE3Fr4iH5Mzu1T"}
 {"key":"nativeWindowFrame","value":false,"_id":"469p9owjeXYd4ejI"}
-{"key":"dhtDataUpdated","value":1714481609011,"_id":"5KihzN6Xnj16jFjT"}
+{"key":"dhtDataUpdated","value":1717955223276,"_id":"5KihzN6Xnj16jFjT"}
 {"key":"updateNotification","value":true,"_id":"BTN68KpoMiQejY3n"}
-{"key":"version","value":"0.5.0","_id":"Bn5K2ajKlQwMcBPP"}
+{"key":"version","value":"0.5.1","_id":"Bn5K2ajKlQwMcBPP"}
 {"key":"ipAddress","value":"192.168.31.201","_id":"CRVlh3clulKV6eoX"}
-{"key":"releaseName","value":"Mischief Managed","_id":"DeV9bBPlWrGdXKd5"}
+{"key":"releaseName","value":"Now.. Bring me that Horizon","_id":"DeV9bBPlWrGdXKd5"}
 {"key":"dhtEnable","value":true,"_id":"F8NukUyiR7hwiKgH"}
 {"key":"automaticUpdating","value":true,"_id":"H3aR6E3NoNUNrQYj"}
 {"key":"disclaimerAccepted","value":1,"_id":"IZRxsBmpG4TPWdbp"}
@@ -23,6 +23,7 @@
 {"key":"lastWatchedTitle","value":"Rick and Morty - Season 7, Episode 1 - How Poopy Got His Poop Back","_id":"gGwtlKQ3fT8PGym0"}
 {"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
 {"key":"events","value":false,"_id":"oDYCO6W6GOeIMHpS"}
+{"key":"OnlineSearchCategory","value":"Movies","_id":"oFi2dQRStmUrCHTa"}
 {"key":"totalUploaded","value":26177344,"_id":"wOrv5P0AXnOsvw16"}
 {"$$indexCreated":{"fieldName":"key","unique":true,"sparse":false}}
 {"key":"version","value":"0.5.1","_id":"Bn5K2ajKlQwMcBPP"}
@@ -30,7 +31,5 @@
 {"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
 {"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
 {"key":"dhtData","value":"{\"server\":\"https://fusme.link/,https://jfper.link/,https://uxert.link/,https://yrkde.link/\",\"git\":\"https://github.com/popcorn-official/popcorn-desktop/\",\"site\":\"https://popcorn-time.site/\",\"r\":\"PopcornTimeApp\",\"v\":\"0.5.0\",\"keys\":{\"os\":\"Butter\",\"fanart\":\"ce4bba4b3cc473306c6cddb4e1cb0da4\",\"tvdb\":\"80A769280C71D83B\",\"tmdb\":\"ac92176abc89a80e6f5df9510e326601\",\"trakttv\":{\"id\":\"647c69e4ed1ad13393bf6edd9d8f9fb6fe9faf405b44320a6b71ab960b4540a2\",\"s\":\"f55b0a53c63af683588b47f6de94226b7572a6f83f40bd44c58a7c83fe1f2cb1\"}}}","_id":"fz26EmJhvDV4Ykm1"}
-{"key":"dhtDataUpdated","value":1717955223276,"_id":"5KihzN6Xnj16jFjT"}
+{"key":"dhtDataUpdated","value":1721602455334,"_id":"5KihzN6Xnj16jFjT"}
 {"key":"dhtInfo","value":{"server":"https://fusme.link/,https://jfper.link/,https://uxert.link/,https://yrkde.link/","git":"https://github.com/popcorn-official/popcorn-desktop/","site":"https://popcorn-time.site/","r":"PopcornTimeApp","v":"0.5.0","keys":{"os":"Butter","fanart":"ce4bba4b3cc473306c6cddb4e1cb0da4","tvdb":"80A769280C71D83B","tmdb":"ac92176abc89a80e6f5df9510e326601","trakttv":{"id":"647c69e4ed1ad13393bf6edd9d8f9fb6fe9faf405b44320a6b71ab960b4540a2","s":"f55b0a53c63af683588b47f6de94226b7572a6f83f40bd44c58a7c83fe1f2cb1"}}},"_id":"RZEvDZ0Cvk3xPvg5"}
-{"key":"OnlineSearchCategory","value":"Movies","_id":"oFi2dQRStmUrCHTa"}
-{"key":"OnlineSearchCategory","value":"Movies","_id":"oFi2dQRStmUrCHTa"}
