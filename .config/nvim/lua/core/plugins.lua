@@ -149,5 +149,10 @@ require("lazy").setup({
     { 'rebelot/kanagawa.nvim' },
     { 'shaunsingh/solarized.nvim' },
     { "shaunsingh/nord.nvim" },
-
+    {
+        "craftzdog/solarized-osaka.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+    }
 });

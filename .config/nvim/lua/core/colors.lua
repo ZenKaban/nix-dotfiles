@@ -10,6 +10,7 @@ function SetColor(color)
     -- vim.api.nvim_set_hl(0, "LineNr", {bg = "none"})
 end
 
-SetColor('kanagawa-wave')
+SetColor('solarized-osaka')
+-- SetColor('kanagawa-wave')
 -- SetColor('nord')
 -- SetColor('solarized')
