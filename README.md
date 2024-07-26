@@ -69,6 +69,10 @@ NTP
 [Match] Name=wlan0 
 [Network] DHCP=yes   
 
+/etc/systemd/network/20-wired.network
+[Match] Name=enp10s0
+[Network] DHCP=yes   
+
 So, if you want to auto power-on after boot you need to add the line AutoEnable=true in the configuration file /etc/bluetooth/main.conf at the bottom in the [Policy] section:
 
 /etc/bluetooth/main.conf
