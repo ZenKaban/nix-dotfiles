@@ -57,6 +57,7 @@ libmfx
 libreoffice-fresh
 linux
 linux-firmware
+linux-headers
 linux-zen
 linux-zen-headers
 lnav
@@ -92,7 +93,6 @@ rofi-wayland
 rsync
 rust
 satty-bin
-satty-bin-debug
 sddm
 slurp
 spdlog-git
