@@ -91,7 +91,16 @@ put this in /etc/iptables/iptables.rules, and in ip6tables.rules:
 -A INPUT -i lo -j ACCEPT
 -A OUTPUT -o lo -j ACCEPT
 -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
-
+-A INPUT -i wlan0 -p tcp -s 0/0 --dport 51413 -m state --state NEW -j ACCEPT
+-A INPUT -i wlan0 -p tcp -s 0/0 --dport 27040 -m state --state NEW -j ACCEPT
+-A OUTPUT -o wlan0 -p udp --dport 27000:27015 -j ACCEPT
+-A OUTPUT -o wlan0 -p udp --dport 27015:27036 -j ACCEPT
+-A OUTPUT -o wlan0 -p tcp --dport 27014:27050 -j ACCEPT
+-A INPUT -i enp10s0 -p tcp -s 0/0 --dport 51413 -m state --state NEW -j ACCEPT
+-A INPUT -i enp10s0 -p tcp -s 0/0 --dport 27040 -m state --state NEW -j ACCEPT
+-A OUTPUT -o enp10s0 -p udp --dport 27000:27015 -j ACCEPT
+-A OUTPUT -o enp10s0 -p udp --dport 27015:27036 -j ACCEPT
+-A OUTPUT -o enp10s0 -p tcp --dport 27014:27050 -j ACCEPT
 COMMIT
 ```
 systemctl enable iptables
