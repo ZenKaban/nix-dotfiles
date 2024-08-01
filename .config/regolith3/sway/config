@@ -43,6 +43,7 @@ exec --no-startup-id $wm.program.nm-applet
 
 exec --no-startup-id flatpak run org.telegram.desktop
 for_window [app_id="org.telegram.desktop"] move to scratchpad
+# for_window [app_id="org.telegram.desktop"] fullscreen disable
 
 exec --no-startup-id kitty --class skitty
 for_window [app_id="skitty"] move to scratchpad
