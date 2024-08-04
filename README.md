@@ -13,6 +13,7 @@
 - https://github.com/eza-community/eza
 - https://fx.wtf/install
 - https://lnav.org/
+- https://github.com/bol-van/zapret
 https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/
 
 **Issues with bluetooth sound**
