@@ -9,7 +9,7 @@ bindsym $mod+control+$wm.binding.bar_toggle bar mode toggle
 
 set_from_resource $wm.bar.position wm.bar.position bottom
 set_from_resource $wm.bar.font wm.bar.font monospace
-set_from_resource $wm.bar.separatorchar wm.bar.separatorchar ""
+set_from_resource $wm.bar.separatorchar wm.bar.separatorchar " | "
 set_from_resource $wm.bar.stripworkspacenumbers wm.bar.stripworkspacenumbers yes
 set_from_resource $wm.bar.mode wm.bar.mode dock
 set_from_resource $wm.bar.workspace_min_width wm.bar.workspace_min_width 36
@@ -26,19 +26,21 @@ bar {
   font pango:$wm.bar.font
   separator_symbol $wm.bar.separatorchar
   status_command $wm.bar.status_command
-  strip_workspace_numbers $wm.bar.stripworkspacenumbers
-  # strip_workspace_name yes
+  strip_workspace_numbers no
+  strip_workspace_name yes
   workspace_min_width $wm.bar.workspace_min_width
 
   colors {
       background $wm.bar.background.color
       statusline $wm.bar.statusline.color
-      separator  $wm.bar.separator.color
-
+      # separator  $wm.bar.separator.color
+      separator  #2aa198
 #                        BORDER  BACKGROUND TEXT
-      focused_workspace  $wm.bar.workspace.focused.border.color      $wm.bar.workspace.focused.background.color   $wm.bar.workspace.focused.text.color
+      focused_workspace  #2aa198      $wm.bar.workspace.focused.background.color   $wm.bar.workspace.focused.text.color
       active_workspace   $wm.bar.workspace.active.border.color       $wm.bar.workspace.active.background.color    $wm.bar.workspace.active.text.color
       inactive_workspace $wm.bar.workspace.inactive.border.color     $wm.bar.workspace.inactive.background.color  $wm.bar.workspace.inactive.text.color
       urgent_workspace   $wm.bar.workspace.urgent.border.color       $wm.bar.workspace.urgent.background.color    $wm.bar.workspace.urgent.text.color
   }
 }
+
+# bar swaybar_command waybar -c ~/.config/waybar/config-i112809632
