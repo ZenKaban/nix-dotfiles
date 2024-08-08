@@ -48,6 +48,11 @@ format = "$layout"
 # # format_alt = " $icon $frequency{ $boost|} "
 
 [[block]]
+block = "sound"
+driver = "pulseaudio"
+format = "$icon{ $volume|}"
+
+[[block]]
 block = "battery"
 format = "$percentage {$time|}"
 # format = "$icon $percentage"
@@ -59,11 +64,6 @@ driver = "upower"
 # block = "rofication"
 # interval = 1
 # socket_path = "/tmp/rofi_notification_daemon"
-
-[[block]]
-block = "sound"
-driver = "pulseaudio"
-format = "$icon{ $volume|}"
 
 [[block.click]]
 button = "left"
