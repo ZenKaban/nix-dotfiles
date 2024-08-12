@@ -17,10 +17,10 @@
         "hyprland/language", 
         // "custom/updates",
         "custom/updates",
-        "memory",
-        "cpu",
+        // "memory",
+        // "cpu",
         // "disk",
-        "pulseaudio",
+        // "pulseaudio",
         // "bluetooth",
         // "network",
         "clock"
