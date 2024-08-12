@@ -60,14 +60,14 @@ MODE_HTTP_KEEPALIVE=0
 # apply fooling to https                                                                                     
 MODE_HTTPS=1                                                                                                 
 # apply fooling to quic                                                                                      
-MODE_QUIC=1                                                                                                  
+MODE_QUIC=0                                                                                                  
 # none,ipset,hostlist,autohostlist                                                                           
 MODE_FILTER=autohostlist                                                                                     
                                                                                                              
 # CHOOSE NFQWS DAEMON OPTIONS for DPI desync mode. run "nfq/nfqws --help" for option list                    
 DESYNC_MARK=0x40000000                                                                                       
 DESYNC_MARK_POSTNAT=0x20000000                                                                               
-NFQWS_OPT_DESYNC="--dpi-desync=fake --dpi-desync-ttl=5"                                                      
+NFQWS_OPT_DESYNC="--dpi-desync=fake,split2 --dpi-desync-ttl=5"                                                      
 #NFQWS_OPT_DESYNC_HTTP=""                                                                                    
 #NFQWS_OPT_DESYNC_HTTPS=""                                                                                   
 #NFQWS_OPT_DESYNC_HTTP6="--dpi-desync=split --dpi-desync-ttl=5 --dpi-desync-fooling=none"                    
