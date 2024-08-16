@@ -43,6 +43,7 @@ source $ZSH/oh-my-zsh.sh
 
 ### Aliases
 alias ls='eza -l'
+alias lss='eza -l --sort=modified'
 alias v='nvim'
 alias ssh='env TERM=xterm-256color ssh' # allows kitty to work with ssh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
