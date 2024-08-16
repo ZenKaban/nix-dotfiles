@@ -410,6 +410,8 @@ class fzf_content_open(Command):
 
         if 'bat' in get_executables():
             bat = 'bat'
+        elif 'batcat' in get_executables():
+            bat = 'batcat'
         else:
             self.fm.notify("Couldn't find bat in the PATH.", bad=True)
             return
@@ -427,7 +429,7 @@ class fzf_content_open(Command):
                 return
             fzf = self.fm.execute_command(
                 'rg --line-number "${1:-.}" | fzf --delimiter \':\' \
-                    --preview \'bat --color=always --highlight-line {2} {1}\' \
+                    --preview \'' + bat + ' --color=always --highlight-line {2} {1}\' \
                     | awk -F \':\' \'{print "+"$2" "$1}\'',
                 universal_newlines=True,stdout=subprocess.PIPE)
 
