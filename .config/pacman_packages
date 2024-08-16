@@ -29,11 +29,13 @@ eza
 f2fs-tools
 fastfetch
 fd
+ffmpegthumbnailer
 firefox
 flatpak
 foo2zjs-nightly
 fuseiso
 fx
+fzf
 gamemode
 ghostscript
 git
@@ -127,7 +129,9 @@ xsane
 xwaylandvideobridge
 yarn
 yay
+yazi
 zathura
 zathura-djvu
 zathura-pdf-mupdf
+zoxide
 zsh-vi-mode
