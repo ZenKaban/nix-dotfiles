@@ -52,11 +52,11 @@ set_from_resource $wm.binding.ws_prev_on_output2 wm.binding.ws_prev_on_output2 C
 bindsym --to-code $mod+$wm.binding.ws_prev_on_output2 workspace prev_on_output
 
 ## Navigate // Scratchpad // <><Ctrl> a ##
-bindsym --to-code $mod+o [app_id=org.telegram.desktop] scratchpad show, resize set 1800 1000
-bindsym --to-code $mod+n [class=obsidian] scratchpad show, resize set 1800 1000
-bindsym --to-code $mod+t [app_id=skitty] scratchpad show, resize set 1800 1000
-bindsym --to-code $mod+r [app_id=sranger] scratchpad show, resize set 1800 1000
-bindsym --to-code $mod+p [app_id=sbtop] scratchpad show, resize set 1800 1000
+bindsym --to-code $mod+o [app_id=org.telegram.desktop] scratchpad show, resize set 1880 1000
+bindsym --to-code $mod+n [class=obsidian] scratchpad show, resize set 1880 1000
+bindsym --to-code $mod+t [app_id=skitty] scratchpad show, resize set 1880 1000
+bindsym --to-code $mod+r [app_id=sranger] scratchpad show, resize set 1880 1000
+bindsym --to-code $mod+p [app_id=sbtop] scratchpad show, resize set 1880 1000
 
 
 ###############################################################################
@@ -85,8 +85,8 @@ set_from_resource $wm.binding.take_down wm.binding.take_down Ctrl+Shift+j
 bindsym --to-code $mod+$wm.binding.take_left [con_id=__focused__] move to workspace prev, focus
 bindsym --to-code $mod+$wm.binding.take_right [con_id=__focused__] move to workspace next, focus
 ## Modify // Vertical Window Orientation // <> v ##
-set_from_resource $wm.binding.split_v wm.binding.split_v v
-bindsym --to-code $mod+$wm.binding.split_v split vertical
+# set_from_resource $wm.binding.split_v wm.binding.split_v v
+# bindsym --to-code $mod+$wm.binding.split_v split vertical
 
 ## Modify // Horizontal Window Orientation // <> g ##
 set_from_resource $wm.binding.split_h wm.binding.split_h g

@@ -29,8 +29,8 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	{ run = '$EDITOR "$@"', desc = "$EDITOR", block = true, for = "unix" },
-    { run = 'sudo nvim "$@"', desc = "sudo nvim", block = true },
+	{ run = 'nvim "$@"', desc = "NVIM", block = true, for = "unix" },
+    { run = 'sudo nvim "$@"', desc = "SUDO NVIM", block = true },
 ]
 open = [
 	{ run = 'xdg-open "$1"',                desc = "Open", for = "linux" },

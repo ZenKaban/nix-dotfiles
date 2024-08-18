@@ -48,7 +48,7 @@ for_window [app_id="org.telegram.desktop"] move to scratchpad
 exec --no-startup-id kitty --class skitty
 for_window [app_id="skitty"] move to scratchpad
 
-exec --no-startup-id kitty --class sranger ranger
+exec --no-startup-id kitty --class sranger yazi
 for_window [app_id="sranger"] move to scratchpad
 
 exec --no-startup-id kitty --class sbtop btop
