@@ -18,7 +18,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+if [ "$HOST" != "arch" ]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 eval "$(zoxide init zsh)"
 # source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 # Uncomment one of the following lines to change the auto-update behavior
