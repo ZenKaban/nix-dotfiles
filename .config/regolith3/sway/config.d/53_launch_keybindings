@@ -25,5 +25,5 @@ bindsym --to-code $mod+i exec ~/.config/rofi/apps/rofi-vpn-master/rofi-vpn.sh
 bindsym --to-code $mod+w exec ~/.config/rofi/apps/rofi-wifi-menu-master/rofi-wifi-menu.sh
 bindsym --to-code $mod+grave exec swaylock
 bindsym --to-code $mod+Control+grave exec /home/$USER/.config/rofi/apps/rofi-power-menu/suspend.sh
-bindsym --to-code $mod+V exec cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy
+bindsym --to-code $mod+V exec cliphist list | rofi -dmenu | cliphist decode | wl-copy
 
