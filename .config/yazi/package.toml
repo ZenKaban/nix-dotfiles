@@ -1,5 +1,5 @@
 [plugin]
-deps = [{ use = "TD-Sky/sudo", commit = "198d471" }, { use = "ourongxing/fast-enter", commit = "2864c59" }, { use = "pirafrank/what-size", commit = "f08f7f2" }]
+deps = [{ use = "TD-Sky/sudo", commit = "198d471" }, { use = "pirafrank/what-size", commit = "f08f7f2" }]
 
 [flavor]
 deps = []
