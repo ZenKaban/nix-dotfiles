@@ -55,9 +55,11 @@ bindsym --to-code $mod+$wm.binding.ws_prev_on_output2 workspace prev_on_output
 bindsym --to-code $mod+o [app_id=org.telegram.desktop] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+n [class=obsidian] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+t [app_id=skitty] scratchpad show, resize set 1880 1000
-bindsym --to-code $mod+r [app_id=sranger] scratchpad show, resize set 1880 1000
+bindsym --to-code $mod+r exec ~/.config/scripts/check_yazi
+# bindsym --to-code $mod+r [app_id=sranger] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+p [app_id=sbtop] scratchpad show, resize set 1880 1000
-bindsym --to-code $mod+e [app_id=snvim] scratchpad show, resize set 1880 1000
+bindsym --to-code $mod+e exec ~/.config/scripts/check_nvim
+# bindsym --to-code $mod+e exec [app_id=snvim] scratchpad show, resize set 1880 1000
 
 
 ###############################################################################

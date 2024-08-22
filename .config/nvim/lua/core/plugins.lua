@@ -185,12 +185,10 @@ require("lazy").setup({
         },
       },
     },
+    { 'adigitoleo/haunt.nvim' },
     -- see below for full list of options 👇
     -- Themes
-    { 'joshdick/onedark.vim' },
-    { 'rebelot/kanagawa.nvim' },
     { 'shaunsingh/solarized.nvim' },
-    { "shaunsingh/nord.nvim" },
     {
         "craftzdog/solarized-osaka.nvim",
         lazy = false,
