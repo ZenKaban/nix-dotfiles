@@ -33,7 +33,7 @@ vim.keymap.set('n', '<s-Tab>', ':BufferLineCyclePrev<CR>')
 -- vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float<CR>')
 -- vim.keymap.set('n', '<leader>th', ':ToggleTerm direction=horizontal<CR>')
 -- vim.keymap.set('n', '<leader>tv', ':ToggleTerm direction=vertical size=90<CR>')
-vim.keymap.set('n', '<leader>t', ':HauntTerm -t scratch')
+vim.keymap.set('n', '<leader>t', ':HauntTerm -t scratch<CR>')
 --LazyGit
 vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>')
 
