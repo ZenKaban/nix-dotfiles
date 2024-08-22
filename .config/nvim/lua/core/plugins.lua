@@ -185,7 +185,7 @@ require("lazy").setup({
         },
       },
     },
-    { 'adigitoleo/haunt.nvim' },
+    { 'notjedi/nvim-rooter.lua' },
     -- see below for full list of options 👇
     -- Themes
     { 'shaunsingh/solarized.nvim' },
