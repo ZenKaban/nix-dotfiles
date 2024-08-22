@@ -57,6 +57,7 @@ bindsym --to-code $mod+n [class=obsidian] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+t [app_id=skitty] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+r [app_id=sranger] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+p [app_id=sbtop] scratchpad show, resize set 1880 1000
+bindsym --to-code $mod+e [app_id=snvim] scratchpad show, resize set 1880 1000
 
 
 ###############################################################################

@@ -47,14 +47,14 @@ require("lazy").setup({
         },
     },
     { 'windwp/nvim-ts-autotag' },
-    {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v3.x",
-        dependencies = {
-            "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons",
-            "MunifTanjim/nui.nvim", "s1n7ax/nvim-window-picker"
-        }
-    },
+    -- {
+    --     "nvim-neo-tree/neo-tree.nvim",
+    --     branch = "v3.x",
+    --     dependencies = {
+    --         "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons",
+    --         "MunifTanjim/nui.nvim", "s1n7ax/nvim-window-picker"
+    --     }
+    -- },
     {
         "akinsho/bufferline.nvim",
         dependencies = { 'nvim-tree/nvim-web-devicons' }
@@ -143,6 +143,48 @@ require("lazy").setup({
         },
     },
     { 'echasnovski/mini.nvim',    version = false },
+    ---@type LazySpec
+    {
+      "mikavilpas/yazi.nvim",
+      event = "VeryLazy",
+      keys = {
+        -- 👇 in this section, choose your own keymappings!
+        {
+          "<leader>e",
+          "<cmd>Yazi<cr>",
+          desc = "Open yazi at the current file",
+        },
+        {
+          -- Open in the current working directory
+          "<leader>cw",
+          "<cmd>Yazi cwd<cr>",
+          desc = "Open the file manager in nvim's working directory" ,
+        },
+        {
+          -- NOTE: this requires a version of yazi that includes
+          -- https://github.com/sxyazi/yazi/pull/1305 from 2024-07-18
+          '<c-up>',
+          "<cmd>Yazi toggle<cr>",
+          desc = "Resume the last yazi session",
+        },
+      },
+      ---@type YaziConfig
+      opts = {
+        -- if you want to open yazi instead of netrw, see below for more info
+        open_for_directories = true,
+        keymaps = {
+            show_help = '<f1>',
+            open_file_in_vertical_split = '<leader>v',
+            open_file_in_horizontal_split = '<leader>x',
+            open_file_in_tab = '<c-t>',
+            grep_in_directory = '<c-s>',
+            replace_in_directory = '<c-g>',
+            cycle_open_buffers = '<tab>',
+            copy_relative_path_to_selected_files = '<c-y>',
+            send_to_quickfix_list = '<c-q>',
+        },
+      },
+    },
     -- see below for full list of options 👇
     -- Themes
     { 'joshdick/onedark.vim' },

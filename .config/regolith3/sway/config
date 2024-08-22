@@ -57,6 +57,8 @@ for_window [app_id="sbtop"] move to scratchpad
 exec --no-startup-id flatpak run md.obsidian.Obsidian
 for_window [class="obsidian"] move to scratchpad
 
+exec --no-startup-id kitty --class snvim zsh -ic nvim
+for_window [app_id="snvim"] move to scratchpad
 
 ###############################################################################
 # Workspace Names
