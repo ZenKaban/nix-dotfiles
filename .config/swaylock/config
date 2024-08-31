@@ -10,7 +10,7 @@
 # https://github.com/mortie/swaylock-effects
 
 ignore-empty-password
-font="Liga SFMono Nerd Font"
+font="Caskaydia Cove Nerd Font"
 
 clock
 timestr=%R
