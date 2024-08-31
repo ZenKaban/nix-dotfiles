@@ -65,19 +65,12 @@ alias ssh='env TERM=xterm-256color ssh' # allows kitty to work with ssh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias lazygitconfig='lazygit --git-dir=$HOME/.cfg --work-tree=$HOME'
 alias fgrep='~/.config/scripts/fzrg'
+alias kcp='kitten clipboard'
 
 ### Functions 
 # Update dotfiles
 function config-upd() {
    config pull && config add -u && config status && config commit -m "$1" && config push
-}
-
-ranger() {
-    if [ -z "$RANGER_LEVEL" ]; then
-        /usr/bin/ranger "$@"
-    else
-        exit
-    fi
 }
 
 function yy() {
