@@ -8,7 +8,7 @@ set_from_resource $wm.binding.bar_toggle wm.binding.bar_toggle i
 bindsym $mod+control+$wm.binding.bar_toggle bar mode toggle
 
 set_from_resource $wm.bar.position wm.bar.position bottom
-set_from_resource $wm.bar.font wm.bar.font monospace
+set_from_resource $wm.bar.font wm.bar.font Caskaydia Cove Nerd Font
 set_from_resource $wm.bar.separatorchar wm.bar.separatorchar " | "
 set_from_resource $wm.bar.stripworkspacenumbers wm.bar.stripworkspacenumbers yes
 set_from_resource $wm.bar.mode wm.bar.mode dock
