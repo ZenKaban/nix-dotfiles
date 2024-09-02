@@ -2,7 +2,7 @@
 if [[ $(swaymsg -t get_tree | grep sranger | wc -c) > 0 ]]; then
    swaymsg "[app_id=sranger] scratchpad show, resize set 1880 1000"
 else
-   swaymsg  "exec --no-startup-id kitty --class sranger yazi" 
+   swaymsg  "exec --no-startup-id kitty --class sranger zsh -ic yazi" 
    sleep 1
    swaymsg "[app_id=sranger] scratchpad show, resize set 1880 1000"
 fi
