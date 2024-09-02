@@ -60,6 +60,9 @@ for_window [class="obsidian"] move to scratchpad
 exec --no-startup-id kitty --class snvim zsh -ic nvim
 for_window [app_id="snvim"] move to scratchpad
 
+exec --no-startup-id flatpak run com.plexamp.Plexamp
+for_window [class="Plexamp"] move to scratchpad
+
 ###############################################################################
 # Workspace Names
 # These are the labels which define each workspace.
