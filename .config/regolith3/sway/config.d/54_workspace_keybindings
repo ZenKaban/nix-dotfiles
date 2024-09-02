@@ -59,7 +59,6 @@ bindsym --to-code $mod+r exec ~/.config/scripts/check_yazi
 # bindsym --to-code $mod+r [app_id=sranger] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+p [app_id=sbtop] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+e exec ~/.config/scripts/check_nvim
-bindsym --to-code $mod+y [class=Plexamp] scratchpad show, resize set 1880 1000
 # bindsym --to-code $mod+e exec [app_id=snvim] scratchpad show, resize set 1880 1000
 
 
