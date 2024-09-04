@@ -1,5 +1,6 @@
 *.DS_Store
 /.config/iterm2
+~/.config/rofi/apps/data
 */nvim/lazy-lock.json
 */gh
 *.log
