@@ -73,6 +73,15 @@ function config-upd() {
    config pull && config add -u && config status && config commit -m "$1" && config push
 }
 
+
+function sysupd() {
+    if [ "$HOST" != "arch" ]; then
+        sudo apt update && sudo apt upgrade && brew update && brew upgrade && flatpak update
+    else
+        yay
+    fi
+}
+
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
