@@ -63,6 +63,9 @@ for_window [app_id="snvim"] move to scratchpad
 exec --no-startup-id flatpak run org.mozilla.firefox --new-window zenkebab.synology.me:8801
 for_window [title="Audio Station"] move to scratchpad
 
+exec --no-startup-id utox 
+for_window [class="uTox"] move to scratchpad
+
 ###############################################################################
 # Workspace Names
 # These are the labels which define each workspace.
