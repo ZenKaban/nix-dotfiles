@@ -112,3 +112,11 @@ window#waybar {
 #custom-storage.critical {
     color: rgba(238, 46, 36, 1);
 }
+
+#custom-notification {
+    font-family: "Caskaydia Cove Nerd Font";
+    margin: 0 5px;
+    margin: 0px 0px 0px 10px;
+    padding: 0 5px;
+    border-top: 3px solid rgba(217, 216, 216, 0.5);
+}
