@@ -1,0 +1,6 @@
+[profiles."matrix.org"]
+user_id = "@zenkebab:matrix.org"
+[settings.image_preview]
+image_preview = {}
+[settings.notifications]
+enabled = true
