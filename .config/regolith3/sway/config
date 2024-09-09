@@ -54,6 +54,9 @@ for_window [app_id="sranger"] move to scratchpad
 exec --no-startup-id kitty --class sbtop btop
 for_window [app_id="sbtop"] move to scratchpad
 
+exec --no-startup-id kitty --class iamb iamb
+for_window [app_id="iamb"] move to scratchpad
+
 exec --no-startup-id flatpak run md.obsidian.Obsidian
 for_window [class="obsidian"] move to scratchpad
 

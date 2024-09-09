@@ -61,7 +61,7 @@ bindsym --to-code $mod+p [app_id=sbtop] scratchpad show, resize set 1880 1000
 bindsym --to-code $mod+e exec ~/.config/scripts/check_nvim
 bindsym --to-code $mod+y exec ~/.config/scripts/check_audio_station
 # bindsym --to-code $mod+e exec [app_id=snvim] scratchpad show, resize set 1880 1000
-bindsym --to-code $mod+u [class=uTox] scratchpad show, resize set 1880 1000
+bindsym --to-code $mod+u exec ~/.config/scripts/check_iamb
 
 ###############################################################################
 # Window and Workspace Configuration
