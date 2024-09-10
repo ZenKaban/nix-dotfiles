@@ -80,6 +80,7 @@ window#waybar {
 #idle_inhibitor,
 #scratchpad,
 #language,
+#custom-clock,
 /* #workspaces, */
 #mpd {
     margin: 0px 0px 0px 10px;
