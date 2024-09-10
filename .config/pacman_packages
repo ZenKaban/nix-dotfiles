@@ -22,6 +22,7 @@ ddcutil
 dialog
 discord
 dosfstools
+downgrade
 efibootmgr
 electron30
 esbuild

@@ -24,8 +24,8 @@
         // "pulseaudio",
         // "bluetooth",
         // "network",
-        // "clock"
-        "custom/clock"
+        "clock"
+        // "custom/clock"
         // "battery",
         // "custom/power"
     ],
@@ -129,7 +129,8 @@
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "  {:%H:%M | %a, %b %d}"
+        // "format": "  {:%H:%M | %a, %b %d}"
+        "format": "  {:%b %d | %H:%M}",
     },
 
     "custom/clock": {
