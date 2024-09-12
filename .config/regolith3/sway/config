@@ -63,7 +63,6 @@ for_window [class="obsidian"] move to scratchpad
 exec --no-startup-id kitty --class snvim zsh -ic nvim
 for_window [app_id="snvim"] move to scratchpad
 
-exec --no-startup-id flatpak run org.mozilla.firefox --new-window zenkebab.synology.me:8801
 for_window [title="Audio Station"] move to scratchpad
 
 # exec --no-startup-id utox 
