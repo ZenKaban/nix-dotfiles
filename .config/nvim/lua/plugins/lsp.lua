@@ -30,7 +30,7 @@ flags = {
 },
 capabilities = capabilities,
 }
-lspconfig.tsserver.setup {}
+lspconfig.ts_ls.setup {}
 lspconfig.lua_ls.setup {}
 lspconfig.clangd.setup {}
 lspconfig.cmake.setup {}
