@@ -176,7 +176,7 @@ require("lazy").setup({
             show_help = '<f1>',
             open_file_in_vertical_split = '<leader>v',
             open_file_in_horizontal_split = '<leader>x',
-            open_file_in_tab = '<c-t>',
+            open_file_in_tab = '<leader>t',
             grep_in_directory = '<c-s>',
             replace_in_directory = '<c-g>',
             cycle_open_buffers = '<tab>',

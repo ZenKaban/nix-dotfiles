@@ -26,5 +26,6 @@ bindsym --to-code $mod+w exec ~/.config/rofi/apps/rofi-wifi-menu-master/rofi-wif
 bindsym --to-code $mod+grave exec swaylock
 bindsym --to-code $mod+Control+grave exec /home/$USER/.config/rofi/apps/rofi-power-menu/suspend.sh
 bindsym --to-code $mod+V exec cliphist list | rofi -dmenu | cliphist decode | wl-copy
+bindsym --to-code $mod+Shift+V exec cliphist list | rofi -dmenu | cliphist delete
 bindsym --to-code $mod+Control+e exec kitty zsh -ic nvim
 bindsym --to-code $mod+g exec zsh -ic ~/.config/rofi/apps/rofi-calendar.sh >/dev/null
