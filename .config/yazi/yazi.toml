@@ -31,7 +31,7 @@ wrap            = "yes"
 [opener]
 edit = [
 	{ run = 'nvim "$@"', desc = "NVIM", block = true, for = "unix" },
-    { run = 'sudo nvim "$@"', desc = "SUDO NVIM", block = true },
+    { run = 'sudo nvim "$@"', desc = "SUDO NVIM", block = true, for = "unix" },
 ]
 open = [
 	{ run = 'xdg-open "$1"',                desc = "Open", for = "linux" },
@@ -42,6 +42,11 @@ open = [
 open_image = [
     { run = 'imv "$@"',                     desc = "Open Image", for = "linux"},
 ]
+
+open_log = [
+    { run = 'lnav "$@"', desc = "Open log", block = true, for = "linux"},
+]
+
 reveal = [
 	{ run = 'xdg-open "$(dirname "$1")"',           desc = "Reveal", for = "linux" },
 	{ run = 'open -R "$1"',                         desc = "Reveal", for = "macos" },
@@ -62,6 +67,8 @@ play = [
 rules = [
 	# Folder
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
+    # Log
+    { name = "*.log", use = ["open_log", "edit", "reveal"] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
@@ -78,7 +85,7 @@ rules = [
 	# Empty file
 	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
 	# Fallback
-	{ name = "*", use = [ "open", "reveal" ] },
+	{ name = "*", use = [ "open", "edit", "reveal" ] },
 ]
 
 [tasks]
