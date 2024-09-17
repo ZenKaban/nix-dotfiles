@@ -93,5 +93,3 @@ function yy() {
 
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
-
-source /home/kabanov-alex/.yql/shell_completion
