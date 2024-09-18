@@ -7,11 +7,12 @@ foo2zjs-nightly
 iamb-bin
 pacman-log-orphans-hook
 popcorntime
-satty-bin
+satty-git
 spdlog-git
 swaylock-effects
 synology-drive
 vial-appimage
+waybar-git
 waybar-module-pacman-updates-git
 webcord
 xsane

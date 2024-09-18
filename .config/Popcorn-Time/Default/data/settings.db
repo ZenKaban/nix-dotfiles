@@ -14,19 +14,58 @@
 {"key":"activateWatchlist","value":false,"_id":"O3Oc6SHL6hv3Dv75"}
 {"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
 {"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
-{"key":"lastWatchedTime","value":false,"_id":"QRBhwjgOR30Dtf33"}
+{"key":"lastWatchedTime","value":8.677433,"_id":"QRBhwjgOR30Dtf33"}
 {"key":"dhtInfo","value":{"server":"https://fusme.link/,https://jfper.link/,https://uxert.link/,https://yrkde.link/","git":"https://github.com/popcorn-official/popcorn-desktop/","site":"https://popcorn-time.site/","r":"PopcornTimeApp","v":"0.5.0","keys":{"os":"Butter","fanart":"ce4bba4b3cc473306c6cddb4e1cb0da4","tvdb":"80A769280C71D83B","tmdb":"ac92176abc89a80e6f5df9510e326601","trakttv":{"id":"647c69e4ed1ad13393bf6edd9d8f9fb6fe9faf405b44320a6b71ab960b4540a2","s":"f55b0a53c63af683588b47f6de94226b7572a6f83f40bd44c58a7c83fe1f2cb1"}}},"_id":"RZEvDZ0Cvk3xPvg5"}
 {"key":"language","value":"en","_id":"X0pmToU0CEAO8bzN"}
-{"key":"totalDownloaded","value":14190980548,"_id":"c55C7omzSplOjTQS"}
+{"key":"totalDownloaded","value":20258894741,"_id":"c55C7omzSplOjTQS"}
 {"key":"alwaysFullscreen","value":true,"_id":"eXLFiUaEQqctdoaO"}
 {"key":"dhtData","value":"{\"server\":\"https://fusme.link/,https://jfper.link/,https://uxert.link/,https://yrkde.link/\",\"git\":\"https://github.com/popcorn-official/popcorn-desktop/\",\"site\":\"https://popcorn-time.site/\",\"r\":\"PopcornTimeApp\",\"v\":\"0.5.0\",\"keys\":{\"os\":\"Butter\",\"fanart\":\"ce4bba4b3cc473306c6cddb4e1cb0da4\",\"tvdb\":\"80A769280C71D83B\",\"tmdb\":\"ac92176abc89a80e6f5df9510e326601\",\"trakttv\":{\"id\":\"647c69e4ed1ad13393bf6edd9d8f9fb6fe9faf405b44320a6b71ab960b4540a2\",\"s\":\"f55b0a53c63af683588b47f6de94226b7572a6f83f40bd44c58a7c83fe1f2cb1\"}}}","_id":"fz26EmJhvDV4Ykm1"}
-{"key":"lastWatchedTitle","value":"Rick and Morty - Season 7, Episode 1 - How Poopy Got His Poop Back","_id":"gGwtlKQ3fT8PGym0"}
+{"key":"lastWatchedTitle","value":"Futurama - Season 1, Episode 1 - Space Pilot 3000","_id":"gGwtlKQ3fT8PGym0"}
 {"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
 {"key":"events","value":false,"_id":"oDYCO6W6GOeIMHpS"}
 {"key":"OnlineSearchCategory","value":"Movies","_id":"oFi2dQRStmUrCHTa"}
-{"key":"totalUploaded","value":26177344,"_id":"wOrv5P0AXnOsvw16"}
+{"key":"totalUploaded","value":37041869,"_id":"wOrv5P0AXnOsvw16"}
 {"$$indexCreated":{"fieldName":"key","unique":true,"sparse":false}}
 {"key":"version","value":"0.5.1","_id":"Bn5K2ajKlQwMcBPP"}
 {"key":"releaseName","value":"Now.. Bring me that Horizon","_id":"DeV9bBPlWrGdXKd5"}
 {"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
 {"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"ipAddress","value":"192.168.31.3","_id":"CRVlh3clulKV6eoX"}
+{"key":"playerVolume","value":"0.90","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.80","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.70","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.60","_id":"jt9mnx9XywoYsech"}
+{"key":"lastWatchedTitle","value":"Futurama - Season 9, Episode 1 - The One Amigo","_id":"gGwtlKQ3fT8PGym0"}
+{"key":"lastWatchedTime","value":47.107169,"_id":"QRBhwjgOR30Dtf33"}
+{"key":"totalDownloaded","value":20640626601,"_id":"c55C7omzSplOjTQS"}
+{"key":"totalUploaded","value":37639562,"_id":"wOrv5P0AXnOsvw16"}
+{"key":"playerVolume","value":"0.60","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.45","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.47","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.49","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.51","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.53","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.56","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.58","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.60","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.64","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.67","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.76","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"0.93","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
+{"key":"lastWatchedTitle","value":"Futurama - Season 9, Episode 1 - The One Amigo","_id":"gGwtlKQ3fT8PGym0"}
+{"key":"lastWatchedTime","value":48.67545,"_id":"QRBhwjgOR30Dtf33"}
+{"key":"totalDownloaded","value":21110258621,"_id":"c55C7omzSplOjTQS"}
+{"key":"totalUploaded","value":38393469,"_id":"wOrv5P0AXnOsvw16"}
