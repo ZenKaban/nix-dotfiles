@@ -17,9 +17,9 @@
         "hyprland/language", 
         // "custom/updates",
         "custom/notification",
-        "custom/updates",
-        // "memory",
-        // "cpu",
+        // "custom/updates",
+        "memory",
+        "cpu",
         // "disk",
         // "pulseaudio",
         // "bluetooth",
@@ -98,7 +98,7 @@
 
     "tray": {
         "icon-size": 20,
-        "spacing": 10
+        "spacing": 5
     },
 
     "wlr/taskbar": {

@@ -121,7 +121,6 @@ utox
 vial-appimage
 vim
 waybar-git
-waybar-module-pacman-updates-git
 webcord
 wget
 wireplumber
