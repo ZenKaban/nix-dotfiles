@@ -66,6 +66,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias lazygitconfig='lazygit --git-dir=$HOME/.cfg --work-tree=$HOME'
 alias fgrep='~/.config/scripts/fzrg'
 alias kcp='kitten clipboard'
+alias cl='clear;fastfetch'
 
 ### Functions 
 # Update dotfiles
