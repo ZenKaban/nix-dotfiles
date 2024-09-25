@@ -12,7 +12,10 @@ settings = {
         autopep8 = { enabled = false },
         yapf = { enabled = false },
         -- linter options
-        pylint = { enabled = true, executable = "pylint" },
+        pylint = { enabled = true,
+                    executable = "pylint",
+                    args={'--rcfile', '~/.pylintrc'}
+                },
         pyflakes = { enabled = false },
         pycodestyle = { enabled = false },
         -- type checker
