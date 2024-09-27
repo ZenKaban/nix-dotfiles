@@ -1,5 +1,6 @@
 amd-vulkan-prefixes
 amdvlk
+amfora
 android-udev
 archlinux-themes-sddm
 atool
@@ -55,6 +56,7 @@ imv
 iwd
 jq
 kitty
+lazygit
 less
 lib32-gamemode
 lib32-systemd
