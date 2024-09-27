@@ -20,13 +20,11 @@ cmatrix
 cups
 davfs2
 ddcutil
-dialog
 discord
 dosfstools
 downgrade
 efibootmgr
 electron30
-esbuild
 eza
 f2fs-tools
 fastfetch
@@ -60,8 +58,6 @@ lazygit
 less
 lib32-gamemode
 lib32-systemd
-libayatana-appindicator
-libmfx
 libreoffice-fresh
 linux
 linux-firmware
@@ -93,10 +89,8 @@ pyenv
 python-pillow
 qmk
 qt5-wayland
-ranger
 reflector
 ripgrep
-rofi-calc
 rofi-wayland
 rsync
 rust
@@ -106,13 +100,11 @@ slurp
 spdlog-git
 steam
 sudo
-swappy
 swaylock-effects
 swaync
 synology-drive
 sysbench
 system-config-printer
-teensy_loader_cli
 telegram-desktop
 tldr
 transmission-qt
@@ -132,7 +124,6 @@ xdg-desktop-portal-hyprland
 xf86-video-amdgpu
 xsane
 xwaylandvideobridge
-yarn
 yay
 yazi
 zathura
