@@ -33,6 +33,7 @@ ffmpegthumbnailer
 firefox
 flatpak
 foo2zjs-nightly
+furmark
 fuseiso
 fx
 fzf
@@ -96,6 +97,7 @@ rsync
 rust
 satty-git
 sddm
+shellcheck
 slurp
 spdlog-git
 steam

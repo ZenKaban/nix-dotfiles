@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "height": 15,
+    "height": 10,
     "spacing": 5,
     // Choose the order of the modules
     "modules-left": [
