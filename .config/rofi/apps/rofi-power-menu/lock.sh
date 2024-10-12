@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-if gtklock --background $(trawlcat regolith.lockscreen.wallpaper.file /dev/null) ; 
+if hyprlock ; 
 then 
     ''    
 else
