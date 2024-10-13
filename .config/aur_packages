@@ -10,6 +10,8 @@ pacman-log-orphans-hook
 popcorntime
 satty-git
 spdlog-git
+swaylock-effects
+swaylock-effects-debug
 synology-drive
 v2raya-bin
 vial-appimage

@@ -53,6 +53,7 @@ hyprpaper
 iamb-bin
 imagemagick
 imv
+iperf3
 iwd
 jq
 kitty
@@ -103,6 +104,8 @@ slurp
 spdlog-git
 steam
 sudo
+swaylock-effects
+swaylock-effects-debug
 swaync
 synology-drive
 sysbench
