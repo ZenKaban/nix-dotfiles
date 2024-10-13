@@ -7,6 +7,7 @@ atool
 base
 base-devel
 bat
+bind
 bluez
 bluez-deprecated-tools
 bluez-hid2hci
@@ -102,7 +103,6 @@ slurp
 spdlog-git
 steam
 sudo
-swaylock-effects
 swaync
 synology-drive
 sysbench
