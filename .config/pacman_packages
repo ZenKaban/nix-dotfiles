@@ -105,7 +105,6 @@ spdlog-git
 steam
 sudo
 swaylock-effects
-swaylock-effects-debug
 swaync
 synology-drive
 sysbench
@@ -118,7 +117,6 @@ ttf-liberation
 udiskie
 usbutils
 utox
-v2raya-bin
 vial-appimage
 vim
 waybar-git

@@ -26,9 +26,9 @@ screenshots
 fade-in=1
 
 # Effect for background
-effect-blur=5x3
-# effect-greyscale
-# effect-pixelate=5
+effect-blur=7x3
+effect-greyscale
+effect-pixelate=3
 
 # Show/Hide indicator circle
 indicator
