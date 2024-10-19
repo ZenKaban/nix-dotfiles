@@ -2,7 +2,7 @@
 if [[ $(swaymsg -t get_tree | grep "Audio Station" | wc -c) > 0 ]]; then
    swaymsg '[title="Audio Station"] scratchpad show, resize set 1880 1000'
 else
-   swaymsg  "exec --no-startup-id flatpak run org.mozilla.firefox --new-window https://zenkebab.synology.me:8801/" 
+   swaymsg  "exec --no-startup-id flatpak run org.mozilla.firefox --new-window https://192.168.1.121:8801/" 
    sleep 1
    swaymsg '[title="Audio Station"] scratchpad show, resize set 1880 1000'
 fi
