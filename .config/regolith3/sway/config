@@ -64,6 +64,7 @@ exec --no-startup-id kitty --class snvim zsh -ic nvim
 for_window [app_id="snvim"] move to scratchpad
 
 for_window [title="Audio Station"] move to scratchpad
+for_window [title="Яндекс Почта"] move to scratchpad
 
 # exec --no-startup-id utox 
 # for_window [class="uTox"] move to scratchpad
