@@ -4,3 +4,4 @@ exec systemctl start --user xdg-desktop-portal.service
 exec_always autotiling
 exec noisetorch
 exec --no-startup-id wl-paste --type text --watch cliphist store
+exec arc mount ~/arcadia
