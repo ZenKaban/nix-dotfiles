@@ -23,7 +23,7 @@ bindsym --to-code $mod+q exec rofi -show power-menu -modi power-menu:~/.config/r
 bindsym --to-code $mod+b exec ~/.config/rofi/apps/rofi-bluetooth/rofi-bluetooth
 bindsym --to-code $mod+i exec ~/.config/rofi/apps/rofi-vpn-master/rofi-vpn.sh
 bindsym --to-code $mod+w exec ~/.config/rofi/apps/rofi-wifi-menu-master/rofi-wifi-menu.sh
-bindsym --to-code $mod+grave exec swaylock
+bindsym --to-code $mod+grave exec swaymsg "input type:keyboard xkb_switch_layout 0" && swaylock
 bindsym --to-code $mod+Control+grave exec /home/$USER/.config/rofi/apps/rofi-power-menu/suspend.sh
 bindsym --to-code $mod+V exec cliphist list | rofi -dmenu | cliphist decode | wl-copy
 bindsym --to-code $mod+Shift+V exec cliphist list | rofi -dmenu | cliphist delete
