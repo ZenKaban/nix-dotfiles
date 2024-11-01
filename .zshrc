@@ -16,6 +16,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/.fzf/bin
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 
 # the detailed meaning of the below three variable can be found in `man zshparam`.
 export HISTSIZE=1000000   # the number of items for the internal history list
@@ -35,6 +36,7 @@ if [ "$HOST" != "arch" ]; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 eval "$(zoxide init zsh)"
+
 
 # Uncomment one of the following lines to change the auto-update behavior
 zstyle ':omz:update' mode auto      # update automatically without asking
@@ -56,6 +58,9 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)
 
 ### Aliases
 alias ls='eza -l'
