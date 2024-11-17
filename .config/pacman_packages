@@ -101,7 +101,6 @@ satty-git
 sddm
 shellcheck
 slurp
-spdlog-git
 steam
 sudo
 swaylock-effects
@@ -119,7 +118,7 @@ usbutils
 utox
 vial-appimage
 vim
-waybar-git
+waybar
 webcord
 wget
 wireplumber
