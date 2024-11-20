@@ -16,6 +16,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/.fzf/bin
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export MANPAGER='nvim +Man!'
 
 # the detailed meaning of the below three variable can be found in `man zshparam`.
 export HISTSIZE=1000000   # the number of items for the internal history list
