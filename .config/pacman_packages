@@ -68,6 +68,8 @@ linux-zen
 linux-zen-headers
 lnav
 lutris
+man-db
+man-pages
 mangohud
 multilib-devel
 ncdu
@@ -108,8 +110,8 @@ swaync
 synology-drive
 sysbench
 system-config-printer
+tealdeer
 telegram-desktop
-tldr
 transmission-qt
 ttf-joypixels
 ttf-liberation
