@@ -1,9 +1,9 @@
 {"key":"start_screen","value":"Favorites","_id":"3iWE3Fr4iH5Mzu1T"}
 {"key":"nativeWindowFrame","value":false,"_id":"469p9owjeXYd4ejI"}
-{"key":"dhtDataUpdated","value":1721602455334,"_id":"5KihzN6Xnj16jFjT"}
+{"key":"dhtDataUpdated","value":1733151650940,"_id":"5KihzN6Xnj16jFjT"}
 {"key":"updateNotification","value":true,"_id":"BTN68KpoMiQejY3n"}
 {"key":"version","value":"0.5.1","_id":"Bn5K2ajKlQwMcBPP"}
-{"key":"ipAddress","value":"192.168.31.3","_id":"CRVlh3clulKV6eoX"}
+{"key":"ipAddress","value":"192.168.1.197","_id":"CRVlh3clulKV6eoX"}
 {"key":"releaseName","value":"Now.. Bring me that Horizon","_id":"DeV9bBPlWrGdXKd5"}
 {"key":"dhtEnable","value":true,"_id":"F8NukUyiR7hwiKgH"}
 {"key":"automaticUpdating","value":true,"_id":"H3aR6E3NoNUNrQYj"}
@@ -14,21 +14,23 @@
 {"key":"activateWatchlist","value":false,"_id":"O3Oc6SHL6hv3Dv75"}
 {"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
 {"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
-{"key":"lastWatchedTime","value":false,"_id":"QRBhwjgOR30Dtf33"}
+{"key":"lastWatchedTime","value":-2.495895,"_id":"QRBhwjgOR30Dtf33"}
 {"key":"dhtInfo","value":{"server":"https://fusme.link/,https://jfper.link/,https://uxert.link/,https://yrkde.link/","git":"https://github.com/popcorn-official/popcorn-desktop/","site":"https://popcorn-time.site/","r":"PopcornTimeApp","v":"0.5.0","keys":{"os":"Butter","fanart":"ce4bba4b3cc473306c6cddb4e1cb0da4","tvdb":"80A769280C71D83B","tmdb":"ac92176abc89a80e6f5df9510e326601","trakttv":{"id":"647c69e4ed1ad13393bf6edd9d8f9fb6fe9faf405b44320a6b71ab960b4540a2","s":"f55b0a53c63af683588b47f6de94226b7572a6f83f40bd44c58a7c83fe1f2cb1"}}},"_id":"RZEvDZ0Cvk3xPvg5"}
 {"key":"language","value":"en","_id":"X0pmToU0CEAO8bzN"}
-{"key":"totalDownloaded","value":21686734191,"_id":"c55C7omzSplOjTQS"}
+{"key":"totalDownloaded","value":23481097865,"_id":"c55C7omzSplOjTQS"}
 {"key":"alwaysFullscreen","value":true,"_id":"eXLFiUaEQqctdoaO"}
 {"key":"dhtData","value":"{\"server\":\"https://fusme.link/,https://jfper.link/,https://uxert.link/,https://yrkde.link/\",\"git\":\"https://github.com/popcorn-official/popcorn-desktop/\",\"site\":\"https://popcorn-time.site/\",\"r\":\"PopcornTimeApp\",\"v\":\"0.5.0\",\"keys\":{\"os\":\"Butter\",\"fanart\":\"ce4bba4b3cc473306c6cddb4e1cb0da4\",\"tvdb\":\"80A769280C71D83B\",\"tmdb\":\"ac92176abc89a80e6f5df9510e326601\",\"trakttv\":{\"id\":\"647c69e4ed1ad13393bf6edd9d8f9fb6fe9faf405b44320a6b71ab960b4540a2\",\"s\":\"f55b0a53c63af683588b47f6de94226b7572a6f83f40bd44c58a7c83fe1f2cb1\"}}}","_id":"fz26EmJhvDV4Ykm1"}
-{"key":"lastWatchedTitle","value":"Beetlejuice Beetlejuice","_id":"gGwtlKQ3fT8PGym0"}
+{"key":"lastWatchedTitle","value":"American Dad S21E01 The Grocery Store Bank 1080p AMZN WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv","_id":"gGwtlKQ3fT8PGym0"}
 {"key":"playerVolume","value":"1.00","_id":"jt9mnx9XywoYsech"}
 {"key":"events","value":false,"_id":"oDYCO6W6GOeIMHpS"}
 {"key":"OnlineSearchCategory","value":"Movies","_id":"oFi2dQRStmUrCHTa"}
-{"key":"totalUploaded","value":725273298,"_id":"wOrv5P0AXnOsvw16"}
+{"key":"audioPassthrough","value":true,"_id":"sl9xoqT18Y6CTZ6I"}
+{"key":"totalUploaded","value":727717301,"_id":"wOrv5P0AXnOsvw16"}
 {"$$indexCreated":{"fieldName":"key","unique":true,"sparse":false}}
 {"key":"version","value":"0.5.1","_id":"Bn5K2ajKlQwMcBPP"}
 {"key":"releaseName","value":"Now.. Bring me that Horizon","_id":"DeV9bBPlWrGdXKd5"}
 {"key":"arch","value":"x64","_id":"OgS0VRIY9OnwPSQh"}
 {"key":"os","value":"linux","_id":"OKsmiIsRy4FDw1sv"}
-{"key":"totalDownloaded","value":21686734191,"_id":"c55C7omzSplOjTQS"}
-{"key":"totalUploaded","value":725273298,"_id":"wOrv5P0AXnOsvw16"}
+{"key":"chosenPlayer","value":"VLC","_id":"eHu6Mvuo4pHIWKWt"}
+{"key":"totalDownloaded","value":24365047433,"_id":"c55C7omzSplOjTQS"}
+{"key":"totalUploaded","value":730874883,"_id":"wOrv5P0AXnOsvw16"}

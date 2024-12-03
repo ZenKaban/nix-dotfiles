@@ -43,6 +43,10 @@ open_image = [
     { run = 'imv "$@"',                     desc = "Open Image", for = "linux"},
 ]
 
+pdf = [
+    { run = 'zathura "$@"', desc = "Open PDF", for = "linux"},
+]
+
 open_log = [
     { run = 'lnav "$@"', desc = "Open log", block = true, for = "linux"},
 ]
@@ -84,6 +88,8 @@ rules = [
 	{ mime = "*/javascript", use = [ "edit", "reveal" ] },
 	# Empty file
 	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
+	# PDF
+	{ mime = "application/pdf", use = [ "pdf", "reveal" ] },
 	# Fallback
 	{ name = "*", use = [ "open", "edit", "reveal" ] },
 ]
