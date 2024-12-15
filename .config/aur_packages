@@ -1,4 +1,5 @@
 amd-vulkan-prefixes
+android-sdk-platform-tools
 archlinux-themes-sddm
 canon-pixma-mg2500-complete
 davfs2
@@ -14,4 +15,6 @@ vial-appimage
 webcord
 xsane
 yay
+yazi-git
+yazi-git-debug
 zsh-vi-mode

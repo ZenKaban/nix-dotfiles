@@ -1,6 +1,9 @@
 amd-vulkan-prefixes
 amdvlk
 amfora
+android-file-transfer
+android-sdk-platform-tools
+android-tools
 android-udev
 archlinux-themes-sddm
 atool
@@ -132,7 +135,8 @@ xf86-video-amdgpu
 xsane
 xwaylandvideobridge
 yay
-yazi
+yazi-git
+yazi-git-debug
 zathura
 zathura-djvu
 zathura-pdf-mupdf
