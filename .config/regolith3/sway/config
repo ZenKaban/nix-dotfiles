@@ -37,7 +37,7 @@ for_window [app_id="firefox" title="^Picture-in-Picture$"] \
 
 workspace_auto_back_and_forth yes
 
-output DP-1 scale 1.5
+output DP-1 scale 1.4
 
 # Load nm-applet to provide auth dialogs for network access
 set_from_resource $wm.program.nm-applet wm.program.nm-applet /usr/bin/nm-applet
