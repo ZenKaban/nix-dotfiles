@@ -21,12 +21,12 @@
         // "memory",
         // "cpu",
         // "disk",
-        // "pulseaudio",
+        "pulseaudio",
+        "battery",
         // "bluetooth",
         // "network",
         "clock"
         // "custom/clock"
-        // "battery",
         // "custom/power"
     ],
 
