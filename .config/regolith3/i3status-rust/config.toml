@@ -18,6 +18,11 @@ format = "$layout"
 "English (US)" = "EN"
 "Russian (N/A)" = "RU"
 
+[[block]]
+block = "notify"
+format = " $icon {($notification_count.eng(w:1)) |}"
+driver = "swaync"
+
 # [[block]]
 # block = "net"
 # format = ""

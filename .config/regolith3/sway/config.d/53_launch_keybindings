@@ -29,3 +29,4 @@ bindsym --to-code $mod+V exec cliphist list | rofi -dmenu | cliphist decode | wl
 bindsym --to-code $mod+Shift+V exec cliphist list | rofi -dmenu | cliphist delete
 bindsym --to-code $mod+Control+e exec kitty zsh -ic nvim
 bindsym --to-code $mod+g exec zsh -ic ~/.config/rofi/apps/rofi-calendar.sh >/dev/null
+bindsym --to-code $mod+u exec swaync-client -t -sw
