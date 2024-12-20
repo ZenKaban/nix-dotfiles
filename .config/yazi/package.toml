@@ -1,9 +1,10 @@
 [plugin]
-deps = [{ use = "TD-Sky/sudo", rev = "a8287ea" }, 
+deps = [
 { use = "pirafrank/what-size", rev = "f08f7f2" }, 
 { use = "yazi-rs/plugins:full-border", rev = "62f0789" }, 
 { use = "AnirudhG07/rich-preview", rev = "8be4d27" }, 
-{ use = "yazi-rs/plugins:git", rev = "62f0789" }]
+{ use = "yazi-rs/plugins:git", rev = "62f0789" }
+]
 
 [flavor]
 deps = []

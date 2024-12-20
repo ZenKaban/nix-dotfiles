@@ -155,19 +155,9 @@ keymap = [
 
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },
-	# sudo cp/mv
-    { on = ["R", "p"], run = "plugin sudo --args='paste'", desc = "sudo paste" },
-    # sudo mv
-    { on = ["R", "r"], run = "plugin sudo --args='rename'", desc = "sudo rename" },
-    # sudo ln -s (absolute-path)
-    { on = ["R", "l"], run = "plugin sudo --args='link'", desc = "sudo link" },
-    # sudo touch/mkdir
-    { on = ["R", "a"], run = "plugin sudo --args='create'", desc = "sudo create" },
-    # sudo trash
-    { on = ["R", "d"], run = "plugin sudo --args='remove'", desc = "sudo trash" },
-    # sudo delete
-    { on = ["R", "D"], run = "plugin sudo --args='remove -P'", desc = "sudo delete" },{ on = "<F1>", run = "help", desc = "Open help" },
+    { on = "<F1>", run = "help", desc = "Open help" },
 ]
+
 prepend_keymap = [
     { on = "<C-s>", run  = 'shell "$SHELL" --block --confirm', desc = "Open shell here"},
     { on = [ "c", "s" ], run  = "plugin what-size", desc = "Calc size of selection or cwd" },
@@ -307,18 +297,7 @@ keymap = [
 
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },
-	# sudo cp/mv
-    { on = ["R", "p"], run = "plugin sudo --args='paste'", desc = "sudo paste" },
-    # sudo mv
-    { on = ["R", "r"], run = "plugin sudo --args='rename'", desc = "sudo rename" },
-    # sudo ln -s (absolute-path)
-    { on = ["R", "l"], run = "plugin sudo --args='link'", desc = "sudo link" },
-    # sudo touch/mkdir
-    { on = ["R", "a"], run = "plugin sudo --args='create'", desc = "sudo create" },
-    # sudo trash
-    { on = ["R", "d"], run = "plugin sudo --args='remove'", desc = "sudo trash" },
-    # sudo delete
-    { on = ["R", "D"], run = "plugin sudo --args='remove -P'", desc = "sudo delete" },{ on = "<F1>", run = "help", desc = "Open help" },
+	{ on = "<F1>", run = "help", desc = "Open help" },
 ]
 
 [confirm]
