@@ -1,3 +1,4 @@
+7zip
 amd-vulkan-prefixes
 amdvlk
 amfora
@@ -83,7 +84,6 @@ ntfs-3g
 numactl
 obsidian
 openssl-1.1
-p7zip
 pacman-contrib
 pacman-log-orphans-hook
 pavucontrol
@@ -126,6 +126,7 @@ vim
 vlc
 waybar
 webcord
+wev
 wget
 wireplumber
 wl-clipboard

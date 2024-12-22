@@ -1,0 +1,5 @@
+// This goes in $HOME/.config/xkb/symbols/scroll
+default partial modifier_keys
+xkb_symbols "map_to_mod3" {
+    modifier_map Mod3 { Scroll_Lock };
+};

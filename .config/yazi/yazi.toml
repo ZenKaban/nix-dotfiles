@@ -38,6 +38,7 @@ open = [
 	{ run = 'xdg-open "$1"',                desc = "Open", for = "linux" },
 	{ run = 'open "$@"',                    desc = "Open", for = "macos" },
 	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
+	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "linux" },
 ]
 open_image = [
     { run = 'imv "$@"',                     desc = "Open Image", for = "linux"},
@@ -56,7 +57,7 @@ reveal = [
 	{ run = '''exiftool "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show EXIF", for = "unix" },
 ]
 extract = [
-	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
+	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "linux" },
 	{ run = 'ya pub extract --list %*',   desc = "Extract here", for = "windows" },
 ]
 play = [
