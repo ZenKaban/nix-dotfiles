@@ -51,6 +51,8 @@ grim
 grub
 hypridle
 hyprland
+hyprland-qtutils
+hyprland-qtutils-debug
 hyprlock
 hyprpaper
 iamb-bin
@@ -68,6 +70,8 @@ libreoffice-fresh
 linux
 linux-firmware
 linux-headers
+linux-lts
+linux-lts-headers
 linux-zen
 linux-zen-headers
 lnav
