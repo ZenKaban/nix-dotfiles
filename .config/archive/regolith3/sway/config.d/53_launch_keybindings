@@ -1,0 +1,32 @@
+###############################################################################
+# Launcher dialogs
+###############################################################################
+
+### Launch // Terminal // <> Enter ##
+set_from_resource $wm.binding.terminal wm.binding.terminal t 
+bindsym --to-code $mod+Control+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty
+
+# Launch // Terminal // <> Enter ##
+# set_from_resource $wm.binding.terminal wm.binding.terminal r 
+# bindsym --to-code $mod+$wm.binding.terminal exec --no-startup-id /usr/bin/kitty ranger
+
+# Switch monitor source
+bindsym --to-code $mod+Control+d exec ddcutil --display 1 setvcp 60 0x0f && ddcutil --display 2 setvcp 60 0x11
+
+# Screenshot
+bindsym --to-code Print exec grim -g "$(slurp -d)" - | wl-copy
+# bindsym --to-code $mod+Print exec grim -g "$(slurp -d)" - | swappy -f -
+bindsym --to-code $mod+Print exec grim -g "$(slurp -d)" - | satty -f -
+
+bindsym --to-code $mod+Space exec rofi -show drun
+bindsym --to-code $mod+q exec rofi -show power-menu -modi power-menu:~/.config/rofi/apps/rofi-power-menu/rofi-power-menu
+bindsym --to-code $mod+b exec ~/.config/rofi/apps/rofi-bluetooth/rofi-bluetooth
+bindsym --to-code $mod+i exec ~/.config/rofi/apps/rofi-vpn-master/rofi-vpn.sh
+bindsym --to-code $mod+w exec ~/.config/rofi/apps/rofi-wifi-menu-master/rofi-wifi-menu.sh
+bindsym --to-code $mod+grave exec swaymsg "input type:keyboard xkb_switch_layout 0" && swaylock
+bindsym --to-code $mod+Control+grave exec /home/$USER/.config/rofi/apps/rofi-power-menu/suspend.sh
+bindsym --to-code $mod+V exec cliphist list | rofi -dmenu | cliphist decode | wl-copy
+bindsym --to-code $mod+Shift+V exec cliphist list | rofi -dmenu | cliphist delete
+bindsym --to-code $mod+Control+e exec kitty zsh -ic nvim
+bindsym --to-code $mod+g exec zsh -ic ~/.config/rofi/apps/rofi-calendar.sh >/dev/null
+bindsym --to-code $mod+u exec swaync-client -t -sw

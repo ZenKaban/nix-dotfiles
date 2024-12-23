@@ -1,0 +1,7 @@
+
+# exec --no-startup-id swayidle -w timeout 10 'if pgrep -x gtklock; then swaymsg "output * dpms off"; fi' resume 'swaymsg "output * dpms on"'
+## Session // Lock Screen // <> Escape ##
+set_from_resource $wm.binding.lock wm.binding.lock Escape
+set_from_resource $wm.program.lock wm.program.lock gtklock --background $(trawlcat regolith.lockscreen.wallpaper.file /dev/null)
+bindsym --to-code $mod+$wm.binding.lock exec $wm.program.lock
+
