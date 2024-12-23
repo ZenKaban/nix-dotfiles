@@ -1,4 +1,0 @@
-profile {
-	output "Dell Inc. DELL P2422HE JKNCYB3" mode 1920x1080@60Hz position 0,0 transform normal scale 1
-	output "Unknown 0x093E 0x00000000" mode 1920x1080@60.003Hz position 0,1080 transform normal scale 1
-}

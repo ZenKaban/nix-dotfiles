@@ -1,2 +1,0 @@
-bindswitch --locked --reload lid:on exec regolith-sway-clamshell LID_CLOSE
-bindswitch --locked --reload lid:off exec regolith-sway-clamshell LID_OPEN
