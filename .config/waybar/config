@@ -79,7 +79,7 @@
     "hyprland/workspaces": {
         // "format": "{name}",
         "format-icons": {
-            "active": " ",
+            // "active": " ",
             "urgent": " ",
         },
         "format": "{icon}: {windows}",
