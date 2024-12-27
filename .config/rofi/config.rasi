@@ -2,7 +2,7 @@
 //@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
 configuration {
     modes: "drun";
-	font: "Caskaydia Cove Nerd Font 18";
+	font: "Caskaydia Cove Nerd Font 21";
     monitor: "-1";
 /*	location: 0;*/
 /*	yoffset: 0;*/
