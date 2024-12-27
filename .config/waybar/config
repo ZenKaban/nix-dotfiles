@@ -10,11 +10,11 @@
     ],
 
     "modules-center": [
+        "hyprland/language", 
         "hyprland/workspaces",
     ],
 
     "modules-right": [
-        "hyprland/language", 
         // "custom/updates",
         "custom/notification",
         // "custom/updates",
@@ -23,9 +23,9 @@
         // "disk",
         "pulseaudio",
         "battery",
+        "clock"
         // "bluetooth",
         // "network",
-        "clock"
         // "custom/clock"
         // "custom/power"
     ],
