@@ -83,7 +83,7 @@
             "urgent": " ",
         },
         "format": "{icon}: {windows}",
-        "format-window-separator": " |",
+        "format-window-separator": " | ",
         "window-rewrite-default": "",
         "window-rewrite": {
             "title<.*YouTube.*>": "", // Windows whose titles contain "youtube"
