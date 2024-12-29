@@ -116,6 +116,7 @@ usbutils
 vim
 vlc
 waybar
+waybar-module-pacman-updates-git
 webcord
 wget
 wireplumber
