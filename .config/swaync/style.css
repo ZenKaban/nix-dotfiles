@@ -16,7 +16,7 @@
 
 @define-color noti-text-color rgba(53, 185, 171, 1);
 @define-color noti-border-color rgba(53, 185, 171, 0.4);
-@define-color noti-bg rgba(23, 63, 79, 0.4);
+@define-color noti-bg rgba(23, 63, 79, 0.7);
 @define-color noti-bg-hover rgba(23, 63, 79, 1);
 @define-color noti-bg-focus rgba(23, 63, 79, 0.6);
 @define-color noti-close-bg rgba(255, 255, 255, 0.1);
