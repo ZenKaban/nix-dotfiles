@@ -12,7 +12,7 @@
 /* @define-color text-color-disabled rgb(150, 150, 150); */
 /* @define-color bg-selected rgb(0, 128, 255); */
 
-@define-color cc-bg rgba(23, 63, 79, 0.4);
+@define-color cc-bg rgba(23, 63, 79, 0.7);
 
 @define-color noti-text-color rgba(53, 185, 171, 1);
 @define-color noti-border-color rgba(53, 185, 171, 0.4);
