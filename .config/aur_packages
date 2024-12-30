@@ -5,6 +5,7 @@ davfs2
 downgrade
 foo2zjs-nightly
 hyprpolkitagent-bin
+hyprpolkitagent-bin-debug
 pacman-log-orphans-hook
 popcorntime
 satty-git
