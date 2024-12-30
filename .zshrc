@@ -94,5 +94,17 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
+export YA_USER="kabanov-alex"
+function yvpnFUNC()
+{
+    expect <<EOF
+        spawn sudo -E /sbin/openvpn --config $HOME/.itsme/openvpn.conf.tpm
+        expect "Enter tpm-token token Password:"
+        send -- "ХХХ\r"
+        set timeout -1
+        expect eof
+EOF
+}
+
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
