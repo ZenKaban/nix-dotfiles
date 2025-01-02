@@ -119,7 +119,6 @@ vlc
 waybar
 waybar-module-pacman-updates-git
 webcord
-wg-client
 wget
 wireguard-tools
 wireplumber
