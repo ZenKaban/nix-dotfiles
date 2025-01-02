@@ -38,10 +38,10 @@ window#waybar {
     color: #ff6a00;
 }
 
-#workspaces button.urgent {
-    background-color: #a96d1f;
-    color: white;
-}
+/* #workspaces button.urgent { */
+/*     background-color: #a96d1f; */
+/*     color: white; */
+/* } */
 
 #workspaces button:hover {
     box-shadow: inherit;
