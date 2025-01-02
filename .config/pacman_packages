@@ -106,6 +106,7 @@ sudo
 swaync
 synology-drive
 system-config-printer
+systemd-resolvconf
 tealdeer
 telegram-desktop
 transmission-qt
@@ -118,7 +119,9 @@ vlc
 waybar
 waybar-module-pacman-updates-git
 webcord
+wg-client
 wget
+wireguard-tools
 wireplumber
 wl-clipboard
 xdg-desktop-portal-gtk
