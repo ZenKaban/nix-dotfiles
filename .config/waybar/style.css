@@ -12,10 +12,12 @@ window#waybar {
     border: none;
     border-radius: 0;
     box-shadow: none;
-    text-shadow: none;
+    text-shadow: gray;
     transition-duration: 0s;
     color: rgba(217, 216, 216, 1);
-    background: #002b36; 
+    /* background: #002b36;  */
+    background: rgba(0, 0, 0, 0.0); 
+
 } 
 
 #workspaces {
@@ -28,7 +30,7 @@ window#waybar {
 
 #workspaces button {
     padding: 0 8px;
-    color: #565f89;
+    color: rgba(217, 216, 216, 1);
     border: 3px solid rgba(9, 85, 225, 0);
     border-radius: 10px;
     min-width: 33px;
