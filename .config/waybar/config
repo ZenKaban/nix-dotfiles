@@ -82,8 +82,8 @@
             // "active": " ",
             // "urgent": " ",
         },
-        "format": "{icon}: {windows}",
-        "format-window-separator": " | ",
+        "format": "[{icon}:{windows} ]",
+        "format-window-separator": " ^",
         "window-rewrite-default": "",
         "window-rewrite": {
             "title<.*YouTube.*>": "", // Windows whose titles contain "youtube"
@@ -92,7 +92,7 @@
             // "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
             "kitty": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
             "steam": "󰓓",
-            "vial": " ",
+            "vial": "",
             "discord": "󰙯",
             "lutris": "󱎓",
             "transmission": "󰇚",
@@ -103,7 +103,7 @@
             "org.telegram.desktop" : "",
 	    },
         "disable-scroll": true,
-        "all-outputs": false,
+        "all-outputs": true,
         "on-click": "activate",
     },
     
@@ -114,7 +114,7 @@
     },
 
     "tray": {
-        "icon-size": 20,
+        "icon-size": 25,
         "spacing": 5
     },
 
