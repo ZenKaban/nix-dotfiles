@@ -10,6 +10,7 @@ pacman-log-orphans-hook
 popcorntime
 satty-git
 synology-drive
+usbimager
 waybar-module-pacman-updates-git
 webcord
 xsane

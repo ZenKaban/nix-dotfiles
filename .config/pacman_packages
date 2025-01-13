@@ -43,6 +43,7 @@ gamescope-session-steam-git
 ghostscript
 git
 github-cli
+gnome-multi-writer
 go
 goverlay
 grim
@@ -56,6 +57,7 @@ hyprpolkitagent-bin
 imagemagick
 imv
 iperf3
+isoimagewriter
 iwd
 jq
 kitty
@@ -115,6 +117,7 @@ transmission-qt
 ttf-joypixels
 ttf-liberation
 udiskie
+usbimager
 usbutils
 vim
 vlc
