@@ -9,7 +9,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
-  #nixpkgs.overlays = [ yazi.overlays.default ]; 
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -98,6 +97,7 @@
     packages = with pkgs; [
       kdePackages.kate
       kdePackages.dolphin
+      yazi
       
     #  thunderbird
     ];
@@ -120,8 +120,10 @@
   programs.gamescope.enable = true;
   programs.yazi = {
 	enable = true;
-#	package = yazi.packages.${pkgs.system}.default; # if you use overlays, you can omit this
+	#package = yazi.packages.${pkgs.system}.default; # if you use overlays, you can omit this
   };
+  
+
   programs.steam = {
 	  enable = true;
 	  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
