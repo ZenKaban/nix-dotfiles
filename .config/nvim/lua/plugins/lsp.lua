@@ -35,8 +35,8 @@ capabilities = capabilities,
 }
 lspconfig.ts_ls.setup {}
 lspconfig.lua_ls.setup {}
-lspconfig.clangd.setup {}
-lspconfig.cmake.setup {}
+-- lspconfig.clangd.setup {}
+-- lspconfig.cmake.setup {}
 lspconfig.prismals.setup {}
 lspconfig.cssls.setup {
     capabilities = capabilities

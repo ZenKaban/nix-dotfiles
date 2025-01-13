@@ -120,7 +120,6 @@
   programs.gamescope.enable = true;
   programs.yazi = {
 	enable = true;
-	#package = yazi.packages.${pkgs.system}.default; # if you use overlays, you can omit this
   };
   
 
@@ -198,7 +197,7 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
