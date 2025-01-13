@@ -155,4 +155,4 @@ configuration {
 }
 //@theme "/usr/share/rofi/themes/solarized_alternate.rasi"
 
-@theme "/run/current-system/sw/share/rofi/themes/solarized_alternate.rasi"
+@theme "~/.config/rofi/solarized_alternate.rasi"
