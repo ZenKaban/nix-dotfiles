@@ -49,8 +49,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 COMPLETION_WAITING_DOTS="true"
 ENABLE_CORRECTION="true"
 HIST_STAMPS="yyyy-mm-dd"
-plugins=(
+plugins+=(
     git
+    zsh-vi-mode
     # pyenv
     # poetry
 )
@@ -100,5 +101,5 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
-source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')

@@ -104,6 +104,7 @@
   };
 
   users.defaultUserShell = pkgs.zsh;
+
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = false;
   services.xserver.displayManager.autoLogin.user = "alex";
@@ -115,7 +116,12 @@
   programs.hyprland.enable = true;
   #programs.hypridle.enable = true;
   programs.zsh.enable = true;  
-  programs.yazi.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamescope.enable = true;
+  programs.yazi = {
+	enable = true;
+#	package = yazi.packages.${pkgs.system}.default; # if you use overlays, you can omit this
+  };
   programs.steam = {
 	  enable = true;
 	  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
@@ -154,6 +160,12 @@
     zoxide
     wl-clipboard
     swaynotificationcenter
+    unzip
+    python3
+    go
+    nodejs_22
+    mangohud
+    gamescope
 
   ];
 
