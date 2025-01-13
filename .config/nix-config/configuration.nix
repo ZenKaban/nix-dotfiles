@@ -3,7 +3,9 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
-
+let 
+  unstable = import <unstable> { };
+in
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -13,9 +15,9 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
@@ -57,9 +59,32 @@
     layout = "us";
     variant = "";
   };
+
+  #USER
+  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.alex = {
+    isNormalUser = true;
+    description = "alex";
+    extraGroups = [ "networkmanager" "wheel" ];
+    packages = with pkgs; [
+      kdePackages.kate
+      kdePackages.dolphin
+      unstable.yazi
+    ];
+  };
+
+  # Enable automatic login for the user.
+  services.xserver.displayManager.autoLogin.enable = false;
+  services.xserver.displayManager.autoLogin.user = "alex";
+
+  users.defaultUserShell = pkgs.zsh;
+
+  #FONTS
   fonts.packages = with pkgs; [
-  	nerdfonts
+    cascadia-code
   ];
+
+  #HARDWARE
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -80,96 +105,91 @@
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.alex = {
-    isNormalUser = true;
-    description = "alex";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-      kdePackages.dolphin
-      yazi
-      
-    #  thunderbird
-    ];
-  };
-
-  users.defaultUserShell = pkgs.zsh;
-
-  # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = false;
-  services.xserver.displayManager.autoLogin.user = "alex";
 
   services.blueman.enable = true;
 
-  # Install firefox.
+  # PROGRAMS
   programs.firefox.enable = true;
   programs.hyprland.enable = true;
   #programs.hypridle.enable = true;
   programs.zsh.enable = true;  
   programs.steam.gamescopeSession.enable = true;
   programs.gamescope.enable = true;
-  programs.yazi = {
-	enable = true;
-  };
-  
-
+  programs.yazi.enable = true;
   programs.steam = {
 	  enable = true;
 	  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
 	  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
 	  localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 	};
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # PACKAGES
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  # editors
+    vim 
+    neovim
+    obsidian
+  # clipboard
+    satty
+    grim
+    slurp
+    cliphist
+    wl-clipboard
+  # communications
+    telegram-desktop
+    discord
+  # languages
+    python3
+    go
+    nixd
+  # Media
+    imv
+    imagemagick
+    xsane
+    zathura
+  # gaming
+    lutris
+    mangohud
+    gamescope
+  # Download/upload
+    synology-drive-client
+    transmission_4-qt
+  # system
+    udiskie
+    tealdeer
+    ripgrep
+    lnav
+    ncdu
+    pavucontrol
+    jq
+    unzip
     wget
     hyprland
     xdg-desktop-portal-hyprland
     zsh
     kitty
-    satty
     waybar
-    #yazi
-    grim
-    slurp
-    neovim
-    telegram-desktop
     fastfetch
     git
     rofi-wayland
     networkmanagerapplet
     bat
     btop
-    cliphist
-    discord
     eza
     fd
     zoxide
-    wl-clipboard
     swaynotificationcenter
-    unzip
-    python3
-    go
-    nodejs_22
-    mangohud
-    gamescope
-
   ];
 
+  # Mounts
   fileSystems."/home/alex" = 
     { device = "/dev/disk/by-path/pci-0000:07:00.0-nvme-1-part3";
       fsType = "f2fs";
@@ -179,14 +199,6 @@
     { device = "/dev/disk/by-path/pci-0000:04:00.0-nvme-1-part1";
       fsType = "f2fs";
     };
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
 
   # List services that you want to enable:
 
