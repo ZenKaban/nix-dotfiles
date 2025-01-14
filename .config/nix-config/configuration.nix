@@ -177,8 +177,8 @@ in
     jq
     unzip
     wget
-    unstable.hyprland
-    unstable.xdg-desktop-portal-hyprland
+    hyprland
+    xdg-desktop-portal-hyprland
     zsh
     unstable.kitty
     unstable.waybar
