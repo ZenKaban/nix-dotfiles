@@ -81,7 +81,7 @@ in
 
   #FONTS
   fonts.packages = with pkgs; [
-    cascadia-code
+    nerdfonts
   ];
 
   #HARDWARE
@@ -125,6 +125,10 @@ in
 	  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
 	  localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 	};
+  programs.neovim = {
+      enable = true;
+      defaultEditor = true;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
