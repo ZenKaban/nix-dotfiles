@@ -76,6 +76,7 @@ in
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "alex";
+  services.displayManager.defaultSession = "hyprland";
 
   users.defaultUserShell = pkgs.zsh;
 
@@ -139,7 +140,7 @@ in
   environment.systemPackages = with pkgs; [
   # editors
     vim 
-    neovim
+    unstable.neovim
     obsidian
   # clipboard
     satty
@@ -148,7 +149,7 @@ in
     cliphist
     wl-clipboard
   # communications
-    telegram-desktop
+    unstable.telegram-desktop
     discord
   # languages
     python3
@@ -176,12 +177,12 @@ in
     jq
     unzip
     wget
-    hyprland
-    xdg-desktop-portal-hyprland
+    unstable.hyprland
+    unstable.xdg-desktop-portal-hyprland
     zsh
-    kitty
-    waybar
-    fastfetch
+    unstable.kitty
+    unstable.waybar
+    unstable.fastfetch
     git
     rofi-wayland
     networkmanagerapplet
