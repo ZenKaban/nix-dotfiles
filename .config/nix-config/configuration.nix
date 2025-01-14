@@ -107,7 +107,7 @@ in
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
-  programs.noisetorch.enable = true
+  programs.noisetorch.enable = true;
 
 
   services.blueman.enable = true;
@@ -115,10 +115,10 @@ in
   # PROGRAMS
   programs.firefox.enable = true;
   programs.hyprland.enable = true;
-  #programs.hypridle.enable = true;
+  # programs.hypridle.enable = true;
   programs.zsh.enable = true;  
-  programs.steam.gamescopeSession.enable = true;
-  programs.gamescope.enable = true;
+  # programs.steam.gamescopeSession.enable = true;
+  # programs.gamescope.enable = true;
   programs.yazi.enable = true;
   programs.steam = {
 	  enable = true;
@@ -178,6 +178,7 @@ in
     unzip
     wget
     hyprland
+    hyprpaper
     xdg-desktop-portal-hyprland
     zsh
     unstable.kitty
