@@ -4,7 +4,7 @@
 
 { config, pkgs, ... }:
 let 
-  unstable = import <unstable> { };
+  unstable = import <unstable> { config = { allowUnfree = true; }; };
 in
 {
   imports =
@@ -108,12 +108,12 @@ in
     #jack.enable = true;
   };
   programs.noisetorch.enable = true;
-
+  hardware.graphics.enable32Bit = true;
 
   services.blueman.enable = true;
 
   # PROGRAMS
-  programs.firefox.enable = true;
+  programs.firefox.enable = true; 
   programs.hyprland.enable = true;
   # programs.hypridle.enable = true;
   programs.zsh.enable = true;  
@@ -161,9 +161,10 @@ in
     xsane
     zathura
   # gaming
-    lutris
+    unstable.lutris
     mangohud
     gamescope
+    wine
   # Download/upload
     synology-drive-client
     transmission_4-qt
