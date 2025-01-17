@@ -167,11 +167,6 @@ in
     gamescope
     wine
     unstable.amdgpu_top 
-    unstable.unigine-heaven
-    unstable.lact
-    corectrl
-    vulkan-tools
-    mesa-demos
   # Download/upload
     synology-drive-client
     transmission_4-qt
@@ -217,15 +212,15 @@ in
     };
 
   # List services that you want to enable:
-  systemd.services.lact = {
-    description = "AMDGPU Control Daemon";
-    after = ["multi-user.target"];
-    wantedBy = ["multi-user.target"];
-    serviceConfig = {
-      ExecStart = "${unstable.lact}/bin/lact daemon";
-    };
-    enable = true;
-  };
+  # systemd.services.lact = {
+  #   description = "AMDGPU Control Daemon";
+  #   after = ["multi-user.target"];
+  #   wantedBy = ["multi-user.target"];
+  #   serviceConfig = {
+  #     ExecStart = "${unstable.lact}/bin/lact daemon";
+  #   };
+  #   enable = true;
+  # };
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
