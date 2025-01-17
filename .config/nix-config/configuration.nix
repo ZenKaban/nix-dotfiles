@@ -69,7 +69,6 @@ in
     packages = with pkgs; [
       kdePackages.kate
       kdePackages.dolphin
-      unstable.yazi
     ];
   };
 
@@ -99,7 +98,7 @@ in
     };
   };
   security.rtkit.enable = true;
-  security.polkit.enable = true;
+  # security.polkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -118,8 +117,6 @@ in
   programs.hyprland.enable = true;
   # programs.hypridle.enable = true;
   programs.zsh.enable = true;  
-  # programs.steam.gamescopeSession.enable = true;
-  # programs.gamescope.enable = true;
   programs.yazi.enable = true;
   programs.steam = {
 	  enable = true;
@@ -127,7 +124,10 @@ in
 	  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
 	  localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 	};
+  # programs.steam.gamescopeSession.enable = true;
+  # programs.gamescope.enable = true;
   programs.neovim = {
+      package = unstable.neovim-unwrapped;
       enable = true;
       defaultEditor = true;
   };
@@ -141,7 +141,6 @@ in
   environment.systemPackages = with pkgs; [
   # editors
     vim 
-    unstable.neovim
     obsidian
   # clipboard
     satty
