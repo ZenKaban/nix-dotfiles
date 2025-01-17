@@ -99,6 +99,7 @@ in
     };
   };
   security.rtkit.enable = true;
+  security.polkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -166,6 +167,11 @@ in
     gamescope
     wine
     unstable.amdgpu_top 
+    unstable.unigine-heaven
+    unstable.lact
+    corectrl
+    vulkan-tools
+    mesa-demos
   # Download/upload
     synology-drive-client
     transmission_4-qt
@@ -195,6 +201,8 @@ in
     fd
     zoxide
     swaynotificationcenter
+    # unstable.hyprpolkitagent
+    polkit-kde-agent
   ];
 
   # Mounts
