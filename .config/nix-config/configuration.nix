@@ -48,17 +48,17 @@ in
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
+  # services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
+  # services.xserver.xkb = {
+  #   layout = "us";
+  #   variant = "";
+  # };
 
   #USER
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -73,8 +73,8 @@ in
   };
 
   # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "alex";
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "alex";
   services.displayManager.defaultSession = "hyprland";
 
   users.defaultUserShell = pkgs.zsh;
@@ -98,7 +98,7 @@ in
     };
   };
   security.rtkit.enable = true;
-  # security.polkit.enable = true;
+  security.polkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -142,6 +142,7 @@ in
   # editors
     vim 
     obsidian
+    vimPlugins.yazi-nvim
   # clipboard
     satty
     grim
@@ -163,7 +164,6 @@ in
   # gaming
     unstable.lutris
     mangohud
-    gamescope
     wine
     unstable.amdgpu_top 
   # Download/upload
@@ -195,8 +195,8 @@ in
     fd
     zoxide
     swaynotificationcenter
-    # unstable.hyprpolkitagent
-    polkit-kde-agent
+    # polkit-kde-agent
+    killall
   ];
 
   # Mounts
