@@ -16,6 +16,8 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.supportedFilesystems = [ "ntfs" ];
+  # boot.kernelParams = [ "amdgpu.ppfeaturemask=0xffffffff" ];
 
   networking.hostName = "nixos"; # Define your hostname.
 
@@ -53,6 +55,7 @@ in
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
+  services.xserver.videoDrivers = [ "amdgpu" ]; 
 
   # Configure keymap in X11
   # services.xserver.xkb = {
@@ -71,6 +74,18 @@ in
       kdePackages.dolphin
     ];
   };
+  security.sudo.extraRules = [
+    { 
+        groups = [ "wheel" ]; 
+        commands = [ 
+            { 
+                command = "/run/current-system/sw/bin/hciconfig"; 
+                options = [ "NOPASSWD" ]; 
+                }
+        ];
+    }
+  ]; 
+
 
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
@@ -91,6 +106,7 @@ in
   # Enable sound with pipewire.
   hardware.pulseaudio.enable = false;
   hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.package = unstable.bluez; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
   hardware.bluetooth.settings = {
     General = {
@@ -138,6 +154,7 @@ in
   # PACKAGES
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  environment.stub-ld.enable = true;
   environment.systemPackages = with pkgs; [
   # editors
     vim 
@@ -195,8 +212,12 @@ in
     fd
     zoxide
     swaynotificationcenter
-    # polkit-kde-agent
+    polkit-kde-agent
     killall
+    bash
+    czkawka
+    cifs-utils
+    vial
   ];
 
   # Mounts
@@ -209,6 +230,45 @@ in
     { device = "/dev/disk/by-path/pci-0000:04:00.0-nvme-1-part1";
       fsType = "f2fs";
     };
+
+  fileSystems."/home/alex/nas" = {
+    device = "//192.168.1.121/photo";
+    fsType = "cifs";
+    options = let
+      # this line prevents hanging on network split
+      automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+
+    in ["${automount_opts},credentials=/etc/nixos/smb-secrets"];
+  };
+
+  services.udev.packages = with pkgs; [
+    vial
+    # bluez
+    # writeShellScriptBin "ss" /run/wrappers/bin/sudo
+    # sudo
+    # (writeTextFile {
+    #   name = "bluetooth-fix";
+    #   text = ''
+    #   '';
+    #
+    #   destination = "/etc/udev/rules.d/100-bluetooth.rules";
+    # })
+  ];
+
+  # services.udev.extraRules = ''
+  #       ACTION=="add", SUBSYSTEM=="bluetooth", KERNELS=="hci0", RUN+="/run/wrappers/bin/sudo ${pkgs.bluez}/bin/hciconfig hci0 lm ACCEPT,MASTER", RUN+="/run/wrappers/bin/sudo ${pkgs.bluez}/bin/hciconfig hci0 lp HOLD,SNIFF,PARK"
+  # ''; 
+   #  hciconfig-bin = pkgs.writeShellApplication {
+   #      name = "hciconfig-bin";
+   #      runtimeInputs = with pkgs; [
+   #          hciconfig
+   #      ];
+   #      text = ''
+   #      '';
+   #  };
+   # in ''  
+   #  ACTION=="add", SUBSYSTEM=="bluetooth", KERNELS=="hci0", RUN+="${hciconfig-bin}/bin/hciconfig hci0 lm ACCEPT,MASTER", RUN+="${hciconfig-bin}/bin/hciconfig hci0 lp HOLD,SNIFF,PARK"
+   # '';
 
   # List services that you want to enable:
   # systemd.services.lact = {
