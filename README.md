@@ -21,6 +21,33 @@ ________________
 https://wiki.archlinux.org/title/Bluetooth#Interference_between_headphones_and_mouse
 ---------------------
 fix capslock/numlock blinks - https://gist.github.com/cathartyc/31c93ccf0f34ded7a924781de2dd29d6
+I have solved this issue time ago, partially following the 2nd workaround presented on this Reddit comment.
+Essentially, we need to create a new XKB option.
+Everything is done inside $HOME/.config/xkb/ . What I did differently from the guide:
+
+    my rules/evdev file contains
+
+// This goes in $HOME/.config/xkb/rules/evdev
+! option = symbols
+  devastator:map_sclk = +scroll(map_to_mod3)
+
+// Include the system 'evdev' file
+! include %S/evdev
+
+where devastator:map_sclk is the name I gave to the option and scroll is the name (made up by me too) of the file described below;
+
+    in symbols I created a file, named scroll (or whatever you called it before), that contains
+
+// This goes in $HOME/.config/xkb/symbols/scroll
+default partial modifier_keys
+xkb_symbols "map_to_mod3" {
+    modifier_map Mod3 { Scroll_Lock };
+};
+
+    you need to tell your compositor that you want to use this option. Sadly, since every Wayland compositor handles the input in its own way, there is no standard method to do that.
+    I use Hyprland, and in my hyprland.conf, inside input, I added devastator:map_sclk in kb_options.
+    For Sway, e.g., the instructions are written on their Github Wiki.
+    For GNOME, the method is explained in the same Reddit comment I linked above.
 ------------------
 
 https://bbs.archlinux.org/viewtopic.php?id=220315
