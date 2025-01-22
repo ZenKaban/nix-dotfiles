@@ -19,6 +19,10 @@ https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-
 **Issues with bluetooth sound**
 ________________
 https://wiki.archlinux.org/title/Bluetooth#Interference_between_headphones_and_mouse
+---------------------
+fix capslock/numlock blinks - https://gist.github.com/cathartyc/31c93ccf0f34ded7a924781de2dd29d6
+------------------
+
 https://bbs.archlinux.org/viewtopic.php?id=220315
 
 Edit systemd `sudo EDITOR=nvim systemctl edit --full systemd-udevd.service`
