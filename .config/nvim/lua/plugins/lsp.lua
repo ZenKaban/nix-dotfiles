@@ -38,7 +38,7 @@ lspconfig.lua_ls.setup {}
 -- lspconfig.clangd.setup {}
 -- lspconfig.cmake.setup {}
 lspconfig.prismals.setup {}
-lspconfig.nixd.setup {}
+-- lspconfig.nixd.setup {}
 lspconfig.cssls.setup {
     capabilities = capabilities
 }
