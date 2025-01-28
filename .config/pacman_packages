@@ -41,6 +41,7 @@ imv
 iwd
 jq
 kitty
+lact
 less
 lib32-gamemode
 lib32-systemd
@@ -49,6 +50,7 @@ libreoffice-fresh
 linux
 linux-firmware
 linux-lts
+linux-zen
 lnav
 lutris
 man-db
