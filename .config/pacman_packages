@@ -28,6 +28,7 @@ ffmpegthumbnailer
 firefox
 fx
 fzf
+gamescope
 git
 go
 grim
@@ -93,6 +94,7 @@ udiskie
 vial-appimage
 vim
 vulkan-radeon
+vulkan-tools
 waybar
 waybar-module-pacman-updates-git
 wget
