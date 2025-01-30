@@ -28,6 +28,7 @@ ffmpegthumbnailer
 firefox
 fx
 fzf
+gamemode
 gamescope
 git
 go
@@ -80,6 +81,7 @@ reflector
 rofi-wayland
 satty
 sddm
+shadps4-bin
 shellcheck
 slurp
 smartmontools
@@ -98,6 +100,7 @@ vulkan-tools
 waybar
 waybar-module-pacman-updates-git
 wget
+wine
 wireless_tools
 wireplumber
 wl-clipboard
