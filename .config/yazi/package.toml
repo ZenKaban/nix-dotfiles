@@ -4,7 +4,7 @@ deps = [
 { use = "yazi-rs/plugins:full-border", rev = "62f0789" }, 
 { use = "AnirudhG07/rich-preview", rev = "8be4d27" }, 
 { use = "yazi-rs/plugins:git", rev = "62f0789" }
-]
+, { use = "boydaihungst/restore", rev = "ffc209e" }]
 
 [flavor]
 deps = []
