@@ -24,21 +24,21 @@ family = "Roboto"
 style = "Bold"
 
 # custom colours for the colour palette
-[color-palette]
-palette = [
-    "#00ffff",
-    "#a52a2a",
-    "#dc143c",
-    "#ff1493",
-    "#ffd700",
-    "#008000",
-]
-
-custom = [
-    "#00ffff",
-    "#a52a2a",
-    "#dc143c",
-    "#ff1493",
-    "#ffd700",
-    "#008000",
-]
+# [color-palette]
+# palette = [
+#     "#00ffff",
+#     "#a52a2a",
+#     "#dc143c",
+#     "#ff1493",
+#     "#ffd700",
+#     "#008000",
+# ]
+#
+# custom = [
+#     "#00ffff",
+#     "#a52a2a",
+#     "#dc143c",
+#     "#ff1493",
+#     "#ffd700",
+#     "#008000",
+# ]
