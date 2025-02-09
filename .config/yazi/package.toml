@@ -1,10 +1,32 @@
-[plugin]
-deps = [
-{ use = "pirafrank/what-size", rev = "f08f7f2" }, 
-{ use = "yazi-rs/plugins:full-border", rev = "62f0789" }, 
-{ use = "AnirudhG07/rich-preview", rev = "8be4d27" }, 
-{ use = "yazi-rs/plugins:git", rev = "62f0789" }
-, { use = "boydaihungst/restore", rev = "ffc209e" }]
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "f08f7f2"
+hash = "6de1e859aa4f9832aa00a1a65e552ea3"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "62f0789"
+hash = "3a73613fc702a5f8369791b3401f52f1"
+
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "8be4d27"
+hash = "c9a3d0731e7d7340e2c6d6126b1f3aa3"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "62f0789"
+hash = "e0764cb89cf5d755041e93d0cac4cea4"
+
+[[plugin.deps]]
+use = "boydaihungst/restore"
+rev = "ffc209e"
+hash = "4b2069c1c73aa22f0d5c1548e32027a8"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "8945e54"
+hash = "f3ade4dba8fb56b85e8363b66f677f9"
 
 [flavor]
 deps = []

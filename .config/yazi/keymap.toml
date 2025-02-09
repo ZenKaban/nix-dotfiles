@@ -156,6 +156,9 @@ keymap = [
     # Trash
     { on = ["u"], run = "plugin restore", desc = "Restore last deleted files/folders" },
 
+    #Mount
+    { on = "M", run = "plugin mount" },
+
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },
     { on = "<F1>", run = "help", desc = "Open help" },
