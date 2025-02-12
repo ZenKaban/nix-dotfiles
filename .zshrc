@@ -13,10 +13,14 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR=nvim
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:~/.fzf/bin
+# export PATH=$PATH:~/.fzf/bin
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export MANPAGER='nvim +Man!'
+export FZF_CTRL_T_OPTS="
+  --walker-skip .git,node_modules,target
+  --preview 'bat -n --color=always {}'
+  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
 # the detailed meaning of the below three variable can be found in `man zshparam`.
 export HISTSIZE=1000000   # the number of items for the internal history list
@@ -31,13 +35,6 @@ setopt EXTENDED_HISTORY  # record command start time
 
 # eval "$(pyenv init --path)"
 # eval "$(pyenv virtualenv-init -)"
-
-if [ "$HOST" != "arch" ] && [ "$HOST" != "nixos" ]; then
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
-
-eval "$(zoxide init zsh)"
-
 
 # Uncomment one of the following lines to change the auto-update behavior
 zstyle ':omz:update' mode auto      # update automatically without asking
@@ -100,6 +97,13 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
+### Evals
+if [ "$HOST" != "arch" ] && [ "$HOST" != "nixos" ]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+eval "$(zoxide init zsh)"
 
 # source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
