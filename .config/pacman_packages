@@ -12,11 +12,11 @@ brightnessctl
 btop
 canon-pixma-mg2500-complete
 chromium
+cifs-utils
 cliphist
 cups
 ddcutil
 discord
-dolphin
 downgrade
 dunst
 efibootmgr
@@ -79,6 +79,7 @@ qmk
 qt5-wayland
 qt6-wayland
 reflector
+ripgrep
 rofi-wayland
 satty
 sddm
