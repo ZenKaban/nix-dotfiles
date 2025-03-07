@@ -18,7 +18,6 @@ cups
 ddcutil
 discord
 downgrade
-dunst
 efibootmgr
 eza
 f2fs-tools
@@ -92,6 +91,7 @@ swaync
 synology-drive
 tealdeer
 telegram-desktop
+ticktick
 transmission-qt
 trash-cli
 ttf-cascadia-code-nerd
