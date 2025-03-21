@@ -1,7 +1,6 @@
 7zip
 amd-ucode
 amdgpu_top-bin
-amdgpu_top-bin-debug
 base
 base-devel
 bat
@@ -49,7 +48,6 @@ less
 lib32-gamemode
 lib32-systemd
 libpulse
-libreoffice-fresh
 linux
 linux-firmware
 linux-lts
@@ -69,6 +67,7 @@ networkmanager
 noisetorch
 numactl
 obsidian
+onlyoffice-bin
 pacman-log-orphans-hook
 pavucontrol
 pipewire
