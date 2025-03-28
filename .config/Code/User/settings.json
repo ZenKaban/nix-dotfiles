@@ -1,0 +1,20 @@
+{
+    "diffEditor.experimental.showMoves": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "workbench.colorTheme": "Solarized Dark",
+    "terminal.explorerKind": "external",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.startupEditor": "none",
+    "chat.commandCenter.enabled": false,
+    "terminal.integrated.allowChords": false,
+    "workbench.settings.openDefaultKeybindings": true,
+    "vscode-neovim.compositeKeys": {
+        
+    }, 
+    "code-runner.executorMapByFileExtension": {
+        ".yql": "yql -i"
+    },
+    "code-runner.runInTerminal": true
+}
