@@ -16,5 +16,11 @@
     "code-runner.executorMapByFileExtension": {
         ".yql": "yql -i"
     },
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "vscode-neovim.neovimExecutablePaths.linux": "/home/linuxbrew/.linuxbrew/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/kabanov-alex/.config/nvim/init.lua",
+    "editor.lineNumbers": "relative",
+    "diffEditor.codeLens": true,
+    "terminal.external.linuxExec": "/usr/bin/kitty zsh -ic",
+    "terminal.integrated.defaultProfile.linux": "zsh"
 }
