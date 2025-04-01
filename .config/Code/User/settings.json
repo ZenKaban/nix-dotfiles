@@ -22,5 +22,16 @@
     "editor.lineNumbers": "relative",
     "diffEditor.codeLens": true,
     "terminal.external.linuxExec": "/usr/bin/kitty zsh -ic",
-    "terminal.integrated.defaultProfile.linux": "zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "[yql]": {
+
+        "comments": {
+        "lineComment": "--",  // this is wrong
+        "blockComment": [
+          "/*",
+          "*/"
+          ]
+        },
+    },
+    "keyboard.dispatch": "keyCode"
 }
