@@ -21,6 +21,7 @@ export FZF_CTRL_T_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+export YT_PROXY=hahn
 
 # the detailed meaning of the below three variable can be found in `man zshparam`.
 export HISTSIZE=1000000   # the number of items for the internal history list

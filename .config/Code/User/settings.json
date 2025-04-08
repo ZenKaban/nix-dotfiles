@@ -33,5 +33,7 @@
           ]
         },
     },
-    "keyboard.dispatch": "keyCode"
+    "keyboard.dispatch": "keyCode",
+    "editor.minimap.autohide": true,
+    "explorer.confirmDelete": false
 }
