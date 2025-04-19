@@ -37,6 +37,7 @@ go
 grim
 grub
 gst-plugin-pipewire
+gstreamer-vaapi
 htop
 hyprland
 hyprpaper
