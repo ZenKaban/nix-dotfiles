@@ -113,3 +113,8 @@ eval "$(zoxide init zsh)"
 # source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/alex/.lmstudio/bin"
+# End of LM Studio CLI section
+

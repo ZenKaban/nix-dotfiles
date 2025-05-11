@@ -1,10 +1,12 @@
 alvr
+amf-amdgpu-pro
 canon-pixma-mg2500-complete
 downgrade
-nekoray-bin
+lmstudio
 noisetorch
 onlyoffice-bin
 pacman-log-orphans-hook
+r2modman-bin
 shadps4-bin
 sidequest-bin
 synology-drive
@@ -14,4 +16,3 @@ waybar-module-pacman-updates-git
 xsane
 xwaylandvideobridge
 yay
-yay-debug
