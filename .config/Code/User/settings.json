@@ -35,5 +35,10 @@
     },
     "keyboard.dispatch": "keyCode",
     "editor.minimap.autohide": true,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "yandex-code-assist.agents.agentsTestPreview": true,
+    "yandex-code-assist.agents.preferredLanguage": "Russian - Русский",
+    "yandex-code-assist.agents.chromeExecutablePath": "/usr/bin/yandex-browser",
+    "yandex-code-assist.agents.modelSettings.o3Mini.reasoningEffort": "high",
+    "window.menuBarVisibility": "compact"
 }
