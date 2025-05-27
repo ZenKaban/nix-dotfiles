@@ -101,6 +101,7 @@
             "libreoffice": "󰏆",
             "telegram" : "",
             "org.telegram.desktop" : "",
+            "code" : ""
 	    },
         "disable-scroll": true,
         "all-outputs": false,
