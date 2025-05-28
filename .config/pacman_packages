@@ -88,7 +88,6 @@ polkit-kde-agent
 qmk
 qt5-wayland
 qt6-wayland
-r2modman-bin
 reflector
 ripgrep
 rofi-wayland
