@@ -61,5 +61,13 @@
     {
         "key": "ctrl+shift+alt+meta+n",
         "command": "workbench.action.moveEditorToNewWindow"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+p",
+        "command": "arcanum.openPullRequestInBrowser"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+q",
+        "command": "workbench.view.extension.arcanumPullRequests"
     }
 ]
