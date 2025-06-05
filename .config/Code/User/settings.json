@@ -14,7 +14,8 @@
         
     }, 
     "code-runner.executorMapByFileExtension": {
-        ".yql": "yql -i"
+
+        ".yql": "yql --langver 2025.01 -i"
     },
     "code-runner.runInTerminal": true,
     "vscode-neovim.neovimExecutablePaths.linux": "/home/linuxbrew/.linuxbrew/bin/nvim",
@@ -40,5 +41,6 @@
     "yandex-code-assist.agents.preferredLanguage": "Russian - Русский",
     "yandex-code-assist.agents.chromeExecutablePath": "/usr/bin/yandex-browser",
     "yandex-code-assist.agents.modelSettings.o3Mini.reasoningEffort": "high",
-    "window.menuBarVisibility": "compact"
+    "window.menuBarVisibility": "compact",
+    "code-runner.clearPreviousOutput": true
 }

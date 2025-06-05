@@ -57,5 +57,9 @@
     {
         "key": "ctrl+alt+b",
         "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+n",
+        "command": "workbench.action.moveEditorToNewWindow"
     }
 ]
