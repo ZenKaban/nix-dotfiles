@@ -64,7 +64,7 @@ alias ls='eza -l'
 alias lss='eza -l --sort=modified'
 alias v='nvim'
 alias ssh='env TERM=xterm-256color ssh' # allows kitty to work with ssh
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
     if [ "$HOST" = "nixos" ]; then
         alias config='/run/current-system/sw/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
     else
