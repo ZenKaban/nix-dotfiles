@@ -3,7 +3,6 @@ amf-amdgpu-pro
 canon-pixma-mg2500-complete
 downgrade
 geekbench
-lmstudio
 noisetorch
 onlyoffice-bin
 pacman-log-orphans-hook
@@ -11,7 +10,9 @@ shadps4-bin
 sidequest-bin
 synology-drive
 ticktick
+tytools
 vial-appimage
+waterfox-bin
 waybar-module-pacman-updates-git
 xsane
 xwaylandvideobridge

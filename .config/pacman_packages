@@ -29,7 +29,6 @@ f2fs-tools
 fastfetch
 fd
 ffmpegthumbnailer
-firefox
 fx
 fzf
 gamemode
@@ -56,12 +55,12 @@ less
 lib32-gamemode
 lib32-systemd
 libpulse
+libreoffice-fresh
 libva-utils
 linux
 linux-firmware
 linux-lts
 linux-zen
-lmstudio
 lnav
 lutris
 man-db
@@ -107,11 +106,13 @@ ticktick
 transmission-qt
 trash-cli
 ttf-cascadia-code-nerd
+tytools
 udiskie
 vial-appimage
 vim
 vulkan-radeon
 vulkan-tools
+waterfox-bin
 waybar
 waybar-module-pacman-updates-git
 wget
