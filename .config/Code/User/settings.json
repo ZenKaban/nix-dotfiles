@@ -42,5 +42,13 @@
     "yandex-code-assist.agents.chromeExecutablePath": "/usr/bin/yandex-browser",
     "yandex-code-assist.agents.modelSettings.o3Mini.reasoningEffort": "high",
     "window.menuBarVisibility": "compact",
-    "code-runner.clearPreviousOutput": true
+    "code-runner.clearPreviousOutput": true,
+    "yandex-code-assist.agent.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show"
+    ]
 }
