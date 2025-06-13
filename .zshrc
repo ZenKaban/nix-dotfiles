@@ -84,7 +84,7 @@ function config-upd() {
 
 function sysupd() {
     if [ "$HOST" != "arch" ]; then
-        sudo apt update && sudo apt upgrade && brew update && brew upgrade && flatpak update
+        sudo apt update --allow-insecure-repositories && sudo apt upgrade && brew update && brew upgrade && flatpak update
     else
         yay
     fi

@@ -50,5 +50,6 @@
         "git log",
         "git diff",
         "git show"
-    ]
+    ],
+    "vscode-yandex-arc.arcPath": ""
 }
