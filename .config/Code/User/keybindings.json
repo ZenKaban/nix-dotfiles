@@ -69,5 +69,9 @@
     {
         "key": "ctrl+shift+alt+meta+q",
         "command": "workbench.view.extension.arcanumPullRequests"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+z",
+        "command": "yql.executeYQL"
     }
 ]
