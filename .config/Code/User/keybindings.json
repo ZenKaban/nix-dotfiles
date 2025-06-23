@@ -16,12 +16,8 @@
         "when": "editorTextFocus && neovim.ctrlKeysInsert./ && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
     },
     {
-        "key": "ctrl+shift+alt+meta+r",
+        "key": "ctrl+shift+alt+meta+s ctrl+shift+alt+meta+r",
         "command": "yandex-code-assist.reviewChanges.stagedDiff"
-    },
-    {
-        "key": "ctrl+shift+alt+meta+a",
-        "command": "workbench.view.extension.chatWebviewContainer"
     },
     {
         "key": "ctrl+shift+alt+meta+e",
@@ -34,15 +30,15 @@
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
     {
-        "key": "ctrl+shift+alt+meta+s",
+        "key": "ctrl+shift+alt+meta+a ctrl+shift+alt+meta+s",
         "command": "arc.stageAll"
     },
     {
-        "key": "ctrl+shift+alt+meta+c",
+        "key": "ctrl+shift+alt+meta+a ctrl+shift+alt+meta+c",
         "command": "arc.commitWithInput"
     },
     {
-        "key": "ctrl+shift+alt+meta+b",
+        "key": "ctrl+shift+alt+meta+a ctrl+shift+alt+meta+b",
         "command": "arc.checkout"
     },
     {
@@ -51,7 +47,7 @@
         "when": "taskCommandsRegistered"
     },
     {
-        "key": "ctrl+shift+b",
+        "key": "ctrl+shift+alt+meta+b",
         "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
@@ -63,7 +59,7 @@
         "command": "workbench.action.moveEditorToNewWindow"
     },
     {
-        "key": "ctrl+shift+alt+meta+p",
+        "key": "ctrl+shift+alt+meta+a ctrl+shift+alt+meta+p",
         "command": "arcanum.openPullRequestInBrowser"
     },
     {
@@ -71,7 +67,43 @@
         "command": "workbench.view.extension.arcanumPullRequests"
     },
     {
-        "key": "ctrl+shift+alt+meta+z",
+        "key": "ctrl+shift+alt+meta+r",
         "command": "yql.executeYQL"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+s ctrl+shift+alt+meta+e",
+        "command": "yandex-code-assist.agent.explainCode"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+s ctrl+shift+alt+meta+f",
+        "command": "yandex-code-assist.agent.fixCode"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+s ctrl+shift+alt+meta+t",
+        "command": "yandex-code-assist.agent.focusInput"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+s ctrl+shift+alt+meta+i",
+        "command": "yandex-code-assist.agent.improveCode"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+f f",
+        "command": "television.ToggleFileFinder"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-television.ToggleFileFinder"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+f g",
+        "command": "television.ToggleTextFinder"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-television.ToggleTextFinder"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+f s",
+        "command": "television.ToggleTextFinderWithSelection"
     }
 ]
