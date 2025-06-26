@@ -104,6 +104,7 @@
             "code" : ""
 	    },
         "disable-scroll": true,
+        "sort-by": "id",
         "all-outputs": false,
         "on-click": "activate",
     },
