@@ -10,7 +10,7 @@
     ],
 
     "modules-center": [
-        "hyprland/language", 
+        // "hyprland/language", 
         "hyprland/workspaces",
     ],
 
