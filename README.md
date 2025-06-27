@@ -15,6 +15,14 @@
 - https://lnav.org/
 - https://github.com/bol-van/zapret
 https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/
+________________
+M8 UDEV rules
+
+/etc/udev/rules.d/50-myusb.rules
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="048a", GROUP="users", MODE="0666"
+KERNEL=="hidraw*", ATTRS{idVendor}=="16c0", GROUP="users", MODE="0666"
+
+________________
 
 **Issues with bluetooth sound**
 ________________
