@@ -50,13 +50,13 @@ iperf
 iperf3
 iwd
 jq
+jre8-openjdk
 kitty
 lact
 less
 lib32-gamemode
 lib32-systemd
 libpulse
-libreoffice-fresh
 libva-utils
 linux
 linux-firmware
@@ -85,12 +85,14 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 polkit-kde-agent
+protonup-qt-bin
 qmk
 qt5-wayland
 qt6-wayland
 reflector
 ripgrep
 rofi-wayland
+rust
 satty
 sddm
 shadps4-bin
@@ -103,6 +105,7 @@ synology-drive
 systemctl-tui
 tealdeer
 telegram-desktop
+television
 ticktick
 transmission-qt
 trash-cli
