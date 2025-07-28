@@ -87,7 +87,7 @@
         "command": "yandex-code-assist.agent.improveCode"
     },
     {
-        "key": "ctrl+shift+alt+meta+f f",
+        "key": "ctrl+shift+alt+meta+f ctrl+shift+alt+meta+f",
         "command": "television.ToggleFileFinder"
     },
     {
@@ -95,7 +95,7 @@
         "command": "-television.ToggleFileFinder"
     },
     {
-        "key": "ctrl+shift+alt+meta+f g",
+        "key": "ctrl+shift+alt+meta+f ctrl+shift+alt+meta+g",
         "command": "television.ToggleTextFinder"
     },
     {
@@ -103,7 +103,33 @@
         "command": "-television.ToggleTextFinder"
     },
     {
-        "key": "ctrl+shift+alt+meta+f s",
+        "key": "ctrl+shift+alt+meta+f ctrl+shift+alt+meta+s",
         "command": "television.ToggleTextFinderWithSelection"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "!editorTextFocus && !filesExplorerFocus && !searchViewletFocus && !terminalFocus && neovim.mode != 'cmdline'"
+    },
+    {
+        "key": "ctrl+w q",
+        "command": "-workbench.action.closeActiveEditor",
+        "when": "!editorTextFocus && !filesExplorerFocus && !searchViewletFocus && !terminalFocus && neovim.mode != 'cmdline'"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+c",
+        "command": "workbench.action.closeUnmodifiedEditors"
+    },
+    {
+        "key": "ctrl+k u",
+        "command": "-workbench.action.closeUnmodifiedEditors"
     }
 ]

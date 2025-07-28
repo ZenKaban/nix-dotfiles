@@ -74,6 +74,9 @@ alias lazygitconfig='lazygit --git-dir=$HOME/.cfg --work-tree=$HOME'
 alias fgrep='~/.config/scripts/fzrg'
 alias kcp='kitten clipboard'
 alias cl='clear;fastfetch'
+if [ "$HOST" != "arch" ] && [ "$HOST" != "nixos" ]; then
+    alias ya='/home/kabanov-alex/.local/bin/ya'
+fi
 
 ### Functions 
 # Update dotfiles

@@ -51,5 +51,6 @@
         "git diff",
         "git show"
     ],
-    "vscode-yandex-arc.arcPath": ""
+    "vscode-yandex-arc.arcPath": "",
+    "yandex-code-assist.agent.vsCodeLmModelSelector": {}
 }
