@@ -52,5 +52,8 @@
         "git show"
     ],
     "vscode-yandex-arc.arcPath": "",
-    "yandex-code-assist.agent.vsCodeLmModelSelector": {}
+    "yandex-code-assist.agent.vsCodeLmModelSelector": {},
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
+    }
 }
