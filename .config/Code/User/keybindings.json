@@ -20,7 +20,7 @@
         "command": "yandex-code-assist.reviewChanges.stagedDiff"
     },
     {
-        "key": "ctrl+shift+alt+meta+e",
+        "key": "ctrl+shift+alt+meta+e ctrl+shift+alt+meta+e",
         "command": "workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
@@ -107,7 +107,7 @@
         "command": "television.ToggleTextFinderWithSelection"
     },
     {
-        "key": "ctrl+shift+alt+meta+w",
+        "key": "ctrl+shift+alt+meta+w ctrl+shift+alt+meta+w",
         "command": "workbench.action.closeActiveEditor",
         "when": "!editorTextFocus && !filesExplorerFocus && !searchViewletFocus && !terminalFocus && neovim.mode != 'cmdline'"
     },
@@ -117,7 +117,7 @@
         "when": "!editorTextFocus && !filesExplorerFocus && !searchViewletFocus && !terminalFocus && neovim.mode != 'cmdline'"
     },
     {
-        "key": "ctrl+shift+alt+meta+w",
+        "key": "ctrl+shift+alt+meta+w ctrl+shift+alt+meta+w",
         "command": "workbench.action.closeActiveEditor"
     },
     {
@@ -125,11 +125,43 @@
         "command": "-workbench.action.closeActiveEditor"
     },
     {
-        "key": "ctrl+shift+alt+meta+c",
+        "key": "ctrl+shift+alt+meta+w ctrl+shift+alt+meta+c",
         "command": "workbench.action.closeUnmodifiedEditors"
     },
     {
         "key": "ctrl+k u",
         "command": "-workbench.action.closeUnmodifiedEditors"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+e ctrl+shift+alt+meta+r",
+        "command": "workbench.files.action.refreshFilesExplorer",
+        "when": "filesExplorerFocus && !explorerFindProviderActive && !inputFocus"
+    },
+    {
+        "key": "shift+r",
+        "command": "-workbench.files.action.refreshFilesExplorer",
+        "when": "filesExplorerFocus && !explorerFindProviderActive && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+c ctrl+shift+alt+meta+c",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+c ctrl+shift+alt+meta+b",
+        "command": "arcBranchView.focus"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+c ctrl+shift+alt+meta+a",
+        "command": "workbench.scm.focus"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+c ctrl+shift+alt+meta+s",
+        "command": "arcCommitView.focus"
     }
 ]

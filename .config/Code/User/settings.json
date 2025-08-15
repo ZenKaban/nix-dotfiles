@@ -35,7 +35,7 @@
         },
     },
     "keyboard.dispatch": "keyCode",
-    "editor.minimap.autohide": true,
+    "editor.minimap.autohide": "mouseover",
     "explorer.confirmDelete": false,
     "yandex-code-assist.agents.agentsTestPreview": true,
     "yandex-code-assist.agents.preferredLanguage": "Russian - Русский",
@@ -55,5 +55,7 @@
     "yandex-code-assist.agent.vsCodeLmModelSelector": {},
     "editor.unicodeHighlight.allowedLocales": {
         "ru": true
-    }
+    },
+    "yandex-code-assist.enableAiCodeCompletion": true,
+    "yandex-code-assist.chat.enableDiffAutoApply": false
 }
