@@ -57,5 +57,7 @@
         "ru": true
     },
     "yandex-code-assist.enableAiCodeCompletion": true,
-    "yandex-code-assist.chat.enableDiffAutoApply": false
+    "yandex-code-assist.chat.enableDiffAutoApply": false,
+    "yandex-code-assist.chat.preferredLanguage": "Russian - Русский",
+    "yql.enableAutocomplete2": true
 }
