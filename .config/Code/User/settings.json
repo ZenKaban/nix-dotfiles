@@ -56,8 +56,8 @@
     "editor.unicodeHighlight.allowedLocales": {
         "ru": true
     },
-    "yandex-code-assist.enableAiCodeCompletion": true,
     "yandex-code-assist.chat.enableDiffAutoApply": false,
     "yandex-code-assist.chat.preferredLanguage": "Russian - Русский",
+    "yandex-code-assist.accumulateContextEnabled": true,
     "yql.enableAutocomplete2": true
 }
