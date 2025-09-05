@@ -114,8 +114,11 @@ tytools
 udiskie
 vial-appimage
 vim
+vlc
+vlc-plugins-all
 vulkan-radeon
 vulkan-tools
+waterfox-bin
 waybar
 waybar-module-pacman-updates-git
 wget
