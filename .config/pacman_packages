@@ -91,7 +91,7 @@ qt5-wayland
 qt6-wayland
 reflector
 ripgrep
-rofi-wayland
+rofi
 rust
 satty
 sddm
