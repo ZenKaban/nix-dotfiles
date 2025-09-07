@@ -2,11 +2,11 @@
 alvr
 amd-ucode
 amdgpu_top
-amf-amdgpu-pro
 android-tools
 base
 base-devel
 bat
+bluetui
 bluez
 bluez-deprecated-tools
 bluez-hid2hci
@@ -20,7 +20,6 @@ cliphist
 cups
 ddcutil
 discord
-dnsmasq
 dolphin
 downgrade
 efibootmgr
@@ -33,8 +32,6 @@ firefox
 fx
 fzf
 gamemode
-gamescope
-geekbench
 git
 go
 grim
@@ -46,9 +43,7 @@ hyprland
 hyprpaper
 imagemagick
 imv
-iperf
 iperf3
-iwd
 jq
 jre8-openjdk
 kitty
@@ -73,7 +68,6 @@ ncdu
 neovim
 network-manager-applet
 networkmanager
-noisetorch
 numactl
 obsidian
 onlyoffice-bin
@@ -86,7 +80,6 @@ pipewire-jack
 pipewire-pulse
 polkit-kde-agent
 protonup-qt-bin
-qmk
 qt5-wayland
 qt6-wayland
 reflector
@@ -95,14 +88,12 @@ rofi
 rust
 satty
 sddm
-shadps4-bin
 sidequest-bin
 slurp
-smartmontools
 steam
+sunshine-bin
 swaync
 synology-drive
-systemctl-tui
 tealdeer
 telegram-desktop
 television
@@ -114,8 +105,6 @@ tytools
 udiskie
 vial-appimage
 vim
-vlc
-vlc-plugins-all
 vulkan-radeon
 vulkan-tools
 waterfox-bin
