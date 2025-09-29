@@ -59,5 +59,6 @@
     "yandex-code-assist.chat.enableDiffAutoApply": false,
     "yandex-code-assist.chat.preferredLanguage": "Russian - Русский",
     "yandex-code-assist.accumulateContextEnabled": true,
-    "yql.enableAutocomplete2": true
+    "yql.enableAutocomplete2": true,
+    "yql.disableLinterChecks": []
 }
