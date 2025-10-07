@@ -43,16 +43,7 @@
     "yandex-code-assist.agents.modelSettings.o3Mini.reasoningEffort": "high",
     "window.menuBarVisibility": "compact",
     "code-runner.clearPreviousOutput": true,
-    "yandex-code-assist.agent.allowedCommands": [
-        "npm test",
-        "npm install",
-        "tsc",
-        "git log",
-        "git diff",
-        "git show"
-    ],
     "vscode-yandex-arc.arcPath": "",
-    "yandex-code-assist.agent.vsCodeLmModelSelector": {},
     "editor.unicodeHighlight.allowedLocales": {
         "ru": true
     },
@@ -60,5 +51,25 @@
     "yandex-code-assist.chat.preferredLanguage": "Russian - Русский",
     "yandex-code-assist.accumulateContextEnabled": true,
     "yql.enableAutocomplete2": true,
-    "yql.disableLinterChecks": []
+    "yql.disableLinterChecks": [
+        "format"
+    ],
+    "yandex-code-assist.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "yandex-code-assist.vsCodeLmModelSelector": {},
+    "yandex-code-assist.deniedCommands": [],
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "find-it-faster.findWithinFiles.fuzzRipgrepQuery": true,
+    "find-it-faster.findFiles.previewCommand": "bat --color=always {}",
+    "find-it-faster.findFiles.previewWindowConfig": "top,50%",
+    "find-it-faster.findWithinFiles.previewWindowConfig": "bottom,50%,border-bottom,+{2}+3/3,~3",
+    "find-it-faster.general.batTheme": "Solarized (dark)",
+    "find-it-faster.general.showMaximizedTerminal": true
 }

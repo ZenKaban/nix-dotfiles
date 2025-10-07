@@ -163,5 +163,21 @@
     {
         "key": "ctrl+shift+alt+meta+c ctrl+shift+alt+meta+s",
         "command": "arcCommitView.focus"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+f ctrl+shift+alt+meta+f",
+        "command": "find-it-faster.findFiles"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "-find-it-faster.findFiles"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+f ctrl+shift+alt+meta+g",
+        "command": "find-it-faster.findWithinFiles"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "-find-it-faster.findWithinFiles"
     }
 ]
