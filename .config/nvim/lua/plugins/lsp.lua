@@ -1,61 +1,63 @@
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+-- local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 -- Sntup language servers.
-local lspconfig = require('lspconfig')
-lspconfig.pylsp.setup {
-on_attach = custom_attach,
-settings = {
-    pylsp = {
-    plugins = {
-        -- formatter options
-        black = { enabled = true },
-        autopep8 = { enabled = false },
-        yapf = { enabled = false },
-        -- linter options
-        pylint = { enabled = true,
-                    executable = "pylint",
-                    args={'--rcfile', '~/.pylintrc'}
-                },
-        pyflakes = { enabled = false },
-        pycodestyle = { enabled = false },
-        -- type checker
-        pylsp_mypy = { enabled = true },
-        -- auto-completion options
-        jedi_completion = { fuzzy = true },
-        -- import sorting
-        pyls_isort = { enabled = true },
-        },
-    },
-},
-
-flags = {
-    debounce_text_changes = 200,
-},
-capabilities = capabilities,
-}
-lspconfig.ts_ls.setup {}
-lspconfig.lua_ls.setup {}
--- lspconfig.clangd.setup {}
--- lspconfig.cmake.setup {}
-lspconfig.prismals.setup {}
--- lspconfig.nixd.setup {}
-lspconfig.cssls.setup {
-    capabilities = capabilities
-}
-lspconfig.golangci_lint_ls.setup {}
-lspconfig.gopls.setup {}
-lspconfig.rust_analyzer.setup {
-  settings = {
-    ['rust-analyzer'] = {
-            diagnostics = {
-                enable = true,
-                experimental = {
-                    enable = true,
-                },
-            },
-    },
-  },
-}
+vim.lsp.enable('pylsp')
+vim.lsp.enable('lua_ls')
+-- local lspconfig = require('lspconfig')
+-- lspconfig.pylsp.setup {
+-- on_attach = custom_attach,
+-- settings = {
+--     pylsp = {
+--     plugins = {
+--         -- formatter options
+--         black = { enabled = true },
+--         autopep8 = { enabled = false },
+--         yapf = { enabled = false },
+--         -- linter options
+--         pylint = { enabled = true,
+--                     executable = "pylint",
+--                     args={'--rcfile', '~/.pylintrc'}
+--                 },
+--         pyflakes = { enabled = false },
+--         pycodestyle = { enabled = false },
+--         -- type checker
+--         pylsp_mypy = { enabled = true },
+--         -- auto-completion options
+--         jedi_completion = { fuzzy = true },
+--         -- import sorting
+--         pyls_isort = { enabled = true },
+--         },
+--     },
+-- },
+--
+-- flags = {
+--     debounce_text_changes = 200,
+-- },
+-- capabilities = capabilities,
+-- }
+-- lspconfig.ts_ls.setup {}
+-- lspconfig.lua_ls.setup {}
+-- -- lspconfig.clangd.setup {}
+-- -- lspconfig.cmake.setup {}
+-- lspconfig.prismals.setup {}
+-- -- lspconfig.nixd.setup {}
+-- lspconfig.cssls.setup {
+--     capabilities = capabilities
+-- }
+-- lspconfig.golangci_lint_ls.setup {}
+-- lspconfig.gopls.setup {}
+-- lspconfig.rust_analyzer.setup {
+--   settings = {
+--     ['rust-analyzer'] = {
+--             diagnostics = {
+--                 enable = true,
+--                 experimental = {
+--                     enable = true,
+--                 },
+--             },
+--     },
+--   },
+-- }
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

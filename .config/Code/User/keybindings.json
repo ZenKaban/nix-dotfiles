@@ -55,10 +55,6 @@
         "command": "-workbench.action.toggleAuxiliaryBar"
     },
     {
-        "key": "ctrl+shift+alt+meta+n",
-        "command": "workbench.action.moveEditorToNewWindow"
-    },
-    {
         "key": "ctrl+shift+alt+meta+a ctrl+shift+alt+meta+p",
         "command": "arcanum.openPullRequestInBrowser"
     },
@@ -179,5 +175,25 @@
     {
         "key": "ctrl+shift+u",
         "command": "-find-it-faster.findWithinFiles"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+n",
+        "command": "yandex-code-assist.rejectDiffBlock",
+        "when": "hasDiffBlock"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-yandex-code-assist.rejectDiffBlock",
+        "when": "hasDiffBlock"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+y",
+        "command": "yandex-code-assist.acceptDiffBlock",
+        "when": "hasDiffBlock"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-yandex-code-assist.acceptDiffBlock",
+        "when": "hasDiffBlock"
     }
 ]
