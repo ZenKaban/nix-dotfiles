@@ -51,9 +51,7 @@
     "yandex-code-assist.chat.preferredLanguage": "Russian - Русский",
     "yandex-code-assist.accumulateContextEnabled": true,
     "yql.enableAutocomplete2": true,
-    "yql.disableLinterChecks": [
-        "format"
-    ],
+    "yql.disableLinterChecks": [],
     "yandex-code-assist.allowedCommands": [
         "npm test",
         "npm install",
