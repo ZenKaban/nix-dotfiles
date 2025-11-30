@@ -116,9 +116,3 @@ eval "$(zoxide init zsh)"
 # source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 # zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 zvm_after_init_commands+=('source <(fzf --zsh)')
-
-## [Completion]
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /home/alex/.dart-cli-completion/zsh-config.zsh ]] && . /home/alex/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
-
