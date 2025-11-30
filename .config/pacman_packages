@@ -23,6 +23,7 @@ discord
 dolphin
 downgrade
 efibootmgr
+envision-xr-git
 eza
 f2fs-tools
 fastfetch
@@ -36,13 +37,16 @@ git
 go
 grim
 grub
+gsmartcontrol
 gst-plugin-pipewire
 gstreamer-vaapi
+hiddify
 htop
 hyprland
 hyprpaper
 imagemagick
 imv
+iperf
 iperf3
 jq
 jre8-openjdk
@@ -52,6 +56,7 @@ less
 lib32-gamemode
 lib32-systemd
 libpulse
+libudev0-shim
 libva-utils
 linux
 linux-firmware
