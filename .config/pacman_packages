@@ -110,11 +110,14 @@ tytools
 udiskie
 vial-appimage
 vim
+vlc
+vlc-plugin-ffmpeg
+vlc-plugin-x264
+vlc-plugin-x265
 vulkan-radeon
 vulkan-tools
 waterfox-bin
 waybar
-waybar-module-pacman-updates-git
 wget
 wine
 wireless_tools
