@@ -1,32 +1,32 @@
 [[plugin.deps]]
 use = "pirafrank/what-size"
-rev = "0a4904c"
-hash = "fca231a128488a554823374f8f6d5241"
+rev = "a36fdaf"
+hash = "c5c38bb8cd68d4426471efe0013ca0ac"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "aeca767"
+rev = "398796d"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "AnirudhG07/rich-preview"
-rev = "843c3fa"
-hash = "b4040931f0d2f9670ddb4923e55cd881"
+rev = "831234e"
+hash = "ed3363e256e210593f0f8e4cec3e36a9"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "aeca767"
-hash = "bf6f074cd41ee33c3360341d168f9733"
+rev = "398796d"
+hash = "73788c7dc5827ef4677c502c3ea8fa19"
 
 [[plugin.deps]]
 use = "boydaihungst/restore"
-rev = "b7c3376"
-hash = "d9dbd61d8b814e74a5420dba1e4788c4"
+rev = "6395e52"
+hash = "f107436db5d2cccccc11ab54bc97b761"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "aeca767"
-hash = "277ba273e5d3d647feb5808d0fe4e4e0"
+rev = "398796d"
+hash = "e2d4bfccf31e5ab05f46fee4797c5215"
 
 [flavor]
 deps = []
