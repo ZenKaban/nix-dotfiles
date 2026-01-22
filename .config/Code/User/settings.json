@@ -53,12 +53,12 @@
     "yql.enableAutocomplete2": true,
     "yql.disableLinterChecks": [],
     "yandex-code-assist.allowedCommands": [
-        "npm test",
-        "npm install",
-        "tsc",
         "git log",
         "git diff",
-        "git show"
+        "git show",
+        "npm test",
+        "npm install",
+        "tsc"
     ],
     "yandex-code-assist.vsCodeLmModelSelector": {},
     "yandex-code-assist.deniedCommands": [],
@@ -69,5 +69,6 @@
     "find-it-faster.findFiles.previewWindowConfig": "top,50%",
     "find-it-faster.findWithinFiles.previewWindowConfig": "bottom,50%,border-bottom,+{2}+3/3,~3",
     "find-it-faster.general.batTheme": "Solarized (dark)",
-    "find-it-faster.general.showMaximizedTerminal": true
+    "find-it-faster.general.showMaximizedTerminal": true,
+    "window.dialogStyle": "native"
 }
