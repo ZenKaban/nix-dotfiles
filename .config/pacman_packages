@@ -1,4 +1,5 @@
 7zip
+alacritty
 alvr
 amd-disable-c6-git
 amd-ucode
@@ -12,11 +13,13 @@ bluez-hid2hci
 bluez-utils
 btop
 canon-pixma-mg2500-complete
+cava
 chromium
 cliphist
 cups
 cups-pk-helper
 discord
+dms-shell-bin
 dolphin
 downgrade
 dunst
@@ -28,6 +31,7 @@ fd
 ffmpegthumbnailer
 firefox
 flatpak
+fuzzel
 fx
 fzf
 gamemode
@@ -40,6 +44,7 @@ hyprland
 hyprpaper
 imagemagick
 imv
+irssi
 iwd
 joyutils
 jq
@@ -56,11 +61,13 @@ linux-zen
 lnav
 lutris
 mangohud
+matugen
 nano
 ncdu
 neovim
 network-manager-applet
 networkmanager
+niri
 obsidian
 openxr
 os-prober
@@ -80,6 +87,7 @@ reflector
 rofi
 satty
 sddm
+senpai
 slurp
 smartmontools
 steam
@@ -111,6 +119,8 @@ wireplumber
 wl-clipboard
 wofi
 wpa_supplicant
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils
 xf86-video-amdgpu
@@ -118,6 +128,7 @@ xf86-video-ati
 xorg-server
 xorg-xinit
 xsane
+xwayland-satellite
 yay
 yazi
 zathura
