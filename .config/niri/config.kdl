@@ -325,6 +325,9 @@ animations {
 workspace "chat" {
 }
 
+// workspace "z" {
+// }
+
 
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
@@ -557,6 +560,7 @@ binds {
     Mod+8 { focus-workspace 8; }
     Mod+9 { focus-workspace 9; }
     Mod+O { focus-workspace "chat"; }
+    Mod+Z { focus-workspace 10; }
     Mod+Shift+1 { move-column-to-workspace 1; }
     Mod+Shift+2 { move-column-to-workspace 2; }
     Mod+Shift+3 { move-column-to-workspace 3; }
@@ -567,6 +571,7 @@ binds {
     Mod+Shift+8 { move-column-to-workspace 8; }
     Mod+Shift+9 { move-column-to-workspace 9; }
     Mod+Shift+O { move-column-to-workspace "chat"; }
+    Mod+Shift+Z { move-column-to-workspace focus=false 10; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
