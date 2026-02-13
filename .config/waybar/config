@@ -6,13 +6,13 @@
     "modules-left": [
         "tray",
         // "wlr/taskbar"
-        // "hyprland/window"
+        "hyprland/window",
         "niri/window"
     ],
 
     "modules-center": [
-        // "hyprland/language", 
-        // "hyprland/workspaces",
+        "hyprland/language", 
+        "hyprland/workspaces",
         "niri/language",
         "niri/workspaces"
     ],
