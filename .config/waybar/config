@@ -6,12 +6,15 @@
     "modules-left": [
         "tray",
         // "wlr/taskbar"
-        "hyprland/window"
+        // "hyprland/window"
+        "niri/window"
     ],
 
     "modules-center": [
-        "hyprland/language", 
-        "hyprland/workspaces",
+        // "hyprland/language", 
+        // "hyprland/workspaces",
+        "niri/language",
+        "niri/workspaces"
     ],
 
     "modules-right": [
@@ -109,8 +112,26 @@
         "all-outputs": false,
         "on-click": "activate",
     },
+    "niri/workspaces": {
+        // "format": "{name}",
+        // "format-icons": {
+        //     // "active": " ",
+        //     // "urgent": " ",
+        // },
+        "format": "{icon}",
+        // "disable-scroll": true,
+        // "sort-by": "id",
+        // "separate-outputs": true,
+        // "on-click": "activate",
+    },
     
     "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-ru": "RU"
+    },
+
+    "niri/language": {
     "format": "{}",
     "format-en": "EN",
     "format-ru": "RU"
@@ -141,6 +162,15 @@
     "hyprland/window": {
         "rewrite": {
             "(.*) — Mozilla Firefox": ": $1",
+            "(.*) - kitty": "> [$1]"
+        },
+        "separate-outputs": true,
+        "max-length": 200
+    },
+    "niri/window": {
+        "rewrite": {
+            "(.*) — Mozilla Firefox": ": $1",
+            "(.*) — Waterfox": ": $1",
             "(.*) - kitty": "> [$1]"
         },
         "separate-outputs": true,
