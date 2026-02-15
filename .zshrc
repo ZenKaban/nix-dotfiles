@@ -116,3 +116,5 @@ eval "$(zoxide init zsh)"
 # source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 # zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 zvm_after_init_commands+=('source <(fzf --zsh)')
+source /home/linuxbrew/.linuxbrew/share/powerlevel10k/powerlevel10k.zsh-theme
+eval $(skotty ssh env)
