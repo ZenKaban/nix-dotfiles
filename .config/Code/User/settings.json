@@ -70,5 +70,7 @@
     "find-it-faster.findWithinFiles.previewWindowConfig": "bottom,50%,border-bottom,+{2}+3/3,~3",
     "find-it-faster.general.batTheme": "Solarized (dark)",
     "find-it-faster.general.showMaximizedTerminal": true,
-    "window.dialogStyle": "native"
+    "window.dialogStyle": "native",
+    "git.openRepositoryInParentFolders": "never",
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', monospace"
 }

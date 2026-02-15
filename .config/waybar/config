@@ -6,15 +6,15 @@
     "modules-left": [
         "tray",
         // "wlr/taskbar"
-        "hyprland/window",
-        "niri/window"
+        "hyprland/window"
+        // "niri/window"
     ],
 
     "modules-center": [
         "hyprland/language", 
-        "hyprland/workspaces",
-        "niri/language",
-        "niri/workspaces"
+        "hyprland/workspaces"
+        // "niri/language",
+        // "niri/workspaces"
     ],
 
     "modules-right": [
