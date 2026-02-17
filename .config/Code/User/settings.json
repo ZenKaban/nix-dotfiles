@@ -72,5 +72,6 @@
     "find-it-faster.general.showMaximizedTerminal": true,
     "window.dialogStyle": "native",
     "git.openRepositoryInParentFolders": "never",
-    "editor.fontFamily": "'CaskaydiaCove Nerd Font', monospace"
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', monospace",
+    "chat.disableAIFeatures": true
 }
