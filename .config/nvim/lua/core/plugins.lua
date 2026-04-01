@@ -46,7 +46,7 @@ require("lazy").setup({
             -- Your setup opts here
         },
     },
-    { 'windwp/nvim-ts-autotag' },
+    -- { 'windwp/nvim-ts-autotag' },
     -- {
     --     "nvim-neo-tree/neo-tree.nvim",
     --     branch = "v3.x",

@@ -73,5 +73,8 @@
     "window.dialogStyle": "native",
     "git.openRepositoryInParentFolders": "never",
     "editor.fontFamily": "'CaskaydiaCove Nerd Font', monospace",
-    "chat.disableAIFeatures": true
+    "chat.disableAIFeatures": true,
+    "files.associations": {
+        "*.sql": "yql"
+    }
 }
