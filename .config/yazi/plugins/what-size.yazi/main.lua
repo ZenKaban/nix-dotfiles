@@ -5,7 +5,7 @@
 -- TODO: Asynchronous calculating and dynamic displaying in statusline,
 -- perhaps by using this:
 --      https://yazi-rs.github.io/docs/plugins/utils/#ps.sub
--- and by using ya.render() method
+-- and by using ui.render() method
 -- See also:
 --      https://github.com/sxyazi/yazi/pull/1903
 --      https://yazi-rs.github.io/docs/dds/#kinds
@@ -118,8 +118,8 @@ local set_separator = ya.sync(function(state, table)
         state.LEFT = table.LEFT
         state.RIGHT = table.RIGHT
     else
-        state.LEFT = ""
-        state.RIGHT = ""
+        state.LEFT = " "
+        state.RIGHT = " "
     end
 end)
 -- }}}1
@@ -130,7 +130,7 @@ end)
 -- }}}1
 -- Redraw statusline {{{1
 local redraw_statusline = ya.sync(function(state)
-    ya.render()
+    ui.render()
 end)
 -- }}}1
 -- Set ui line in statusline for size, clean up when no selection exists {{{1
@@ -160,7 +160,7 @@ local set_ui_line = function(state)
             return ui.Span(sep_left .. get_state("size") .. sep_right)
         else
             -- NOTE [2]: Set this line if want to clear the value in the
-            -- statusline when move the cursor, after calculating WITH 
+            -- statusline when move the cursor, after calculating WITH
             -- selection: return ui.Span(sep_left .. get_state("size") .. sep_right)
             -- or just remove after the unselection like below
             return ""
@@ -168,16 +168,21 @@ local set_ui_line = function(state)
     end
 end
 -- }}}1
+
+--- @since 25.12.29
 return {
     entry = function(self, job)
         local clipboard = job.args.clipboard or job.args[1] == '-c'
 
         local selected = get_selected_paths()
+        local prepend_msg
         -- Keep showing the size after CWD calculation (no selections)
         if #selected == 0 then
             set_state("is_held", true)
+            prepend_msg = "Current Dir: "
         else
             set_state("is_held", false)
+            prepend_msg = "Selected: "
         end
 
         local items = get_paths(selected)
@@ -202,14 +207,16 @@ return {
 
         local formatted_size = format_size(total_size)
 
+        local notification_content = prepend_msg .. formatted_size
         if clipboard then
             ya.clipboard(formatted_size)
-            ya.notify {
-                title = "What size",
-                content = formatted_size .. "\nCopied to clipboard.",
-                timeout = 5,
-            }
+            notification_content = notification_content .. "\nCopied to clipboard."
         end
+        ya.notify {
+            title = "What size",
+            content = notification_content,
+            timeout = 4,
+        }
 
         set_state("size", formatted_size)
         set_state("renewed_state", 0)

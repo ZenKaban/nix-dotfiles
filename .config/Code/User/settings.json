@@ -76,5 +76,6 @@
     "chat.disableAIFeatures": true,
     "files.associations": {
         "*.sql": "yql"
-    }
+    },
+    "vscode-neovim.logOutputToConsole": true
 }
