@@ -195,5 +195,17 @@
         "key": "ctrl+y",
         "command": "-yandex-code-assist.acceptDiffBlock",
         "when": "hasDiffBlock"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+a ctrl+shift+alt+meta+s",
+        "command": "git.stageAll"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+a ctrl+shift+alt+meta+b",
+        "command": "git.branch"
+    },
+    {
+        "key": "ctrl+shift+alt+meta+a ctrl+shift+alt+meta+c",
+        "command": "git.commitStaged"
     }
 ]
