@@ -356,6 +356,7 @@ hl.bind(mainMod .. " + SHIFT + X", hl.dsp.window.move({ workspace = "special:X",
 hl.bind(mainMod .. " + CONTROL + SHIFT + l", hl.dsp.window.move({ workspace = "e+1" }))
 hl.bind(mainMod .. " + CONTROL + SHIFT + h", hl.dsp.window.move({ workspace = "e-1" }))
 hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ workspace = "emptymn" }))
+hl.bind(mainMod .. " + CONTROL + j", hl.dsp.focus({ workspace = "emptymn" }))
 hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
 hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.move({ direction = "left" }))
 hl.bind(mainMod .. " + CONTROL + l", hl.dsp.focus({ workspace = "e+1" }))
