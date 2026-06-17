@@ -301,6 +301,7 @@ hl.bind(mainMod .. " + CONTROL + E", hl.dsp.exec_cmd(fileManager))
 -- hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + return", hl.dsp.exec_cmd("flatpak run net.waterfox.waterfox"))
 hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))
 hl.bind(mainMod .. " + F12", hl.dsp.exec_cmd("hyprctl switchxkblayout current 0"))
 -- hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 -- hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
