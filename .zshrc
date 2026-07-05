@@ -65,11 +65,6 @@ alias lss='eza -l --sort=modified'
 alias v='nvim'
 alias ssh='env TERM=xterm-256color ssh' # allows kitty to work with ssh
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-    if [ "$HOST" = "nixos" ]; then
-        alias config='/run/current-system/sw/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-    else
-        alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-    fi
 alias lazygitconfig='lazygit --git-dir=$HOME/.cfg --work-tree=$HOME'
 alias fgrep='~/.config/scripts/fzrg'
 alias kcp='kitten clipboard'
@@ -89,7 +84,7 @@ function sysupd() {
     if [ "$HOST" != "arch" ]; then
         sudo apt update --allow-insecure-repositories && sudo apt upgrade && brew update && brew upgrade && flatpak update
     else
-        yay
+        sudo paru && flatpak update
     fi
 }
 

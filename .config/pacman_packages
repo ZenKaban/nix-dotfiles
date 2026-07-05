@@ -19,7 +19,6 @@ chromium
 cliphist
 cups
 cups-pk-helper
-discord
 dolphin
 downgrade
 dunst
@@ -37,7 +36,6 @@ gamemode
 git
 grim
 gst-plugin-pipewire
-hiddify-app-bin
 htop
 hyprland
 hyprpaper
@@ -86,6 +84,7 @@ rofi
 satty
 sddm
 senpai
+shadowsocks-v2ray-plugin
 slurp
 smartmontools
 steam
@@ -101,7 +100,8 @@ ttf-cascadia-code-nerd
 tytools
 udiskie
 uwsm
-ventoy-bin
+v2ray
+v2rayn-bin
 vim
 vlc
 vlc-plugin-ffmpeg

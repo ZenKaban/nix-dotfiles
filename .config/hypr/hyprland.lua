@@ -19,7 +19,7 @@ hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
-    scale    = "auto",
+    scale    = "1.33",
 })
 
 hl.monitor({
@@ -61,6 +61,10 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("swaync")
   hl.exec_cmd("/usr/bin/nm-applet")
   hl.exec_cmd("waybar")
+  hl.exec_cmd("steam")
+  hl.exec_cmd("v2rayn")
+  hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+
   -- hl.exec_cmd("hypridle")
 end)
 
@@ -194,12 +198,12 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 --     border_size = 0,
 --     rounding    = 0,
 -- })
--- hl.window_rule({
---     name  = "no-gaps-f1",
---     match = { float = false, workspace = "f[1]" },
---     border_size = 0,
---     rounding    = 0,
--- })
+hl.window_rule({
+    name  = "steam_workspace",
+    match = { class = "^(steam)$" },
+    workspace = "name:G silent"
+
+})
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
@@ -223,6 +227,12 @@ hl.config({
 hl.config({
     scrolling = {
         fullscreen_on_one_column = true,
+    },
+})
+
+hl.config({
+    xwayland = {
+        force_zero_scaling = true,
     },
 })
 
@@ -310,7 +320,7 @@ hl.bind(mainMod .. " + q", hl.dsp.exec_cmd("rofi -show power-menu -modi power-me
 hl.bind(mainMod .. " + CONTROL + b", hl.dsp.exec_cmd("pkill rofi || ~/.config/rofi/apps/rofi-bluetooth/rofi-bluetooth"))
 hl.bind(mainMod .. " + grave", hl.dsp.exec_cmd("hyprctl switchxkblayout current 0 && hyprlock"))
 hl.bind(mainMod .. " + CONTROL + grave", hl.dsp.exec_cmd("~/.config/hypr/scripts/suspend.sh"))
-hl.bind(mainMod .. " + g", hl.dsp.exec_cmd("pkill rofi || zsh -ic ~/.config/rofi/apps/rofi-calendar.sh >/dev/null"))
+-- hl.bind(mainMod .. " + g", hl.dsp.exec_cmd("pkill rofi || zsh -ic ~/.config/rofi/apps/rofi-calendar.sh >/dev/null"))
 hl.bind(mainMod .. " + v", hl.dsp.exec_cmd("cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy"))
 hl.bind(mainMod .. " + SHIFT + v", hl.dsp.exec_cmd("cliphist list | rofi -dmenu -display-columns 2 | cliphist delete"))
 hl.bind(mainMod .. " + u", hl.dsp.exec_cmd("swaync-client -t -sw"))
@@ -333,6 +343,8 @@ end
 
 hl.bind(mainMod .. " + O",             hl.dsp.focus({ workspace = "name:T"}))
 hl.bind(mainMod .. " + SHIFT + O",     hl.dsp.window.move({ workspace = "name:T" }))
+hl.bind(mainMod .. " + G",             hl.dsp.focus({ workspace = "name:G"}))
+hl.bind(mainMod .. " + SHIFT + G",     hl.dsp.window.move({ workspace = "name:G" }))
 hl.bind(mainMod .. " + N",             hl.dsp.focus({ workspace = "name:N"}))
 hl.bind(mainMod .. " + SHIFT + N",     hl.dsp.window.move({ workspace = "name:N" }))
 hl.bind(mainMod .. " + Z",             hl.dsp.focus({ workspace = "name:Z"}))
@@ -468,7 +480,12 @@ hl.workspace_rule({
 
 hl.workspace_rule({ 
     workspace = "name:T",
-    on_created_empty = "flatpak run org.telegram.desktop & Time"
+    on_created_empty = "Telegram"
+})
+
+hl.workspace_rule({ 
+    workspace = "name:G",
+    on_created_empty = "steam"
 })
 
 hl.workspace_rule({ 
@@ -499,14 +516,4 @@ hl.workspace_rule({
 hl.workspace_rule({ 
     workspace = "special:astation",
     on_created_empty = "flatpak run net.waterfox.waterfox --new-window https://zenkebab.synology.me:8801/"
-})
-
-hl.workspace_rule({ 
-    workspace = "special:mail",
-    on_created_empty = "flatpak run net.waterfox.waterfox --new-window https://mail.yandex-team.ru"
-})
-
-hl.workspace_rule({ 
-    workspace = "special:mail",
-    on_created_empty = "flatpak run net.waterfox.waterfox --new-window https://mail.yandex-team.ru"
 })
