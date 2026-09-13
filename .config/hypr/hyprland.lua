@@ -243,7 +243,7 @@ hl.config({
 hl.config({
     misc = {
         force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
+        disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
         initial_workspace_tracking = 0,
         allow_session_lock_restore = true,
         enable_swallow = true,
@@ -517,4 +517,9 @@ hl.workspace_rule({
 hl.workspace_rule({ 
     workspace = "special:astation",
     on_created_empty = "flatpak run net.waterfox.waterfox --new-window https://zenkebab.synology.me:8801/"
+})
+
+hl.workspace_rule({ 
+    workspace = "special:mail",
+    on_created_empty = "flatpak run net.waterfox.waterfox --new-window https://mail.yandex.ru/"
 })
