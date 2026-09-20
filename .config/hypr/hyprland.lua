@@ -61,7 +61,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("swaync")
   hl.exec_cmd("/usr/bin/nm-applet")
   hl.exec_cmd("waybar")
-  hl.exec_cmd("steam")
+  hl.exec_cmd("LD_PRELOAD=/usr/lib32/libextest.so steam") --https://github.com/ValveSoftware/steam-for-linux/issues/13185#issuecomment-4430372188
   hl.exec_cmd("v2rayn")
   hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 
@@ -486,7 +486,7 @@ hl.workspace_rule({
 
 hl.workspace_rule({ 
     workspace = "name:G",
-    on_created_empty = "steam"
+    on_created_empty = "LD_PRELOAD=/usr/lib32/libextest.so steam"
 })
 
 hl.workspace_rule({ 
