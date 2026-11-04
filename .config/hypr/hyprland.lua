@@ -62,6 +62,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("/usr/bin/nm-applet")
   hl.exec_cmd("waybar")
   hl.exec_cmd("LD_PRELOAD=/usr/lib32/libextest.so steam") --https://github.com/ValveSoftware/steam-for-linux/issues/13185#issuecomment-4430372188
+  hl.exec_cmd("Telegram") --https://github.com/ValveSoftware/steam-for-linux/issues/13185#issuecomment-4430372188
   hl.exec_cmd("v2rayn")
   hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 
@@ -205,6 +206,13 @@ hl.window_rule({
 
 })
 
+hl.window_rule({
+    name  = "steam_workspace",
+    match = { class = "^(steam)$" },
+    workspace = "name:G silent"
+
+})
+
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
     dwindle = {
@@ -218,7 +226,7 @@ hl.config({
         new_status = "slave",
         orientation = "center",
         mfact = 0.40,
-        special_scale_factor = 0.5,
+        -- special_scale_factor = 0.5,
         -- orientation = "right"
     },
 })
@@ -477,29 +485,29 @@ hl.workspace_rule({ workspace = "8", monitor = "HDMI-A-1", })
 hl.workspace_rule({ 
     workspace = "s[true]",
     gaps_out = 50,
+    layout_opts = { 
+        special_scale_factor = 0.5 -- your desired scale (0.0 - 1.0)
+    } 
 })
 
 local workspace_programs = {
-    ["name:T"] = { "Telegram", {} },
-    ["name:G"] = { "LD_PRELOAD=/usr/lib32/libextest.so steam", {} },
-    ["name:Tasks"] = { "flatpak run --socket=wayland com.ticktick.TickTick", {} },
-    ["special:btop"] = { "kitty btop", {} },
-    ["special:ranger"] = { "kitty zsh -ic yazi", {} },
-    ["special:kitty"] = { "kitty", {} },
-    ["special:astation"] = { "flatpak run net.waterfox.waterfox --new-window https://zenkebab.synology.me:8801/", {} },
-    ["special:mail"] = { "flatpak run net.waterfox.waterfox --new-window https://mail.yandex.ru/", {} },
+    ["name:T"] = { "Telegram" },
+    ["name:G"] = { "LD_PRELOAD=/usr/lib32/libextest.so steam" },
+    ["name:Tasks"] = { "flatpak run --socket=wayland com.ticktick.TickTick" },
+    ["special:btop"] = { "kitty btop" },
+    ["special:ranger"] = { "kitty zsh -ic yazi" },
+    ["special:kitty"] = { "kitty" },
+    ["special:astation"] = { "flatpak run net.waterfox.waterfox --new-window https://zenkebab.synology.me:8801/" },
+    ["special:mail"] = { "flatpak run net.waterfox.waterfox --new-window https://mail.yandex.ru/" },
 }
 hl.on("workspace.created", function(ws)
-    if ws.is_empty then return end
+    if not ws.is_empty then return end
 
     local program = workspace_programs[ws.name]
     if program == nil then return end
 
-    local cmd, rules = table.unpack(program)
-    -- shallow-copy the rules table so we can add the workspace to it
-    local rules2 = {}
-    for k, v in rules do rules2[k] = v end
-    rules2.workspace = ws.name .. " silent"
+    local cmd = table.unpack(program)
+
     -- run it!
-    hl.exec_cmd(cmd, rules2)
+    hl.exec_cmd(cmd, { workspace = ws.name .. " silent" })
 end)
