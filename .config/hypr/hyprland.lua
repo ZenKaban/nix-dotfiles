@@ -479,47 +479,27 @@ hl.workspace_rule({
     gaps_out = 50,
 })
 
-hl.workspace_rule({ 
-    workspace = "name:T",
-    on_created_empty = "Telegram"
-})
+local workspace_programs = {
+    ["name:T"] = { "Telegram", {} },
+    ["name:G"] = { "LD_PRELOAD=/usr/lib32/libextest.so steam", {} },
+    ["name:Tasks"] = { "flatpak run --socket=wayland com.ticktick.TickTick", {} },
+    ["special:btop"] = { "kitty btop", {} },
+    ["special:ranger"] = { "kitty zsh -ic yazi", {} },
+    ["special:kitty"] = { "kitty", {} },
+    ["special:astation"] = { "flatpak run net.waterfox.waterfox --new-window https://zenkebab.synology.me:8801/", {} },
+    ["special:mail"] = { "flatpak run net.waterfox.waterfox --new-window https://mail.yandex.ru/", {} },
+}
+hl.on("workspace.created", function(ws)
+    if ws.is_empty then return end
 
-hl.workspace_rule({ 
-    workspace = "name:G",
-    on_created_empty = "LD_PRELOAD=/usr/lib32/libextest.so steam"
-})
+    local program = workspace_programs[ws.name]
+    if program == nil then return end
 
-hl.workspace_rule({ 
-    workspace = "name:N",
-    on_created_empty = "flatpak run md.obsidian.Obsidian"
-})
-
-hl.workspace_rule({ 
-    workspace = "name:Tasks",
-    on_created_empty = "flatpak run --socket=wayland com.ticktick.TickTick"
-})
-
-hl.workspace_rule({ 
-    workspace = "special:btop",
-    on_created_empty = "kitty btop"
-})
-
-hl.workspace_rule({ 
-    workspace = "special:ranger",
-    on_created_empty = "kitty zsh -ic yazi"
-})
-
-hl.workspace_rule({ 
-    workspace = "special:kitty",
-    on_created_empty = "kitty"
-})
-
-hl.workspace_rule({ 
-    workspace = "special:astation",
-    on_created_empty = "flatpak run net.waterfox.waterfox --new-window https://zenkebab.synology.me:8801/"
-})
-
-hl.workspace_rule({ 
-    workspace = "special:mail",
-    on_created_empty = "flatpak run net.waterfox.waterfox --new-window https://mail.yandex.ru/"
-})
+    local cmd, rules = table.unpack(program)
+    -- shallow-copy the rules table so we can add the workspace to it
+    local rules2 = {}
+    for k, v in rules do rules2[k] = v end
+    rules2.workspace = ws.name .. " silent"
+    -- run it!
+    hl.exec_cmd(cmd, rules2)
+end)
